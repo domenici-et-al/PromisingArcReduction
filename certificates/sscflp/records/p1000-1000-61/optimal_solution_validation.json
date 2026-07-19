@@ -1,0 +1,10 @@
+{
+  "validation_feasible": true,
+  "validation_cost": 13426820.124794988,
+  "validation_fixed_cost": 1073250.485522,
+  "validation_assignment_cost": 12353569.639272988,
+  "validation_open_facilities": 887,
+  "validation_max_capacity_use": 0.9947412620588465,
+  "validation_violations": 0,
+  "validation_sample": ""
+}

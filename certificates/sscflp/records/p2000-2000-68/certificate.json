@@ -1,0 +1,57 @@
+{
+  "schema_version": "1.0",
+  "problem": "sscflp",
+  "instance": "p2000-2000-68",
+  "status": "certified_global_optimum",
+  "classification": "first_optimality_proof_at_reported_bks",
+  "objective": 9236909.495108996,
+  "reported_bks": 9236909.495,
+  "reported_lower_bound": 9236367.0,
+  "literature_cutoff": "2026-07-18",
+  "source": "Bakker et al. (2025), arXiv:2512.08576v1",
+  "source_evidence": "PDF pp. 11 and 14; complete-results table",
+  "integrity": {
+    "all_audit_checks_passed": true,
+    "certifier_sha256": "45ff2c80f146421e3b9da6ab265a6ac76e8e50cb92b2571413bebbb02520448d",
+    "instance_sha256": "86d729204aaaff769ffe188f011a946d153c3f61ba5f6c931af74814ce94958a",
+    "graph_sha256": "f3605448812b9d7c9bb1d36f91480b9cffa7c74ee64d693e6a8590cf8d33ef55",
+    "assignment_sha256_at_proof_time": "a0b32707a287c4ce188bec3f06ccb19598bc4a9b0ead3b82d4baa4e1e08ca865"
+  },
+  "pricing": {
+    "status": "optimal",
+    "lower_bound": 8155239.920082561,
+    "iterations": 1,
+    "added_arcs": 0,
+    "unfixed_omitted_arcs": 2619743,
+    "time_seconds": 3.174192428588867
+  },
+  "verification": {
+    "status": "optimal",
+    "arcs": 2751493,
+    "objective": 9236909.495108996,
+    "time_seconds": 506.41984939575195,
+    "total_time_seconds": 526.0601167678833
+  },
+  "optimal_solution": {
+    "dense": "certificates/sscflp/optimal-solutions/dense/p2000-2000-68.npz",
+    "dense_sha256": "05190c16ca4ed01844b2518790da28fcabb5e8dbf756a5b79740b232ae269ef0",
+    "sparse": "certificates/sscflp/optimal-solutions/sparse/p2000-2000-68.csv.gz",
+    "sparse_sha256": "f29979fd52b36ea0f4d93741e0d39882a692a434a6d8143280d5312352013ac4"
+  },
+  "files": {
+    "pricing.log": {
+      "path": "certificates/sscflp/records/p2000-2000-68/pricing.log.gz",
+      "sha256": "729d47e0748b3452cfd9ef4292598d9e4a0fc08d4ba5ff8e5c847972427677f7"
+    },
+    "verification.log": {
+      "path": "certificates/sscflp/records/p2000-2000-68/verification.log.gz",
+      "sha256": "d7c926871a86021cc47c69a9554380d6d3ffaefcfd5b7c224b13ddea0323b711"
+    },
+    "pricing_iterations.csv": {
+      "path": "certificates/sscflp/records/p2000-2000-68/pricing_iterations.csv",
+      "sha256": "e4878b6b2d7da83f2472be2df2c058c7dc7ce393164fa37a4e7eafb755edfdef"
+    }
+  },
+  "note": "Large reproducible intermediate arc dumps and simplex basis files are intentionally omitted.",
+  "log_redaction": "Only local paths and Gurobi license registration identifiers were redacted."
+}

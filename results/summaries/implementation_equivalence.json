@@ -1,0 +1,26 @@
+{
+  "schema_version": "1.0",
+  "sscflp": {
+    "historical_frozen_graph_equivalence_instances": 445,
+    "public_port_spot_checks": [
+      "p800-4400-65",
+      "p1000-1000-1",
+      "p2000-2000-31"
+    ],
+    "spot_check_result": "exact_candidate_graph_match"
+  },
+  "mscflp": {
+    "public_port_spot_checks": [
+      "p800-4400-65",
+      "p1000-1000-1",
+      "p2000-2000-31"
+    ],
+    "spot_check_result": "exact_candidate_graph_match"
+  },
+  "mscflp_ci": {
+    "instances_checked": 80,
+    "candidate_arc_count_matches": 80,
+    "materialized_conflict_row_count_matches": 80
+  },
+  "note": "The public port was checked against frozen final-run artifacts, not against later development files."
+}

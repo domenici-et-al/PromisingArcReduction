@@ -1,0 +1,12 @@
+{
+  "schema_version": "1.0",
+  "solutions_checked": 970,
+  "valid_solutions": 970,
+  "failed_solutions": 0,
+  "dense_sparse_exact_matches": 970,
+  "constraint_valid": 970,
+  "released_objective_matches": 970,
+  "historical_solver_objective_matches_within_tolerance": 957,
+  "historical_solver_objective_reconciliations": 13,
+  "note": "Sparse files were regenerated from the audited dense arrays with round-trip precision; final file hashes are checked by SHA256SUMS."
+}

@@ -1,0 +1,13 @@
+{
+  "schema_version": "1.0",
+  "problem": "mscflp-ci",
+  "instance": "wlp22",
+  "status": "certified_global_optimum",
+  "classification": "first_optimality_proof",
+  "objective": 74466.0,
+  "proof_metadata_consistent": true,
+  "optimal_solution_available": false,
+  "optimal_solution": null,
+  "missing_solution_reason": "No exact primal witness was preserved in the available archive.",
+  "note": "This index records independently audited historical full-model solver proofs. The SSCFLP pricing certificate is not claimed for CI."
+}

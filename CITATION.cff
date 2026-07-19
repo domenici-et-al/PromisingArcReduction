@@ -1,0 +1,23 @@
+cff-version: 1.2.0
+message: "If you use this software or its computational artifacts, please cite the associated paper."
+title: "Promising Arc Reduction computational artifact"
+type: software
+authors:
+  - family-names: Domenici
+    given-names: "Pedro Diegues"
+repository-code: "https://github.com/domenici-et-al/PromisingArcReduction"
+license: MIT
+version: 0.1.0
+date-released: 2026-07-19
+keywords:
+  - capacitated facility location
+  - graph reduction
+  - mixed-integer programming
+  - optimality certification
+preferred-citation:
+  type: article
+  title: "Promising arc reduction and full-space certification for large-scale SSCFLP"
+  authors:
+    - family-names: Domenici
+      given-names: "Pedro Diegues"
+  year: 2026

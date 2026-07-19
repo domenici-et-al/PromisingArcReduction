@@ -1,0 +1,9 @@
+{
+  "python": "3.13.12",
+  "numpy": "2.4.3",
+  "gurobi": "13.0.1",
+  "operating_system": "Windows 11 Pro",
+  "processor": "AMD Ryzen 9 9950X",
+  "memory_gb": 64,
+  "timed_experiment_threads": 1
+}

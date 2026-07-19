@@ -1,0 +1,3 @@
+iteration,lp_objective,active_arcs,eligible_omitted_arcs,negative_omitted_arcs,minimum_omitted_reduced_cost,elapsed_sec
+1,99875.99460430919,32717,958271,7,-7.686776123076925,0.6997816562652588
+2,99872.32112759132,32724,958264,0,0.6523280000000113,0.972407341003418

@@ -1,0 +1,16 @@
+__pycache__/
+*.py[cod]
+*.egg-info/
+.venv/
+venv/
+.pytest_cache/
+build/
+dist/
+*.mps
+*.bas
+*.sol
+*.prm
+.DS_Store
+
+# Benchmark files are distributed by their original authors.
+instances/

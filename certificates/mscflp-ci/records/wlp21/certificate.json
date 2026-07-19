@@ -1,0 +1,18 @@
+{
+  "schema_version": "1.0",
+  "problem": "mscflp-ci",
+  "instance": "wlp21",
+  "status": "certified_global_optimum",
+  "classification": "re_certified_optimum",
+  "objective": 38067.0,
+  "proof_metadata_consistent": true,
+  "optimal_solution_available": true,
+  "optimal_solution": {
+    "dense": "certificates/mscflp-ci/optimal-solutions/dense/wlp21.npz",
+    "dense_sha256": "5d7a563cd873af422893079c5134e551333bc02358683b43de7a788a51759bd9",
+    "sparse": "certificates/mscflp-ci/optimal-solutions/sparse/wlp21.csv.gz",
+    "sparse_sha256": "5af4438618d39c849ebcc8d3a665da32a01b9f63a037272ad99041872e48e641"
+  },
+  "missing_solution_reason": null,
+  "note": "This index records independently audited historical full-model solver proofs. The SSCFLP pricing certificate is not claimed for CI."
+}

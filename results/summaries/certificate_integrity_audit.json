@@ -1,0 +1,14 @@
+{
+  "witnesses_checked": 136,
+  "valid_witnesses": 136,
+  "failed_witnesses": 0,
+  "sscflp_witnesses": 131,
+  "mscflp_ci_witnesses": 5,
+  "missing_mscflp_ci_witnesses": [
+    "wlp04",
+    "wlp05",
+    "wlp06",
+    "wlp22"
+  ],
+  "failure_instances": []
+}

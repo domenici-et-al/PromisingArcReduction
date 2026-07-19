@@ -1,0 +1,59 @@
+{
+  "schema_version": "1.0",
+  "timed_runs": {
+    "sscflp": {
+      "instances": 445,
+      "validated_incumbents": 445,
+      "reported_bks_comparisons": 425,
+      "better_than_reported_bks": 237,
+      "co_best_within_0.0001_percentage_points": 359,
+      "worse": 66,
+      "mean_advantage_percent": 0.8198479627367437,
+      "median_advantage_percent": 0.004840161745602246,
+      "mean_retained_arcs_percent": 5.448002545681534,
+      "reported_bks_targets_reached": 359,
+      "median_observed_target_time_ratio_percent": 1.3351500065091648
+    },
+    "mscflp": {
+      "instances": 445,
+      "validated_incumbents": 445,
+      "better_than_reconstructed_bks_by_more_than_0.01_percentage_points": 86,
+      "co_best_within_0.01_percentage_points": 380,
+      "worse": 65,
+      "mean_advantage_percent": -0.045397377305873426,
+      "median_advantage_percent": -0.0004382325468473655,
+      "mean_retained_arcs_percent": 6.121979812450346,
+      "median_observed_time_ratio_percent": 3.5911508732719555
+    },
+    "mscflp_ci": {
+      "instances": 80,
+      "validated_incumbents": 80,
+      "wins_against_lns_best_of_ten": 78,
+      "ties": 1,
+      "losses": 1,
+      "mean_gain_percent": 0.795879122078657,
+      "median_gain_percent": 0.8575498517053777,
+      "mean_retained_arcs_percent": 2.502619320989527,
+      "mean_retained_conflict_rows_percent": 0.12731407149016105
+    }
+  },
+  "certificates": {
+    "sscflp": {
+      "audited_global_optima": 131,
+      "first_optimality_proofs": 115,
+      "re_certifications": 16,
+      "complete_optimal_primal_witnesses": 131
+    },
+    "mscflp_ci": {
+      "historical_full_model_proofs": 9,
+      "complete_optimal_primal_witnesses": 5,
+      "proof_records_without_preserved_primal_witness": 4
+    }
+  },
+  "comparison_note": "Cross-study time ratios are descriptive because hardware, solvers, and parallelism differ.",
+  "objective_reconciliation": {
+    "canonical_objective": "cost independently recomputed from the released primal arrays",
+    "historical_solver_reports_outside_tolerance": 13,
+    "details": "results/summaries/historical_objective_reconciliation.csv"
+  }
+}

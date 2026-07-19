@@ -1,0 +1,36 @@
+{
+  "schema_version": "1.0",
+  "status": "passed",
+  "timed_solution_records": 970,
+  "timed_solution_artifact_counts": {
+    "sscflp": {
+      "dense": 445,
+      "sparse": 445,
+      "metadata": 445,
+      "logs": 890,
+      "progress": 445
+    },
+    "mscflp": {
+      "dense": 445,
+      "sparse": 445,
+      "metadata": 445,
+      "logs": 445,
+      "progress": 445
+    },
+    "mscflp-ci": {
+      "dense": 80,
+      "sparse": 80,
+      "metadata": 80,
+      "logs": 80,
+      "progress": 80
+    }
+  },
+  "sscflp_certificate_records": 131,
+  "validated_optimal_witnesses": 136,
+  "sanitized_compressed_logs": 1676,
+  "public_python_modules": 6,
+  "repository_files_before_checksum_manifest": 6148,
+  "largest_file": "artifacts/solutions/mscflp-ci/dense/wlp20.npz",
+  "largest_file_bytes": 437236,
+  "failures": []
+}

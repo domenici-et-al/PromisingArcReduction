@@ -1,0 +1,10 @@
+instance,classification,proven_optimum,proof_metadata_consistent,optimal_solution_available,certificate,missing_solution_reason
+wlp01,re_certified_optimum,28716.0,True,True,certificates/mscflp-ci/records/wlp01/certificate.json,
+wlp02,re_certified_optimum,52952.0,True,True,certificates/mscflp-ci/records/wlp02/certificate.json,
+wlp03,re_certified_optimum,64296.0,True,True,certificates/mscflp-ci/records/wlp03/certificate.json,
+wlp04,first_optimality_proof,84633.0,True,False,certificates/mscflp-ci/records/wlp04/certificate.json,No exact primal witness was preserved in the available archive.
+wlp05,first_optimality_proof,103829.0,True,False,certificates/mscflp-ci/records/wlp05/certificate.json,No exact primal witness was preserved in the available archive.
+wlp06,first_optimality_proof,111499.0,True,False,certificates/mscflp-ci/records/wlp06/certificate.json,No exact primal witness was preserved in the available archive.
+wlp21,re_certified_optimum,38067.0,True,True,certificates/mscflp-ci/records/wlp21/certificate.json,
+wlp22,first_optimality_proof,74466.0,True,False,certificates/mscflp-ci/records/wlp22/certificate.json,No exact primal witness was preserved in the available archive.
+wlp23,first_optimality_proof,119073.0,True,True,certificates/mscflp-ci/records/wlp23/certificate.json,

@@ -1,0 +1,90 @@
+{
+  "schema_version": "1.0",
+  "problem": "sscflp",
+  "instance": "p1000-4000-44",
+  "method": "PAR",
+  "solution_source": "canonicalized_from_validated_assignment",
+  "dimensions": {
+    "customers": 4000,
+    "facilities": 1000,
+    "incompatible_pairs": 0
+  },
+  "protocol": {
+    "time_limit_seconds": 600.0,
+    "threads": 1,
+    "seed": 0,
+    "constructive_initialization": true
+  },
+  "method_parameters": {
+    "rho": 2.0000000376480545,
+    "eta": 1.414213549062498,
+    "local_horizon": 45,
+    "mean_q": 46.7705,
+    "median_q": 49.0,
+    "p90_q": 59.0,
+    "p95_q": 61.0,
+    "max_q": 65,
+    "pressure_p95": 2.0263046228455917,
+    "pressure_max": 3.3794122210903472,
+    "option_target_median": 45.06059048182241,
+    "congestion_p90": 1.0
+  },
+  "graph": {
+    "candidate_arcs": 187082,
+    "eligible_arcs": 3909112,
+    "full_arcs": 4000000,
+    "candidate_pct_full": 4.67705,
+    "candidate_pct_eligible": 4.785792783629632,
+    "graph_sha256": "4c3c00d7be50b7742100cd355dfe8be2026d67a7449931c403e8c2335118ea07"
+  },
+  "solver": {
+    "status": "time_limit",
+    "objective": 594855.7703409999,
+    "best_bound": 586847.8608382735,
+    "gap": 0.013461934643646272,
+    "gurobi_time_seconds": 592.1089999675751,
+    "end_to_end_time_seconds": 597.2237772941589,
+    "nodes": null,
+    "solutions_found": null,
+    "gurobi_version": "13.0.1"
+  },
+  "validation": {
+    "feasible": true,
+    "cost": 594855.7703409998,
+    "fixed_cost": 383565.706443,
+    "assignment_cost": 211290.06389799976,
+    "open_facilities": 422,
+    "max_capacity_use": 0.9999533634653904,
+    "violations": 0,
+    "sample": ""
+  },
+  "files": {
+    "dense_solution": "artifacts/solutions/sscflp/dense/p1000-4000-44.npz",
+    "dense_solution_sha256": "ec12dcb41e813155d0b32bf07f4462e0a60449f5f7870a4d76e462e678e85591",
+    "sparse_solution": "artifacts/solutions/sscflp/sparse/p1000-4000-44.csv.gz",
+    "sparse_solution_sha256": "24165f2c0bb7919b3c37101e5b3c297b160c9893d3437aa26704c8e1995d0f19",
+    "logs": [
+      {
+        "path": "artifacts/logs/sscflp/p1000-4000-44/gurobi.log.gz",
+        "sha256": "6b3ebd42b06c55941e69d3a8e8e00d46649252453bef3f37fc450a23e26dee32"
+      },
+      {
+        "path": "artifacts/logs/sscflp/p1000-4000-44/warm_start.log.gz",
+        "sha256": "1f76314f1b05acdb2daeee635eb6fd4850b0511b27c9b539ee92821364e3aa45"
+      }
+    ],
+    "progress": {
+      "path": "artifacts/progress/sscflp/p1000-4000-44.csv.gz",
+      "sha256": "e3908695b12dccc830ec2a7f7bad2ce4e8e6c162167ff15314f14d611677bf69"
+    },
+    "logs_sanitized": "Only local paths and Gurobi license registration identifiers were redacted."
+  },
+  "instance_sha256": "a4c3d610b1a3346a8ca1a396ae0358e9e8e474d84e403bfdbba083fb7704cbd9",
+  "released_solution": {
+    "objective": 594855.770341,
+    "objective_source": "independently_recomputed_from_released_primal_arrays",
+    "matches_historical_solver_report_within_tolerance": true,
+    "historical_solver_objective": 594855.7703409999,
+    "released_minus_historical_objective": 1.1641532182693481e-10
+  }
+}

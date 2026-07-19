@@ -1,0 +1,36 @@
+{
+  "schema_version": "1.0",
+  "sscflp": {
+    "time_limit_seconds": 600,
+    "time_scope": "end_to_end",
+    "threads": 1,
+    "seed": 0,
+    "constructive_initialization": true,
+    "initializer_stop": "first_feasible_assignment",
+    "postprocess_reserve_seconds": 3
+  },
+  "mscflp": {
+    "time_limit_seconds": 600,
+    "time_scope": "end_to_end",
+    "threads": 1,
+    "seed": 0,
+    "constructive_initialization": false
+  },
+  "mscflp_ci": {
+    "time_limit_seconds": "10*sqrt(facilities)",
+    "time_scope": "end_to_end",
+    "threads": 1,
+    "seed": 0,
+    "constructive_initialization": false,
+    "conflict_rows": "materialize only intersections of retained customer candidate sets"
+  },
+  "sscflp_certification": {
+    "threads": 16,
+    "seed": 0,
+    "time_limit_seconds": null,
+    "max_pricing_iterations": 100,
+    "reduced_cost_tolerance": 1e-7,
+    "relative_proof_tolerance": 1e-9,
+    "absolute_proof_tolerance": 1e-6
+  }
+}

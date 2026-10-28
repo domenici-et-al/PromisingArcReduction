@@ -40,10 +40,8 @@ def _read_plc(path: Path) -> dict:
     parsed = P_NAME.match(path.stem)
     if parsed and first == int(parsed.group("n")) and second == int(parsed.group("m")):
         customers, facilities = first, second
-        orientation = "customers_first"
     else:
         facilities, customers = first, second
-        orientation = "facilities_first"
 
     expected = 2 + customers + 2 * facilities + customers * facilities
     if len(values) != expected:
@@ -57,7 +55,7 @@ def _read_plc(path: Path) -> dict:
     offset += facilities
     costs = values[offset:].reshape(facilities, customers).T
     return _instance(path, customers, facilities, demands, capacities, fixed, costs,
-                     [], "plc", "per_unit", orientation)
+                     [], "per_unit")
 
 
 def _read_orlib(path: Path) -> dict:
@@ -74,7 +72,7 @@ def _read_orlib(path: Path) -> dict:
         for i in range(customers):
             costs[i][j] = _next(values, "assignment cost")
     return _instance(path, customers, facilities, demands, capacities, fixed, costs,
-                     [], "orlib_cap", "total", "facilities_first")
+                     [], "total")
 
 
 def _read_dzn(path: Path) -> dict:
@@ -90,20 +88,17 @@ def _read_dzn(path: Path) -> dict:
     if declared != len(pairs):
         raise ValueError("Declared incompatibility count does not match IncompatiblePairs.")
     return _instance(path, customers, facilities, demands, capacities, fixed, costs,
-                     pairs, "dzn", "per_unit", "facilities_first")
+                     pairs, "per_unit")
 
 
-def _instance(path, n, m, demands, capacities, fixed, costs, pairs, source, mode, orientation):
+def _instance(path, n, m, demands, capacities, fixed, costs, pairs, mode):
     vector = lambda values: values.astype(float, copy=False) if isinstance(values, np.ndarray) else [float(v) for v in values]
     matrix = costs.astype(float, copy=False) if isinstance(costs, np.ndarray) else [
         [float(v) for v in row] for row in costs
     ]
     return {
         "name": path.stem,
-        "path": str(path),
-        "source_format": source,
         "cost_mode": mode,
-        "header_orientation": orientation,
         "customers": int(n),
         "facilities": int(m),
         "demands": vector(demands),

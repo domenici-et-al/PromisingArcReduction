@@ -8,10 +8,8 @@
   "proof_metadata_consistent": true,
   "optimal_solution_available": true,
   "optimal_solution": {
-    "dense": "certificates/mscflp-ci/optimal-solutions/dense/wlp03.npz",
-    "dense_sha256": "39635da571a16bde91d0ec48a10c2d280a0cb356463709240e3bcc7d5a81cc9d",
-    "sparse": "certificates/mscflp-ci/optimal-solutions/sparse/wlp03.csv.gz",
-    "sparse_sha256": "9e93c137d6037c1ce953a339d848f924437c00c057a5c95a09c4111f42d51504"
+    "path": "certificates/mscflp-ci/records/wlp03/optimal_solution.csv.gz",
+    "sha256": "9e93c137d6037c1ce953a339d848f924437c00c057a5c95a09c4111f42d51504"
   },
   "missing_solution_reason": null,
   "note": "This index records independently audited historical full-model solver proofs. The SSCFLP pricing certificate is not claimed for CI."

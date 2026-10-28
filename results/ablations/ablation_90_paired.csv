@@ -1,0 +1,696 @@
+control,instance,difference_pct,group,rho,source
+No capacity scaling,p800-4400-1,0.5463317184117573,TB-A,1.100000041141543,matched panel
+No capacity scaling,p800-4400-15,0.49745621721430555,TB-A,2.0000000420715365,matched panel
+No capacity scaling,p800-4400-30,0.014897357872867212,TB-A,9.999999918513007,matched panel
+No capacity scaling,p1000-1000-6,0.6544060779405323,TB-A,1.4999999568750952,matched panel
+No capacity scaling,p1000-1000-18,0.12153897336275267,TB-A,3.0000000305155905,matched panel
+No capacity scaling,p1000-1000-30,0.2869128206077813,TB-A,9.999999501786078,matched panel
+No capacity scaling,p1000-4000-1,-1.175248960630961,TB-A,1.1000000659024316,matched panel
+No capacity scaling,p1000-4000-15,-0.25594676858055226,TB-A,2.0000000041877977,matched panel
+No capacity scaling,p1000-4000-30,0.10522221903412673,TB-A,9.999999662805845,matched panel
+No capacity scaling,p1200-3000-1,-0.3294035852362297,TB-A,1.100000024202783,matched panel
+No capacity scaling,p1200-3000-15,-3.8788435931709624,TB-A,2.000000028700753,matched panel
+No capacity scaling,p1200-3000-30,0.2416099280948611,TB-A,10.000000134020969,matched panel
+No capacity scaling,p2000-2000-6,1.3732887855918694,TB-A,1.4999999456347772,matched panel
+No capacity scaling,p2000-2000-18,0.3866739804457025,TB-A,3.0000001061066737,matched panel
+No capacity scaling,p2000-2000-30,0.257234139156617,TB-A,9.999999539539616,matched panel
+No capacity scaling,p800-4400-31,0.19612543649719505,TB-B,1.1000000009546034,matched panel
+No capacity scaling,p800-4400-43,-0.1640710556721064,TB-B,2.0000000080538793,matched panel
+No capacity scaling,p800-4400-55,0.0,TB-B,5.000000050121147,matched panel
+No capacity scaling,p1000-1000-31,1.3480767033350325,TB-B,1.1000000005291564,matched panel
+No capacity scaling,p1000-1000-46,0.07086947496108488,TB-B,3.0000000996401734,matched panel
+No capacity scaling,p1000-1000-60,0.0,TB-B,10.000000069593648,matched panel
+No capacity scaling,p1000-4000-31,3.421983882223938,TB-B,1.0999999966052003,matched panel
+No capacity scaling,p1000-4000-45,-0.02688627897948883,TB-B,2.00000002288164,matched panel
+No capacity scaling,p1000-4000-60,-2.2505843677950162e-08,TB-B,10.000000517927525,matched panel
+No capacity scaling,p1200-3000-31,0.4359350465194711,TB-B,1.100000024202783,matched panel
+No capacity scaling,p1200-3000-45,0.11694489823044736,TB-B,2.0000000958291957,matched panel
+No capacity scaling,p1200-3000-60,0.0,TB-B,9.999999987493108,matched panel
+No capacity scaling,p2000-2000-36,-1.2184421086301558,TB-B,1.5000000333229038,matched panel
+No capacity scaling,p2000-2000-48,-0.20313603005406397,TB-B,2.9999999657536023,matched panel
+No capacity scaling,p2000-2000-60,0.0,TB-B,9.999999738748427,matched panel
+No capacity scaling,p800-4400-61,-0.21724621110740103,TB-C,1.1000000065055653,matched panel
+No capacity scaling,p800-4400-75,0.0,TB-C,1.9999999672075048,matched panel
+No capacity scaling,p800-4400-90,0.0,TB-C,10.000000240413822,matched panel
+No capacity scaling,p1000-1000-61,5.694119562916899,TB-C,1.099999971396408,matched panel
+No capacity scaling,p1000-1000-75,0.0,TB-C,2.000000002368814,matched panel
+No capacity scaling,p1000-1000-90,0.0,TB-C,9.999999970140758,matched panel
+No capacity scaling,p1000-4000-61,-1.7396501480680875,TB-C,1.100000042443862,matched panel
+No capacity scaling,p1000-4000-75,0.0,TB-C,2.0000000268670313,matched panel
+No capacity scaling,p1000-4000-90,0.0,TB-C,10.000000286773592,matched panel
+No capacity scaling,p1200-3000-61,-2.4715493363440113,TB-C,1.1000000542004031,matched panel
+No capacity scaling,p1200-3000-75,1.784922637792495e-14,TB-C,2.0000000471415262,matched panel
+No capacity scaling,p1200-3000-90,0.0,TB-C,10.000000387267635,matched panel
+No capacity scaling,p2000-2000-61,1.2461641389752862,TB-C,1.0999999692335605,matched panel
+No capacity scaling,p2000-2000-77,0.0,TB-C,2.9999998837179587,matched panel
+No capacity scaling,p2000-2000-90,0.0,TB-C,10.000000386147716,matched panel
+No capacity scaling,p1000-1000-1,2.834549625804326,TB-A,1.1000000687224223,matched panel
+No capacity scaling,p1000-1000-11,0.49983973783551466,TB-A,2.000000007652663,matched panel
+No capacity scaling,p1000-1000-21,0.5536265612512103,TB-A,4.999999844638159,matched panel
+No capacity scaling,p1000-4000-6,-1.1095019598270925,TB-A,1.500000025316616,matched panel
+No capacity scaling,p1000-4000-16,0.13967594436121877,TB-A,3.000000094797851,matched panel
+No capacity scaling,p1000-4000-21,0.05501869377049342,TB-A,5.00000004740716,matched panel
+No capacity scaling,p1200-3000-6,-3.073818924421563,TB-A,1.4999999768467474,matched panel
+No capacity scaling,p1200-3000-16,0.8342124211018198,TB-A,2.9999999060622886,matched panel
+No capacity scaling,p1200-3000-21,-0.2761796881950064,TB-A,5.000000015600491,matched panel
+No capacity scaling,p2000-2000-1,1.8467729094711594,TB-A,1.100000067814718,matched panel
+No capacity scaling,p2000-2000-11,0.15997973559384518,TB-A,1.999999956643392,matched panel
+No capacity scaling,p2000-2000-21,0.24108535804352993,TB-A,4.999999826096001,matched panel
+No capacity scaling,p800-4400-6,-0.37092298509446936,TB-A,1.4999999660594774,matched panel
+No capacity scaling,p800-4400-16,0.21286629945764635,TB-A,3.0000000416958654,matched panel
+No capacity scaling,p800-4400-21,0.07072024779949056,TB-A,5.000000120542024,matched panel
+No capacity scaling,p1000-1000-36,0.3877107634851513,TB-B,1.4999999615826285,matched panel
+No capacity scaling,p1000-1000-41,0.16045931286344411,TB-B,1.9999999669336619,matched panel
+No capacity scaling,p1000-1000-51,0.0637740877738667,TB-B,5.000000060151138,matched panel
+No capacity scaling,p1000-4000-36,-1.2957687025992484,TB-B,1.5000000196659862,matched panel
+No capacity scaling,p1000-4000-46,-0.05471282830897106,TB-B,2.999999941767043,matched panel
+No capacity scaling,p1000-4000-51,0.0,TB-B,5.0000002356309245,matched panel
+No capacity scaling,p1200-3000-36,-3.2661927068380474,TB-B,1.5000000063229573,matched panel
+No capacity scaling,p1200-3000-46,0.04387448522960181,TB-B,2.9999999522854575,matched panel
+No capacity scaling,p1200-3000-51,-0.004151563725147756,TB-B,4.999999957059579,matched panel
+No capacity scaling,p2000-2000-41,-0.010312363825148827,TB-B,1.9999999454531663,matched panel
+No capacity scaling,p2000-2000-51,-0.015142579638024458,TB-B,5.0000002332648865,matched panel
+No capacity scaling,p2000-2000-56,0.0010767203224432082,TB-B,9.99999976121969,matched panel
+No capacity scaling,p800-4400-32,1.0118528446852104,TB-B,1.0999999824970692,matched panel
+No capacity scaling,p800-4400-36,-0.8444318910262625,TB-B,1.4999999816183305,matched panel
+No capacity scaling,p800-4400-46,0.013042133538879307,TB-B,3.000000038741316,matched panel
+No capacity scaling,p1000-1000-66,0.0,TB-C,1.5000000149565218,matched panel
+No capacity scaling,p1000-1000-76,0.0,TB-C,2.9999999003110336,matched panel
+No capacity scaling,p1000-1000-81,0.0,TB-C,5.000000248922192,matched panel
+No capacity scaling,p1000-4000-66,0.0,TB-C,1.4999999541966367,matched panel
+No capacity scaling,p1000-4000-76,0.0,TB-C,2.9999999548839416,matched panel
+No capacity scaling,p1000-4000-81,0.0,TB-C,4.99999997390995,matched panel
+No capacity scaling,p1200-3000-66,0.0,TB-C,1.500000012344409,matched panel
+No capacity scaling,p1200-3000-76,0.0,TB-C,2.9999999009554843,matched panel
+No capacity scaling,p1200-3000-81,0.0,TB-C,4.999999944550247,matched panel
+No capacity scaling,p2000-2000-66,0.0,TB-C,1.4999999926754146,matched panel
+No capacity scaling,p2000-2000-71,-1.2748948657081782e-14,TB-C,1.9999999983120829,matched panel
+No capacity scaling,p2000-2000-81,0.0,TB-C,4.999999859560286,matched panel
+No capacity scaling,p800-4400-66,-2.005676528509567e-14,TB-C,1.499999959730923,matched panel
+No capacity scaling,p800-4400-76,1.3342668315009113e-09,TB-C,3.000000011812222,matched panel
+No capacity scaling,p800-4400-81,0.0,TB-C,4.99999985486783,matched panel
+No demand scaling,p800-4400-1,0.5268329611089424,TB-A,1.100000041141543,matched panel
+No demand scaling,p800-4400-15,0.6177621008864921,TB-A,2.0000000420715365,matched panel
+No demand scaling,p800-4400-30,-0.3926077764427417,TB-A,9.999999918513007,matched panel
+No demand scaling,p1000-1000-6,0.1682967364920458,TB-A,1.4999999568750952,matched panel
+No demand scaling,p1000-1000-18,-0.7178914903046076,TB-A,3.0000000305155905,matched panel
+No demand scaling,p1000-1000-30,-1.3450312475249007,TB-A,9.999999501786078,matched panel
+No demand scaling,p1000-4000-1,0.08447937230639033,TB-A,1.1000000659024316,matched panel
+No demand scaling,p1000-4000-15,0.604404696534678,TB-A,2.0000000041877977,matched panel
+No demand scaling,p1000-4000-30,-0.5733368164358624,TB-A,9.999999662805845,matched panel
+No demand scaling,p1200-3000-1,-1.143291732099628,TB-A,1.100000024202783,matched panel
+No demand scaling,p1200-3000-15,-2.934714741345164,TB-A,2.000000028700753,matched panel
+No demand scaling,p1200-3000-30,-0.9603185866895623,TB-A,10.000000134020969,matched panel
+No demand scaling,p2000-2000-6,5.164891208089198,TB-A,1.4999999456347772,matched panel
+No demand scaling,p2000-2000-18,0.20125088359042245,TB-A,3.0000001061066737,matched panel
+No demand scaling,p2000-2000-30,-0.46491051387792337,TB-A,9.999999539539616,matched panel
+No demand scaling,p800-4400-31,0.5308002461838311,TB-B,1.1000000009546034,matched panel
+No demand scaling,p800-4400-43,-0.13357773145514806,TB-B,2.0000000080538793,matched panel
+No demand scaling,p800-4400-55,0.0,TB-B,5.000000050121147,matched panel
+No demand scaling,p1000-1000-31,-0.09963777463771818,TB-B,1.1000000005291564,matched panel
+No demand scaling,p1000-1000-46,-0.09778146990265009,TB-B,3.0000000996401734,matched panel
+No demand scaling,p1000-1000-60,-0.000808325597045741,TB-B,10.000000069593648,matched panel
+No demand scaling,p1000-4000-31,0.43017447602452635,TB-B,1.0999999966052003,matched panel
+No demand scaling,p1000-4000-45,0.2751229424401883,TB-B,2.00000002288164,matched panel
+No demand scaling,p1000-4000-60,-2.2505843677950162e-08,TB-B,10.000000517927525,matched panel
+No demand scaling,p1200-3000-31,0.9816991192471456,TB-B,1.100000024202783,matched panel
+No demand scaling,p1200-3000-45,0.3512727764049042,TB-B,2.0000000958291957,matched panel
+No demand scaling,p1200-3000-60,0.0,TB-B,9.999999987493108,matched panel
+No demand scaling,p2000-2000-36,-0.3891084661763258,TB-B,1.5000000333229038,matched panel
+No demand scaling,p2000-2000-48,0.0147753730012426,TB-B,2.9999999657536023,matched panel
+No demand scaling,p2000-2000-60,-0.007069976839872342,TB-B,9.999999738748427,matched panel
+No demand scaling,p800-4400-61,1.2150795805291414,TB-C,1.1000000065055653,matched panel
+No demand scaling,p800-4400-75,0.0,TB-C,1.9999999672075048,matched panel
+No demand scaling,p800-4400-90,0.0,TB-C,10.000000240413822,matched panel
+No demand scaling,p1000-1000-61,-0.0025332737609535575,TB-C,1.099999971396408,matched panel
+No demand scaling,p1000-1000-75,0.0,TB-C,2.000000002368814,matched panel
+No demand scaling,p1000-1000-90,0.0,TB-C,9.999999970140758,matched panel
+No demand scaling,p1000-4000-61,0.11627171738493888,TB-C,1.100000042443862,matched panel
+No demand scaling,p1000-4000-75,0.0,TB-C,2.0000000268670313,matched panel
+No demand scaling,p1000-4000-90,0.0,TB-C,10.000000286773592,matched panel
+No demand scaling,p1200-3000-61,1.3664908313387119,TB-C,1.1000000542004031,matched panel
+No demand scaling,p1200-3000-75,0.0,TB-C,2.0000000471415262,matched panel
+No demand scaling,p1200-3000-90,0.0,TB-C,10.000000387267635,matched panel
+No demand scaling,p2000-2000-61,-0.0034299842372174654,TB-C,1.0999999692335605,matched panel
+No demand scaling,p2000-2000-77,0.0,TB-C,2.9999998837179587,matched panel
+No demand scaling,p2000-2000-90,0.0,TB-C,10.000000386147716,matched panel
+No demand scaling,p1000-1000-1,-0.05220455008579367,TB-A,1.1000000687224223,matched panel
+No demand scaling,p1000-1000-11,-0.3935522768335178,TB-A,2.000000007652663,matched panel
+No demand scaling,p1000-1000-21,-0.28204525418915427,TB-A,4.999999844638159,matched panel
+No demand scaling,p1000-4000-6,-0.39803552430843125,TB-A,1.500000025316616,matched panel
+No demand scaling,p1000-4000-16,-0.05074039114873262,TB-A,3.000000094797851,matched panel
+No demand scaling,p1000-4000-21,-0.0043141583821114235,TB-A,5.00000004740716,matched panel
+No demand scaling,p1200-3000-6,2.075228790875667,TB-A,1.4999999768467474,matched panel
+No demand scaling,p1200-3000-16,0.3462261918792457,TB-A,2.9999999060622886,matched panel
+No demand scaling,p1200-3000-21,0.037103817127552584,TB-A,5.000000015600491,matched panel
+No demand scaling,p2000-2000-1,-0.7076662602660627,TB-A,1.100000067814718,matched panel
+No demand scaling,p2000-2000-11,-0.3425250076074429,TB-A,1.999999956643392,matched panel
+No demand scaling,p2000-2000-21,-0.9296471565046069,TB-A,4.999999826096001,matched panel
+No demand scaling,p800-4400-6,1.3950062101451186,TB-A,1.4999999660594774,matched panel
+No demand scaling,p800-4400-16,0.1975400794229902,TB-A,3.0000000416958654,matched panel
+No demand scaling,p800-4400-21,0.06661617109936466,TB-A,5.000000120542024,matched panel
+No demand scaling,p1000-1000-36,0.004075295144848905,TB-B,1.4999999615826285,matched panel
+No demand scaling,p1000-1000-41,-0.14959452112952812,TB-B,1.9999999669336619,matched panel
+No demand scaling,p1000-1000-51,-0.05644387505155149,TB-B,5.000000060151138,matched panel
+No demand scaling,p1000-4000-36,-0.2876821833997882,TB-B,1.5000000196659862,matched panel
+No demand scaling,p1000-4000-46,-0.07992883684871337,TB-B,2.999999941767043,matched panel
+No demand scaling,p1000-4000-51,0.0013345099362033338,TB-B,5.0000002356309245,matched panel
+No demand scaling,p1200-3000-36,-1.8444313462575481,TB-B,1.5000000063229573,matched panel
+No demand scaling,p1200-3000-46,-0.06600054675066758,TB-B,2.9999999522854575,matched panel
+No demand scaling,p1200-3000-51,-0.004011769653098161,TB-B,4.999999957059579,matched panel
+No demand scaling,p2000-2000-41,1.4041727678983846,TB-B,1.9999999454531663,matched panel
+No demand scaling,p2000-2000-51,-0.06928626199266451,TB-B,5.0000002332648865,matched panel
+No demand scaling,p2000-2000-56,-0.011323014181595033,TB-B,9.99999976121969,matched panel
+No demand scaling,p800-4400-32,0.6005919983561911,TB-B,1.0999999824970692,matched panel
+No demand scaling,p800-4400-36,0.29199486894934984,TB-B,1.4999999816183305,matched panel
+No demand scaling,p800-4400-46,0.01066356215256278,TB-B,3.000000038741316,matched panel
+No demand scaling,p1000-1000-66,0.0,TB-C,1.5000000149565218,matched panel
+No demand scaling,p1000-1000-76,0.0,TB-C,2.9999999003110336,matched panel
+No demand scaling,p1000-1000-81,0.0,TB-C,5.000000248922192,matched panel
+No demand scaling,p1000-4000-66,0.0,TB-C,1.4999999541966367,matched panel
+No demand scaling,p1000-4000-76,0.0,TB-C,2.9999999548839416,matched panel
+No demand scaling,p1000-4000-81,0.0,TB-C,4.99999997390995,matched panel
+No demand scaling,p1200-3000-66,0.0,TB-C,1.500000012344409,matched panel
+No demand scaling,p1200-3000-76,0.0,TB-C,2.9999999009554843,matched panel
+No demand scaling,p1200-3000-81,0.0,TB-C,4.999999944550247,matched panel
+No demand scaling,p2000-2000-66,0.0,TB-C,1.4999999926754146,matched panel
+No demand scaling,p2000-2000-71,-1.2748948657081782e-14,TB-C,1.9999999983120829,matched panel
+No demand scaling,p2000-2000-81,0.0,TB-C,4.999999859560286,matched panel
+No demand scaling,p800-4400-66,-2.005676528509567e-14,TB-C,1.499999959730923,matched panel
+No demand scaling,p800-4400-76,1.1915870422684008e-11,TB-C,3.000000011812222,matched panel
+No demand scaling,p800-4400-81,0.0,TB-C,4.99999985486783,matched panel
+No congestion expansion,p800-4400-1,0.42611408803699136,TB-A,1.100000041141543,matched panel
+No congestion expansion,p800-4400-15,0.007224035923149819,TB-A,2.0000000420715365,matched panel
+No congestion expansion,p800-4400-30,0.0,TB-A,9.999999918513007,matched panel
+No congestion expansion,p1000-1000-6,0.029363517380751807,TB-A,1.4999999568750952,matched panel
+No congestion expansion,p1000-1000-18,-0.009761023262168968,TB-A,3.0000000305155905,matched panel
+No congestion expansion,p1000-1000-30,-0.00016149860537802483,TB-A,9.999999501786078,matched panel
+No congestion expansion,p1000-4000-1,-0.2900442770404248,TB-A,1.1000000659024316,matched panel
+No congestion expansion,p1000-4000-15,-0.011456194895757199,TB-A,2.0000000041877977,matched panel
+No congestion expansion,p1000-4000-30,0.0,TB-A,9.999999662805845,matched panel
+No congestion expansion,p1200-3000-1,-0.8162136139158618,TB-A,1.100000024202783,matched panel
+No congestion expansion,p1200-3000-15,-0.0038297211764182553,TB-A,2.000000028700753,matched panel
+No congestion expansion,p1200-3000-30,0.0,TB-A,10.000000134020969,matched panel
+No congestion expansion,p2000-2000-6,0.11429089098480781,TB-A,1.4999999456347772,matched panel
+No congestion expansion,p2000-2000-18,-0.0019180854444195445,TB-A,3.0000001061066737,matched panel
+No congestion expansion,p2000-2000-30,0.0,TB-A,9.999999539539616,matched panel
+No congestion expansion,p800-4400-31,0.4332604432770298,TB-B,1.1000000009546034,matched panel
+No congestion expansion,p800-4400-43,-0.06819637553204438,TB-B,2.0000000080538793,matched panel
+No congestion expansion,p800-4400-55,0.0,TB-B,5.000000050121147,matched panel
+No congestion expansion,p1000-1000-31,-0.008803939678860232,TB-B,1.1000000005291564,matched panel
+No congestion expansion,p1000-1000-46,0.0,TB-B,3.0000000996401734,matched panel
+No congestion expansion,p1000-1000-60,0.0,TB-B,10.000000069593648,matched panel
+No congestion expansion,p1000-4000-31,0.24743669887754355,TB-B,1.0999999966052003,matched panel
+No congestion expansion,p1000-4000-45,4.1907771265918804e-05,TB-B,2.00000002288164,matched panel
+No congestion expansion,p1000-4000-60,0.0,TB-B,10.000000517927525,matched panel
+No congestion expansion,p1200-3000-31,0.5218965745254177,TB-B,1.100000024202783,matched panel
+No congestion expansion,p1200-3000-45,0.04543866715229879,TB-B,2.0000000958291957,matched panel
+No congestion expansion,p1200-3000-60,0.0,TB-B,9.999999987493108,matched panel
+No congestion expansion,p2000-2000-36,-0.08524094773923639,TB-B,1.5000000333229038,matched panel
+No congestion expansion,p2000-2000-48,0.003935371926088509,TB-B,2.9999999657536023,matched panel
+No congestion expansion,p2000-2000-60,0.0,TB-B,9.999999738748427,matched panel
+No congestion expansion,p800-4400-61,1.1405622655907364,TB-C,1.1000000065055653,matched panel
+No congestion expansion,p800-4400-75,0.0,TB-C,1.9999999672075048,matched panel
+No congestion expansion,p800-4400-90,0.0,TB-C,10.000000240413822,matched panel
+No congestion expansion,p1000-1000-61,0.02680770122055349,TB-C,1.099999971396408,matched panel
+No congestion expansion,p1000-1000-75,0.0,TB-C,2.000000002368814,matched panel
+No congestion expansion,p1000-1000-90,0.0,TB-C,9.999999970140758,matched panel
+No congestion expansion,p1000-4000-61,1.5130664052696488,TB-C,1.100000042443862,matched panel
+No congestion expansion,p1000-4000-75,0.0,TB-C,2.0000000268670313,matched panel
+No congestion expansion,p1000-4000-90,0.0,TB-C,10.000000286773592,matched panel
+No congestion expansion,p1200-3000-61,4.563788712116421,TB-C,1.1000000542004031,matched panel
+No congestion expansion,p1200-3000-75,0.0,TB-C,2.0000000471415262,matched panel
+No congestion expansion,p1200-3000-90,0.0,TB-C,10.000000387267635,matched panel
+No congestion expansion,p2000-2000-61,0.00840767892831282,TB-C,1.0999999692335605,matched panel
+No congestion expansion,p2000-2000-77,0.0,TB-C,2.9999998837179587,matched panel
+No congestion expansion,p2000-2000-90,0.0,TB-C,10.000000386147716,matched panel
+No congestion expansion,p1000-1000-1,0.32887835346379235,TB-A,1.1000000687224223,matched panel
+No congestion expansion,p1000-1000-11,0.38548401440667895,TB-A,2.000000007652663,matched panel
+No congestion expansion,p1000-1000-21,0.08559124149656974,TB-A,4.999999844638159,matched panel
+No congestion expansion,p1000-4000-6,0.4067222126646315,TB-A,1.500000025316616,matched panel
+No congestion expansion,p1000-4000-16,0.26898552526869196,TB-A,3.000000094797851,matched panel
+No congestion expansion,p1000-4000-21,0.005404538623213832,TB-A,5.00000004740716,matched panel
+No congestion expansion,p1200-3000-6,2.045581825184784,TB-A,1.4999999768467474,matched panel
+No congestion expansion,p1200-3000-16,0.3927202670654914,TB-A,2.9999999060622886,matched panel
+No congestion expansion,p1200-3000-21,0.08058132589910083,TB-A,5.000000015600491,matched panel
+No congestion expansion,p2000-2000-1,2.557251515888571,TB-A,1.100000067814718,matched panel
+No congestion expansion,p2000-2000-11,0.007072526312945367,TB-A,1.999999956643392,matched panel
+No congestion expansion,p2000-2000-21,0.005697065236036782,TB-A,4.999999826096001,matched panel
+No congestion expansion,p800-4400-6,0.21806757783874295,TB-A,1.4999999660594774,matched panel
+No congestion expansion,p800-4400-16,0.008912849339022196,TB-A,3.0000000416958654,matched panel
+No congestion expansion,p800-4400-21,0.0013298179728079955,TB-A,5.000000120542024,matched panel
+No congestion expansion,p1000-1000-36,0.20990276110227926,TB-B,1.4999999615826285,matched panel
+No congestion expansion,p1000-1000-41,-0.15201338449691987,TB-B,1.9999999669336619,matched panel
+No congestion expansion,p1000-1000-51,0.0,TB-B,5.000000060151138,matched panel
+No congestion expansion,p1000-4000-36,-0.36138961569770445,TB-B,1.5000000196659862,matched panel
+No congestion expansion,p1000-4000-46,0.008128864804189397,TB-B,2.999999941767043,matched panel
+No congestion expansion,p1000-4000-51,0.0,TB-B,5.0000002356309245,matched panel
+No congestion expansion,p1200-3000-36,-0.01647784615705587,TB-B,1.5000000063229573,matched panel
+No congestion expansion,p1200-3000-46,0.00639667296883069,TB-B,2.9999999522854575,matched panel
+No congestion expansion,p1200-3000-51,0.005764297794424627,TB-B,4.999999957059579,matched panel
+No congestion expansion,p2000-2000-41,2.913981578952487,TB-B,1.9999999454531663,matched panel
+No congestion expansion,p2000-2000-51,0.0006286279443051615,TB-B,5.0000002332648865,matched panel
+No congestion expansion,p2000-2000-56,0.0,TB-B,9.99999976121969,matched panel
+No congestion expansion,p800-4400-32,0.7171144331926257,TB-B,1.0999999824970692,matched panel
+No congestion expansion,p800-4400-36,0.19561537990046962,TB-B,1.4999999816183305,matched panel
+No congestion expansion,p800-4400-46,0.0,TB-B,3.000000038741316,matched panel
+No congestion expansion,p1000-1000-66,0.0,TB-C,1.5000000149565218,matched panel
+No congestion expansion,p1000-1000-76,0.0,TB-C,2.9999999003110336,matched panel
+No congestion expansion,p1000-1000-81,0.0,TB-C,5.000000248922192,matched panel
+No congestion expansion,p1000-4000-66,0.0,TB-C,1.4999999541966367,matched panel
+No congestion expansion,p1000-4000-76,0.0,TB-C,2.9999999548839416,matched panel
+No congestion expansion,p1000-4000-81,0.0,TB-C,4.99999997390995,matched panel
+No congestion expansion,p1200-3000-66,0.0,TB-C,1.500000012344409,matched panel
+No congestion expansion,p1200-3000-76,0.0,TB-C,2.9999999009554843,matched panel
+No congestion expansion,p1200-3000-81,0.0,TB-C,4.999999944550247,matched panel
+No congestion expansion,p2000-2000-66,0.0,TB-C,1.4999999926754146,matched panel
+No congestion expansion,p2000-2000-71,0.0,TB-C,1.9999999983120829,matched panel
+No congestion expansion,p2000-2000-81,0.0,TB-C,4.999999859560286,matched panel
+No congestion expansion,p800-4400-66,-2.005676528509567e-14,TB-C,1.499999959730923,matched panel
+No congestion expansion,p800-4400-76,0.0,TB-C,3.000000011812222,matched panel
+No congestion expansion,p800-4400-81,0.0,TB-C,4.99999985486783,matched panel
+No congestion expansion,p1000-4000-64,0.30667936047071603,,,targeted stress test
+No congestion expansion,p1000-4000-66,1.738822074031876e-08,,,targeted stress test
+No congestion expansion,p800-4400-65,14.352653536212626,,,targeted stress test
+No congestion expansion,p1000-4000-65,15.485737136384722,,,targeted stress test
+No congestion expansion,p2000-2000-2,1.732356678785599,,,targeted stress test
+Unit final-prefix weights,p800-4400-1,0.23390301988437137,TB-A,1.100000041141543,matched panel
+Unit final-prefix weights,p800-4400-15,0.05744001828317247,TB-A,2.0000000420715365,matched panel
+Unit final-prefix weights,p800-4400-30,-0.0014635793016378696,TB-A,9.999999918513007,matched panel
+Unit final-prefix weights,p1000-1000-6,-0.165885707195251,TB-A,1.4999999568750952,matched panel
+Unit final-prefix weights,p1000-1000-18,-0.009416973411151323,TB-A,3.0000000305155905,matched panel
+Unit final-prefix weights,p1000-1000-30,0.0,TB-A,9.999999501786078,matched panel
+Unit final-prefix weights,p1000-4000-1,-1.3858171465952367,TB-A,1.1000000659024316,matched panel
+Unit final-prefix weights,p1000-4000-15,-0.5778330302970155,TB-A,2.0000000041877977,matched panel
+Unit final-prefix weights,p1000-4000-30,0.0,TB-A,9.999999662805845,matched panel
+Unit final-prefix weights,p1200-3000-1,0.5986425933172695,TB-A,1.100000024202783,matched panel
+Unit final-prefix weights,p1200-3000-15,-1.3172966628040377,TB-A,2.000000028700753,matched panel
+Unit final-prefix weights,p1200-3000-30,0.00682589574364018,TB-A,10.000000134020969,matched panel
+Unit final-prefix weights,p2000-2000-6,0.5042620942543572,TB-A,1.4999999456347772,matched panel
+Unit final-prefix weights,p2000-2000-18,0.001226399781124677,TB-A,3.0000001061066737,matched panel
+Unit final-prefix weights,p2000-2000-30,0.0,TB-A,9.999999539539616,matched panel
+Unit final-prefix weights,p800-4400-31,0.16311190490625158,TB-B,1.1000000009546034,matched panel
+Unit final-prefix weights,p800-4400-43,-0.15113312746728694,TB-B,2.0000000080538793,matched panel
+Unit final-prefix weights,p800-4400-55,0.0,TB-B,5.000000050121147,matched panel
+Unit final-prefix weights,p1000-1000-31,0.029991293018703666,TB-B,1.1000000005291564,matched panel
+Unit final-prefix weights,p1000-1000-46,0.0,TB-B,3.0000000996401734,matched panel
+Unit final-prefix weights,p1000-1000-60,0.0,TB-B,10.000000069593648,matched panel
+Unit final-prefix weights,p1000-4000-31,0.345973357155779,TB-B,1.0999999966052003,matched panel
+Unit final-prefix weights,p1000-4000-45,0.42820831573581536,TB-B,2.00000002288164,matched panel
+Unit final-prefix weights,p1000-4000-60,-2.2505843677950162e-08,TB-B,10.000000517927525,matched panel
+Unit final-prefix weights,p1200-3000-31,0.15350756432768867,TB-B,1.100000024202783,matched panel
+Unit final-prefix weights,p1200-3000-45,0.6544888150915213,TB-B,2.0000000958291957,matched panel
+Unit final-prefix weights,p1200-3000-60,0.0,TB-B,9.999999987493108,matched panel
+Unit final-prefix weights,p2000-2000-36,0.20855488873703698,TB-B,1.5000000333229038,matched panel
+Unit final-prefix weights,p2000-2000-48,0.003935371926088509,TB-B,2.9999999657536023,matched panel
+Unit final-prefix weights,p2000-2000-60,0.0,TB-B,9.999999738748427,matched panel
+Unit final-prefix weights,p800-4400-61,2.087393479345819,TB-C,1.1000000065055653,matched panel
+Unit final-prefix weights,p800-4400-75,0.0,TB-C,1.9999999672075048,matched panel
+Unit final-prefix weights,p800-4400-90,0.0,TB-C,10.000000240413822,matched panel
+Unit final-prefix weights,p1000-1000-61,0.007569452128729674,TB-C,1.099999971396408,matched panel
+Unit final-prefix weights,p1000-1000-75,0.0,TB-C,2.000000002368814,matched panel
+Unit final-prefix weights,p1000-1000-90,0.0,TB-C,9.999999970140758,matched panel
+Unit final-prefix weights,p1000-4000-61,1.5635093780216214,TB-C,1.100000042443862,matched panel
+Unit final-prefix weights,p1000-4000-75,0.0,TB-C,2.0000000268670313,matched panel
+Unit final-prefix weights,p1000-4000-90,0.0,TB-C,10.000000286773592,matched panel
+Unit final-prefix weights,p1200-3000-61,-0.649400162703545,TB-C,1.1000000542004031,matched panel
+Unit final-prefix weights,p1200-3000-75,0.0,TB-C,2.0000000471415262,matched panel
+Unit final-prefix weights,p1200-3000-90,0.0,TB-C,10.000000387267635,matched panel
+Unit final-prefix weights,p2000-2000-61,0.006376941511164255,TB-C,1.0999999692335605,matched panel
+Unit final-prefix weights,p2000-2000-77,0.0,TB-C,2.9999998837179587,matched panel
+Unit final-prefix weights,p2000-2000-90,0.0,TB-C,10.000000386147716,matched panel
+Unit final-prefix weights,p1000-1000-1,0.13395036779042077,TB-A,1.1000000687224223,matched panel
+Unit final-prefix weights,p1000-1000-11,0.502619210770624,TB-A,2.000000007652663,matched panel
+Unit final-prefix weights,p1000-1000-21,0.016871058206320445,TB-A,4.999999844638159,matched panel
+Unit final-prefix weights,p1000-4000-6,0.16046818991815395,TB-A,1.500000025316616,matched panel
+Unit final-prefix weights,p1000-4000-16,-0.07124282012815764,TB-A,3.000000094797851,matched panel
+Unit final-prefix weights,p1000-4000-21,-0.03615178715468674,TB-A,5.00000004740716,matched panel
+Unit final-prefix weights,p1200-3000-6,0.33626638769249445,TB-A,1.4999999768467474,matched panel
+Unit final-prefix weights,p1200-3000-16,-0.4026689349117616,TB-A,2.9999999060622886,matched panel
+Unit final-prefix weights,p1200-3000-21,0.11169357857453224,TB-A,5.000000015600491,matched panel
+Unit final-prefix weights,p2000-2000-1,1.3721693566495945,TB-A,1.100000067814718,matched panel
+Unit final-prefix weights,p2000-2000-11,-0.17501489425283073,TB-A,1.999999956643392,matched panel
+Unit final-prefix weights,p2000-2000-21,0.005697065236036782,TB-A,4.999999826096001,matched panel
+Unit final-prefix weights,p800-4400-6,0.5967044288490514,TB-A,1.4999999660594774,matched panel
+Unit final-prefix weights,p800-4400-16,0.535645515905121,TB-A,3.0000000416958654,matched panel
+Unit final-prefix weights,p800-4400-21,0.0849186288463954,TB-A,5.000000120542024,matched panel
+Unit final-prefix weights,p1000-1000-36,0.07491250822963097,TB-B,1.4999999615826285,matched panel
+Unit final-prefix weights,p1000-1000-41,-0.04792496693959783,TB-B,1.9999999669336619,matched panel
+Unit final-prefix weights,p1000-1000-51,0.0,TB-B,5.000000060151138,matched panel
+Unit final-prefix weights,p1000-4000-36,0.0007210331101601067,TB-B,1.5000000196659862,matched panel
+Unit final-prefix weights,p1000-4000-46,-0.08149854914440113,TB-B,2.999999941767043,matched panel
+Unit final-prefix weights,p1000-4000-51,0.0,TB-B,5.0000002356309245,matched panel
+Unit final-prefix weights,p1200-3000-36,-0.08939757044689275,TB-B,1.5000000063229573,matched panel
+Unit final-prefix weights,p1200-3000-46,-0.02957548061704868,TB-B,2.9999999522854575,matched panel
+Unit final-prefix weights,p1200-3000-51,-0.00394907148502787,TB-B,4.999999957059579,matched panel
+Unit final-prefix weights,p2000-2000-41,0.018923447208808557,TB-B,1.9999999454531663,matched panel
+Unit final-prefix weights,p2000-2000-51,0.04171713174398068,TB-B,5.0000002332648865,matched panel
+Unit final-prefix weights,p2000-2000-56,0.0,TB-B,9.99999976121969,matched panel
+Unit final-prefix weights,p800-4400-32,0.32897518166215317,TB-B,1.0999999824970692,matched panel
+Unit final-prefix weights,p800-4400-36,0.23065285301454025,TB-B,1.4999999816183305,matched panel
+Unit final-prefix weights,p800-4400-46,0.00019148373542212058,TB-B,3.000000038741316,matched panel
+Unit final-prefix weights,p1000-1000-66,0.0,TB-C,1.5000000149565218,matched panel
+Unit final-prefix weights,p1000-1000-76,0.0,TB-C,2.9999999003110336,matched panel
+Unit final-prefix weights,p1000-1000-81,0.0,TB-C,5.000000248922192,matched panel
+Unit final-prefix weights,p1000-4000-66,0.0,TB-C,1.4999999541966367,matched panel
+Unit final-prefix weights,p1000-4000-76,0.0,TB-C,2.9999999548839416,matched panel
+Unit final-prefix weights,p1000-4000-81,0.0,TB-C,4.99999997390995,matched panel
+Unit final-prefix weights,p1200-3000-66,0.00020549941116580224,TB-C,1.500000012344409,matched panel
+Unit final-prefix weights,p1200-3000-76,0.0,TB-C,2.9999999009554843,matched panel
+Unit final-prefix weights,p1200-3000-81,0.0,TB-C,4.999999944550247,matched panel
+Unit final-prefix weights,p2000-2000-66,0.0,TB-C,1.4999999926754146,matched panel
+Unit final-prefix weights,p2000-2000-71,-1.2748948657081782e-14,TB-C,1.9999999983120829,matched panel
+Unit final-prefix weights,p2000-2000-81,0.0,TB-C,4.999999859560286,matched panel
+Unit final-prefix weights,p800-4400-66,-2.005676528509567e-14,TB-C,1.499999959730923,matched panel
+Unit final-prefix weights,p800-4400-76,-2.620825801905416e-10,TB-C,3.000000011812222,matched panel
+Unit final-prefix weights,p800-4400-81,0.0,TB-C,4.99999985486783,matched panel
+Direct adaptive prefix,p800-4400-1,0.4268741513087109,TB-A,1.100000041141543,matched panel
+Direct adaptive prefix,p1000-1000-6,0.10893556823222653,TB-A,1.4999999568750952,matched panel
+Direct adaptive prefix,p1000-4000-1,-1.08760098887946,TB-A,1.1000000659024316,matched panel
+Direct adaptive prefix,p1200-3000-1,-1.0344939904469284,TB-A,1.100000024202783,matched panel
+Direct adaptive prefix,p2000-2000-6,-0.1581327568575562,TB-A,1.4999999456347772,matched panel
+Direct adaptive prefix,p800-4400-31,0.16498034107609533,TB-B,1.1000000009546034,matched panel
+Direct adaptive prefix,p1000-1000-31,0.04303380196805916,TB-B,1.1000000005291564,matched panel
+Direct adaptive prefix,p1000-4000-31,2.147117439582062,TB-B,1.0999999966052003,matched panel
+Direct adaptive prefix,p1200-3000-31,0.8048444278345407,TB-B,1.100000024202783,matched panel
+Direct adaptive prefix,p2000-2000-36,-0.07035676106671697,TB-B,1.5000000333229038,matched panel
+Direct adaptive prefix,p800-4400-61,-0.013636888258520004,TB-C,1.1000000065055653,matched panel
+Direct adaptive prefix,p1000-1000-61,0.028812903717311038,TB-C,1.099999971396408,matched panel
+Direct adaptive prefix,p1000-4000-61,2.1807968684075636,TB-C,1.100000042443862,matched panel
+Direct adaptive prefix,p1200-3000-61,-2.4675250051154456,TB-C,1.1000000542004031,matched panel
+Direct adaptive prefix,p2000-2000-61,0.021550377596453105,TB-C,1.0999999692335605,matched panel
+Direct adaptive prefix,p800-4400-15,0.05542141930149875,TB-A,2.0000000420715365,matched panel
+Direct adaptive prefix,p800-4400-30,-0.0014635793016378696,TB-A,9.999999918513007,matched panel
+Direct adaptive prefix,p1000-1000-18,-0.009416973411151323,TB-A,3.0000000305155905,matched panel
+Direct adaptive prefix,p1000-1000-30,0.0,TB-A,9.999999501786078,matched panel
+Direct adaptive prefix,p1000-4000-15,-0.6063437906016436,TB-A,2.0000000041877977,matched panel
+Direct adaptive prefix,p1000-4000-30,0.0,TB-A,9.999999662805845,matched panel
+Direct adaptive prefix,p1200-3000-15,-1.3172966628040377,TB-A,2.000000028700753,matched panel
+Direct adaptive prefix,p1200-3000-30,-0.0013407599077015597,TB-A,10.000000134020969,matched panel
+Direct adaptive prefix,p2000-2000-18,-0.0021107848266596015,TB-A,3.0000001061066737,matched panel
+Direct adaptive prefix,p2000-2000-30,0.0,TB-A,9.999999539539616,matched panel
+Direct adaptive prefix,p800-4400-43,-0.156343756882098,TB-B,2.0000000080538793,matched panel
+Direct adaptive prefix,p800-4400-55,0.0,TB-B,5.000000050121147,matched panel
+Direct adaptive prefix,p1000-1000-46,-0.005283308520551769,TB-B,3.0000000996401734,matched panel
+Direct adaptive prefix,p1000-1000-60,0.0,TB-B,10.000000069593648,matched panel
+Direct adaptive prefix,p1000-4000-45,-0.06377626507970544,TB-B,2.00000002288164,matched panel
+Direct adaptive prefix,p1000-4000-60,-2.2505843677950162e-08,TB-B,10.000000517927525,matched panel
+Direct adaptive prefix,p1200-3000-45,0.4001040723464252,TB-B,2.0000000958291957,matched panel
+Direct adaptive prefix,p1200-3000-60,0.0,TB-B,9.999999987493108,matched panel
+Direct adaptive prefix,p2000-2000-48,0.003935371926088509,TB-B,2.9999999657536023,matched panel
+Direct adaptive prefix,p2000-2000-60,0.0,TB-B,9.999999738748427,matched panel
+Direct adaptive prefix,p800-4400-75,0.0,TB-C,1.9999999672075048,matched panel
+Direct adaptive prefix,p800-4400-90,0.0,TB-C,10.000000240413822,matched panel
+Direct adaptive prefix,p1000-1000-75,0.0,TB-C,2.000000002368814,matched panel
+Direct adaptive prefix,p1000-1000-90,0.0,TB-C,9.999999970140758,matched panel
+Direct adaptive prefix,p1000-4000-75,0.0,TB-C,2.0000000268670313,matched panel
+Direct adaptive prefix,p1000-4000-90,0.0,TB-C,10.000000286773592,matched panel
+Direct adaptive prefix,p1200-3000-75,0.0,TB-C,2.0000000471415262,matched panel
+Direct adaptive prefix,p1200-3000-90,0.0,TB-C,10.000000387267635,matched panel
+Direct adaptive prefix,p2000-2000-77,0.0,TB-C,2.9999998837179587,matched panel
+Direct adaptive prefix,p2000-2000-90,0.0,TB-C,10.000000386147716,matched panel
+Direct adaptive prefix,p1000-1000-1,0.3279140861055362,TB-A,1.1000000687224223,matched panel
+Direct adaptive prefix,p1000-1000-11,0.6155937581946617,TB-A,2.000000007652663,matched panel
+Direct adaptive prefix,p1000-1000-21,0.01762004147269169,TB-A,4.999999844638159,matched panel
+Direct adaptive prefix,p1000-4000-6,-1.3240202548763182,TB-A,1.500000025316616,matched panel
+Direct adaptive prefix,p1000-4000-16,-0.009176872292227663,TB-A,3.000000094797851,matched panel
+Direct adaptive prefix,p1000-4000-21,0.011829523184576533,TB-A,5.00000004740716,matched panel
+Direct adaptive prefix,p1200-3000-6,0.5352626876094004,TB-A,1.4999999768467474,matched panel
+Direct adaptive prefix,p1200-3000-16,0.039858192949603015,TB-A,2.9999999060622886,matched panel
+Direct adaptive prefix,p1200-3000-21,0.11721714358681037,TB-A,5.000000015600491,matched panel
+Direct adaptive prefix,p2000-2000-1,1.5977175567705793,TB-A,1.100000067814718,matched panel
+Direct adaptive prefix,p2000-2000-11,-0.17501489425283073,TB-A,1.999999956643392,matched panel
+Direct adaptive prefix,p2000-2000-21,0.005697065236036782,TB-A,4.999999826096001,matched panel
+Direct adaptive prefix,p800-4400-6,-0.554454246688497,TB-A,1.4999999660594774,matched panel
+Direct adaptive prefix,p800-4400-16,0.535645515905121,TB-A,3.0000000416958654,matched panel
+Direct adaptive prefix,p800-4400-21,0.08415211586887529,TB-A,5.000000120542024,matched panel
+Direct adaptive prefix,p1000-1000-36,0.1511928048156877,TB-B,1.4999999615826285,matched panel
+Direct adaptive prefix,p1000-1000-41,-0.1679836993958962,TB-B,1.9999999669336619,matched panel
+Direct adaptive prefix,p1000-1000-51,0.0,TB-B,5.000000060151138,matched panel
+Direct adaptive prefix,p1000-4000-36,0.5840838705340737,TB-B,1.5000000196659862,matched panel
+Direct adaptive prefix,p1000-4000-46,-0.08149854914440113,TB-B,2.999999941767043,matched panel
+Direct adaptive prefix,p1000-4000-51,0.0,TB-B,5.0000002356309245,matched panel
+Direct adaptive prefix,p1200-3000-36,-0.43361452973108033,TB-B,1.5000000063229573,matched panel
+Direct adaptive prefix,p1200-3000-46,-0.028445396681400253,TB-B,2.9999999522854575,matched panel
+Direct adaptive prefix,p1200-3000-51,-0.00394907148502787,TB-B,4.999999957059579,matched panel
+Direct adaptive prefix,p2000-2000-41,1.5329197012515776,TB-B,1.9999999454531663,matched panel
+Direct adaptive prefix,p2000-2000-51,0.04171713174398068,TB-B,5.0000002332648865,matched panel
+Direct adaptive prefix,p2000-2000-56,0.0,TB-B,9.99999976121969,matched panel
+Direct adaptive prefix,p800-4400-32,0.7815244513482391,TB-B,1.0999999824970692,matched panel
+Direct adaptive prefix,p800-4400-36,0.5887171491753963,TB-B,1.4999999816183305,matched panel
+Direct adaptive prefix,p800-4400-46,0.00019148373542212058,TB-B,3.000000038741316,matched panel
+Direct adaptive prefix,p1000-1000-66,0.0,TB-C,1.5000000149565218,matched panel
+Direct adaptive prefix,p1000-1000-76,0.0,TB-C,2.9999999003110336,matched panel
+Direct adaptive prefix,p1000-1000-81,0.0,TB-C,5.000000248922192,matched panel
+Direct adaptive prefix,p1000-4000-66,0.0,TB-C,1.4999999541966367,matched panel
+Direct adaptive prefix,p1000-4000-76,0.0,TB-C,2.9999999548839416,matched panel
+Direct adaptive prefix,p1000-4000-81,0.0,TB-C,4.99999997390995,matched panel
+Direct adaptive prefix,p1200-3000-66,-1.573518660673231e-14,TB-C,1.500000012344409,matched panel
+Direct adaptive prefix,p1200-3000-76,0.0,TB-C,2.9999999009554843,matched panel
+Direct adaptive prefix,p1200-3000-81,0.0,TB-C,4.999999944550247,matched panel
+Direct adaptive prefix,p2000-2000-66,0.0,TB-C,1.4999999926754146,matched panel
+Direct adaptive prefix,p2000-2000-71,0.0,TB-C,1.9999999983120829,matched panel
+Direct adaptive prefix,p2000-2000-81,0.0,TB-C,4.999999859560286,matched panel
+Direct adaptive prefix,p800-4400-66,0.0,TB-C,1.499999959730923,matched panel
+Direct adaptive prefix,p800-4400-76,-2.620825801905416e-10,TB-C,3.000000011812222,matched panel
+Direct adaptive prefix,p800-4400-81,0.0,TB-C,4.99999985486783,matched panel
+Direct adaptive prefix,p1000-4000-64,0.5937598907311759,,,targeted stress test
+Direct adaptive prefix,p1000-4000-66,1.738822074031876e-08,,,targeted stress test
+Direct adaptive prefix,p800-4400-65,-2.4328605401975034,,,targeted stress test
+Direct adaptive prefix,p1000-4000-61,2.1798309250826975,,,targeted stress test
+Direct adaptive prefix,p1200-3000-31,0.8048444278345407,,,targeted stress test
+Unweighted square-root prefix,p800-4400-1,0.7601984482302043,TB-A,1.100000041141543,matched panel
+Unweighted square-root prefix,p1000-1000-6,0.7347629071299963,TB-A,1.4999999568750952,matched panel
+Unweighted square-root prefix,p1000-4000-1,-1.5519870772728754,TB-A,1.1000000659024316,matched panel
+Unweighted square-root prefix,p1200-3000-1,-2.2362458108110297,TB-A,1.100000024202783,matched panel
+Unweighted square-root prefix,p2000-2000-6,0.03276669863903274,TB-A,1.4999999456347772,matched panel
+Unweighted square-root prefix,p800-4400-31,-0.5195895485701045,TB-B,1.1000000009546034,matched panel
+Unweighted square-root prefix,p1000-1000-31,1.2639828039195473,TB-B,1.1000000005291564,matched panel
+Unweighted square-root prefix,p1000-4000-31,0.3647380222597141,TB-B,1.0999999966052003,matched panel
+Unweighted square-root prefix,p1200-3000-31,-2.0027264689800908,TB-B,1.100000024202783,matched panel
+Unweighted square-root prefix,p2000-2000-36,-1.3318701298729203,TB-B,1.5000000333229038,matched panel
+Unweighted square-root prefix,p800-4400-61,-0.34898692672435966,TB-C,1.1000000065055653,matched panel
+Unweighted square-root prefix,p1000-1000-61,7.422191751621643,TB-C,1.099999971396408,matched panel
+Unweighted square-root prefix,p1000-4000-61,-1.941952473831189,TB-C,1.100000042443862,matched panel
+Unweighted square-root prefix,p1200-3000-61,-2.610772184937462,TB-C,1.1000000542004031,matched panel
+Unweighted square-root prefix,p2000-2000-61,1.4308408258150627,TB-C,1.0999999692335605,matched panel
+Unweighted square-root prefix,p800-4400-15,-0.13112171083506222,TB-A,2.0000000420715365,matched panel
+Unweighted square-root prefix,p800-4400-30,-0.3748430395073656,TB-A,9.999999918513007,matched panel
+Unweighted square-root prefix,p1000-1000-18,-0.14913063907358168,TB-A,3.0000000305155905,matched panel
+Unweighted square-root prefix,p1000-1000-30,-0.8614751292621038,TB-A,9.999999501786078,matched panel
+Unweighted square-root prefix,p1000-4000-15,-0.8368130998151739,TB-A,2.0000000041877977,matched panel
+Unweighted square-root prefix,p1000-4000-30,-0.5452727307817102,TB-A,9.999999662805845,matched panel
+Unweighted square-root prefix,p1200-3000-15,-4.423464923339943,TB-A,2.000000028700753,matched panel
+Unweighted square-root prefix,p1200-3000-30,-0.9289362320506542,TB-A,10.000000134020969,matched panel
+Unweighted square-root prefix,p2000-2000-18,0.3034322392397966,TB-A,3.0000001061066737,matched panel
+Unweighted square-root prefix,p2000-2000-30,-0.37648455691162525,TB-A,9.999999539539616,matched panel
+Unweighted square-root prefix,p800-4400-43,0.005350142652389878,TB-B,2.0000000080538793,matched panel
+Unweighted square-root prefix,p800-4400-55,0.0,TB-B,5.000000050121147,matched panel
+Unweighted square-root prefix,p1000-1000-46,-0.04465687923715597,TB-B,3.0000000996401734,matched panel
+Unweighted square-root prefix,p1000-1000-60,-0.000808325597045741,TB-B,10.000000069593648,matched panel
+Unweighted square-root prefix,p1000-4000-45,0.0342520313844796,TB-B,2.00000002288164,matched panel
+Unweighted square-root prefix,p1000-4000-60,-2.2505843677950162e-08,TB-B,10.000000517927525,matched panel
+Unweighted square-root prefix,p1200-3000-45,0.022795591492995395,TB-B,2.0000000958291957,matched panel
+Unweighted square-root prefix,p1200-3000-60,0.0,TB-B,9.999999987493108,matched panel
+Unweighted square-root prefix,p2000-2000-48,-0.16804559702759017,TB-B,2.9999999657536023,matched panel
+Unweighted square-root prefix,p2000-2000-60,-0.007069976839872342,TB-B,9.999999738748427,matched panel
+Unweighted square-root prefix,p800-4400-75,0.0,TB-C,1.9999999672075048,matched panel
+Unweighted square-root prefix,p800-4400-90,0.0,TB-C,10.000000240413822,matched panel
+Unweighted square-root prefix,p1000-1000-75,0.0,TB-C,2.000000002368814,matched panel
+Unweighted square-root prefix,p1000-1000-90,0.0,TB-C,9.999999970140758,matched panel
+Unweighted square-root prefix,p1000-4000-75,0.0,TB-C,2.0000000268670313,matched panel
+Unweighted square-root prefix,p1000-4000-90,0.0,TB-C,10.000000286773592,matched panel
+Unweighted square-root prefix,p1200-3000-75,1.784922637792495e-14,TB-C,2.0000000471415262,matched panel
+Unweighted square-root prefix,p1200-3000-90,0.0,TB-C,10.000000387267635,matched panel
+Unweighted square-root prefix,p2000-2000-77,0.0,TB-C,2.9999998837179587,matched panel
+Unweighted square-root prefix,p2000-2000-90,0.0,TB-C,10.000000386147716,matched panel
+Unweighted square-root prefix,p1000-1000-1,3.136763198287027,TB-A,1.1000000687224223,matched panel
+Unweighted square-root prefix,p1000-1000-11,0.7901015808965931,TB-A,2.000000007652663,matched panel
+Unweighted square-root prefix,p1000-1000-21,-0.23565971664473856,TB-A,4.999999844638159,matched panel
+Unweighted square-root prefix,p1000-4000-6,-2.2181815403002587,TB-A,1.500000025316616,matched panel
+Unweighted square-root prefix,p1000-4000-16,-0.3061791707276945,TB-A,3.000000094797851,matched panel
+Unweighted square-root prefix,p1000-4000-21,0.19261767876090574,TB-A,5.00000004740716,matched panel
+Unweighted square-root prefix,p1200-3000-6,-2.9891744855161653,TB-A,1.4999999768467474,matched panel
+Unweighted square-root prefix,p1200-3000-16,0.21250282211653124,TB-A,2.9999999060622886,matched panel
+Unweighted square-root prefix,p1200-3000-21,-0.3093491104324728,TB-A,5.000000015600491,matched panel
+Unweighted square-root prefix,p2000-2000-1,1.371480672676878,TB-A,1.100000067814718,matched panel
+Unweighted square-root prefix,p2000-2000-11,0.22602092825113124,TB-A,1.999999956643392,matched panel
+Unweighted square-root prefix,p2000-2000-21,0.9904091480811187,TB-A,4.999999826096001,matched panel
+Unweighted square-root prefix,p800-4400-6,-0.44805170756237334,TB-A,1.4999999660594774,matched panel
+Unweighted square-root prefix,p800-4400-16,0.25495171807310446,TB-A,3.0000000416958654,matched panel
+Unweighted square-root prefix,p800-4400-21,0.058787876787072375,TB-A,5.000000120542024,matched panel
+Unweighted square-root prefix,p1000-1000-36,0.1576717309827603,TB-B,1.4999999615826285,matched panel
+Unweighted square-root prefix,p1000-1000-41,-0.2454695811916997,TB-B,1.9999999669336619,matched panel
+Unweighted square-root prefix,p1000-1000-51,-0.0764559535184221,TB-B,5.000000060151138,matched panel
+Unweighted square-root prefix,p1000-4000-36,-1.5409149636210524,TB-B,1.5000000196659862,matched panel
+Unweighted square-root prefix,p1000-4000-46,-0.06570984725214381,TB-B,2.999999941767043,matched panel
+Unweighted square-root prefix,p1000-4000-51,0.00133451822832468,TB-B,5.0000002356309245,matched panel
+Unweighted square-root prefix,p1200-3000-36,-3.283575832709809,TB-B,1.5000000063229573,matched panel
+Unweighted square-root prefix,p1200-3000-46,-0.02610363591243886,TB-B,2.9999999522854575,matched panel
+Unweighted square-root prefix,p1200-3000-51,-0.0005811397367642846,TB-B,4.999999957059579,matched panel
+Unweighted square-root prefix,p2000-2000-41,0.9787890544402773,TB-B,1.9999999454531663,matched panel
+Unweighted square-root prefix,p2000-2000-51,-0.01733137805400732,TB-B,5.0000002332648865,matched panel
+Unweighted square-root prefix,p2000-2000-56,-0.011547028255483508,TB-B,9.99999976121969,matched panel
+Unweighted square-root prefix,p800-4400-32,0.06515031008557162,TB-B,1.0999999824970692,matched panel
+Unweighted square-root prefix,p800-4400-36,-0.5683893138361588,TB-B,1.4999999816183305,matched panel
+Unweighted square-root prefix,p800-4400-46,0.004980747739884705,TB-B,3.000000038741316,matched panel
+Unweighted square-root prefix,p1000-1000-66,0.0,TB-C,1.5000000149565218,matched panel
+Unweighted square-root prefix,p1000-1000-76,0.0,TB-C,2.9999999003110336,matched panel
+Unweighted square-root prefix,p1000-1000-81,0.0,TB-C,5.000000248922192,matched panel
+Unweighted square-root prefix,p1000-4000-66,0.0,TB-C,1.4999999541966367,matched panel
+Unweighted square-root prefix,p1000-4000-76,0.0,TB-C,2.9999999548839416,matched panel
+Unweighted square-root prefix,p1000-4000-81,0.0,TB-C,4.99999997390995,matched panel
+Unweighted square-root prefix,p1200-3000-66,-1.573518660673231e-14,TB-C,1.500000012344409,matched panel
+Unweighted square-root prefix,p1200-3000-76,0.0,TB-C,2.9999999009554843,matched panel
+Unweighted square-root prefix,p1200-3000-81,0.0,TB-C,4.999999944550247,matched panel
+Unweighted square-root prefix,p2000-2000-66,0.0,TB-C,1.4999999926754146,matched panel
+Unweighted square-root prefix,p2000-2000-71,0.0,TB-C,1.9999999983120829,matched panel
+Unweighted square-root prefix,p2000-2000-81,0.0,TB-C,4.999999859560286,matched panel
+Unweighted square-root prefix,p800-4400-66,0.0,TB-C,1.499999959730923,matched panel
+Unweighted square-root prefix,p800-4400-76,3.693032242918621e-10,TB-C,3.000000011812222,matched panel
+Unweighted square-root prefix,p800-4400-81,0.0,TB-C,4.99999985486783,matched panel
+Unweighted square-root prefix,p1000-1000-62,2.4929088579745473,,,targeted stress test
+Unweighted square-root prefix,p1000-1000-63,4.742615373974302,,,targeted stress test
+Unweighted square-root prefix,p800-4400-65,-2.1414731638342217,,,targeted stress test
+Unweighted square-root prefix,p1000-1000-61,7.422191751621643,,,targeted stress test
+Unweighted square-root prefix,p2000-2000-61,1.4308408258150627,,,targeted stress test
+Without warm start,p800-4400-1,0.0,TB-A,1.100000041141543,matched panel
+Without warm start,p1000-1000-6,-0.002252346735331207,TB-A,1.4999999568750952,matched panel
+Without warm start,p1000-4000-1,0.0,TB-A,1.1000000659024316,matched panel
+Without warm start,p1200-3000-1,0.0,TB-A,1.100000024202783,matched panel
+Without warm start,p2000-2000-6,0.0,TB-A,1.4999999456347772,matched panel
+Without warm start,p800-4400-31,0.0,TB-B,1.1000000009546034,matched panel
+Without warm start,p1000-1000-31,-0.005185111368775242,TB-B,1.1000000005291564,matched panel
+Without warm start,p1000-4000-31,0.0,TB-B,1.0999999966052003,matched panel
+Without warm start,p1200-3000-31,0.1357769095895338,TB-B,1.100000024202783,matched panel
+Without warm start,p2000-2000-36,0.0,TB-B,1.5000000333229038,matched panel
+Without warm start,p800-4400-61,0.0,TB-C,1.1000000065055653,matched panel
+Without warm start,p1000-1000-61,0.0,TB-C,1.099999971396408,matched panel
+Without warm start,p1000-4000-61,0.0,TB-C,1.100000042443862,matched panel
+Without warm start,p1200-3000-61,-0.989065986154881,TB-C,1.1000000542004031,matched panel
+Without warm start,p2000-2000-61,0.0063949262137308035,TB-C,1.0999999692335605,matched panel
+Without warm start,p800-4400-15,-0.00892654411222431,TB-A,2.0000000420715365,matched panel
+Without warm start,p800-4400-30,0.0,TB-A,9.999999918513007,matched panel
+Without warm start,p1000-1000-18,-0.03898635033181281,TB-A,3.0000000305155905,matched panel
+Without warm start,p1000-1000-30,-0.00016149860537802483,TB-A,9.999999501786078,matched panel
+Without warm start,p1000-4000-15,-0.011456194895757199,TB-A,2.0000000041877977,matched panel
+Without warm start,p1000-4000-30,0.0,TB-A,9.999999662805845,matched panel
+Without warm start,p1200-3000-15,0.0,TB-A,2.000000028700753,matched panel
+Without warm start,p1200-3000-30,0.0,TB-A,10.000000134020969,matched panel
+Without warm start,p2000-2000-18,0.0,TB-A,3.0000001061066737,matched panel
+Without warm start,p2000-2000-30,0.0,TB-A,9.999999539539616,matched panel
+Without warm start,p800-4400-43,0.07073998467924923,TB-B,2.0000000080538793,matched panel
+Without warm start,p800-4400-55,0.0,TB-B,5.000000050121147,matched panel
+Without warm start,p1000-1000-46,0.0,TB-B,3.0000000996401734,matched panel
+Without warm start,p1000-1000-60,0.0,TB-B,10.000000069593648,matched panel
+Without warm start,p1000-4000-45,0.04699339070748244,TB-B,2.00000002288164,matched panel
+Without warm start,p1000-4000-60,0.0,TB-B,10.000000517927525,matched panel
+Without warm start,p1200-3000-45,0.04543866715229879,TB-B,2.0000000958291957,matched panel
+Without warm start,p1200-3000-60,0.0,TB-B,9.999999987493108,matched panel
+Without warm start,p2000-2000-48,0.003935371926088509,TB-B,2.9999999657536023,matched panel
+Without warm start,p2000-2000-60,0.0,TB-B,9.999999738748427,matched panel
+Without warm start,p800-4400-75,0.0,TB-C,1.9999999672075048,matched panel
+Without warm start,p800-4400-90,0.0,TB-C,10.000000240413822,matched panel
+Without warm start,p1000-1000-75,0.0,TB-C,2.000000002368814,matched panel
+Without warm start,p1000-1000-90,0.0,TB-C,9.999999970140758,matched panel
+Without warm start,p1000-4000-75,0.0,TB-C,2.0000000268670313,matched panel
+Without warm start,p1000-4000-90,0.0,TB-C,10.000000286773592,matched panel
+Without warm start,p1200-3000-75,0.0,TB-C,2.0000000471415262,matched panel
+Without warm start,p1200-3000-90,0.0,TB-C,10.000000387267635,matched panel
+Without warm start,p2000-2000-77,0.0,TB-C,2.9999998837179587,matched panel
+Without warm start,p2000-2000-90,0.0,TB-C,10.000000386147716,matched panel
+Without warm start,p800-4400-65,-2.0439053969306614e-13,,,targeted stress test
+Without warm start,p1000-1000-63,0.0,,,targeted stress test
+Without warm start,p2000-2000-5,1.9345696377800394,,,targeted stress test
+Full graph,p800-4400-1,76.16072529500217,TB-A,1.100000041141543,matched panel
+Full graph,p1000-1000-6,3.2143330957379175,TB-A,1.4999999568750952,matched panel
+Full graph,p1000-4000-1,58.38191304128172,TB-A,1.1000000659024316,matched panel
+Full graph,p1200-3000-1,50.69199174945178,TB-A,1.100000024202783,matched panel
+Full graph,p2000-2000-6,84.95500181694764,TB-A,1.4999999456347772,matched panel
+Full graph,p800-4400-31,0.9366890938874547,TB-B,1.1000000009546034,matched panel
+Full graph,p1000-1000-31,0.19976340547359878,TB-B,1.1000000005291564,matched panel
+Full graph,p1000-4000-31,2.2903865146614013,TB-B,1.0999999966052003,matched panel
+Full graph,p1200-3000-31,2.0523438079660394,TB-B,1.100000024202783,matched panel
+Full graph,p2000-2000-36,1.7684783168861897,TB-B,1.5000000333229038,matched panel
+Full graph,p800-4400-61,0.537667231986443,TB-C,1.1000000065055653,matched panel
+Full graph,p1000-1000-61,-0.0025332737609535575,TB-C,1.099999971396408,matched panel
+Full graph,p1000-4000-61,0.22377985181282578,TB-C,1.100000042443862,matched panel
+Full graph,p1200-3000-61,0.6450730011219157,TB-C,1.1000000542004031,matched panel
+Full graph,p2000-2000-61,0.023662188094146157,TB-C,1.0999999692335605,matched panel
+Full graph,p800-4400-15,372.2338724053434,TB-A,2.0000000420715365,matched panel
+Full graph,p800-4400-30,-0.3187747688955293,TB-A,9.999999918513007,matched panel
+Full graph,p1000-1000-18,-0.7910785644514176,TB-A,3.0000000305155905,matched panel
+Full graph,p1000-1000-30,-1.3870364593657838,TB-A,9.999999501786078,matched panel
+Full graph,p1000-4000-15,317.8458317172791,TB-A,2.0000000041877977,matched panel
+Full graph,p1000-4000-30,-0.515145783524123,TB-A,9.999999662805845,matched panel
+Full graph,p1200-3000-15,256.92717011212187,TB-A,2.000000028700753,matched panel
+Full graph,p1200-3000-30,-0.7784319680637217,TB-A,10.000000134020969,matched panel
+Full graph,p2000-2000-18,423.25393542531987,TB-A,3.0000001061066737,matched panel
+Full graph,p2000-2000-30,1797.6438555358106,TB-A,9.999999539539616,matched panel
+Full graph,p800-4400-43,0.546910127903794,TB-B,2.0000000080538793,matched panel
+Full graph,p800-4400-55,0.006572856426666469,TB-B,5.000000050121147,matched panel
+Full graph,p1000-1000-46,-0.08594328811122186,TB-B,3.0000000996401734,matched panel
+Full graph,p1000-1000-60,-0.000808325597045741,TB-B,10.000000069593648,matched panel
+Full graph,p1000-4000-45,0.8302064317034437,TB-B,2.00000002288164,matched panel
+Full graph,p1000-4000-60,-2.2505843677950162e-08,TB-B,10.000000517927525,matched panel
+Full graph,p1200-3000-45,1.2217494644986984,TB-B,2.0000000958291957,matched panel
+Full graph,p1200-3000-60,0.0,TB-B,9.999999987493108,matched panel
+Full graph,p2000-2000-48,0.9167206353335328,TB-B,2.9999999657536023,matched panel
+Full graph,p2000-2000-60,0.013836665341564865,TB-B,9.999999738748427,matched panel
+Full graph,p800-4400-75,0.0,TB-C,1.9999999672075048,matched panel
+Full graph,p800-4400-90,0.0,TB-C,10.000000240413822,matched panel
+Full graph,p1000-1000-75,0.0,TB-C,2.000000002368814,matched panel
+Full graph,p1000-1000-90,0.0,TB-C,9.999999970140758,matched panel
+Full graph,p1000-4000-75,0.0,TB-C,2.0000000268670313,matched panel
+Full graph,p1000-4000-90,0.0,TB-C,10.000000286773592,matched panel
+Full graph,p1200-3000-75,1.784922637792495e-14,TB-C,2.0000000471415262,matched panel
+Full graph,p1200-3000-90,0.0,TB-C,10.000000387267635,matched panel
+Full graph,p2000-2000-77,0.0,TB-C,2.9999998837179587,matched panel
+Full graph,p2000-2000-90,0.0,TB-C,10.000000386147716,matched panel
+Full graph,p1200-3000-12,260.0598746677003,,,targeted stress test
+Full graph,p1200-3000-15,256.92717011212187,,,targeted stress test
+Full graph + warm start,p800-4400-1,76.16072529500217,TB-A,1.100000041141543,matched panel
+Full graph + warm start,p1000-1000-6,3.2143330957379175,TB-A,1.4999999568750952,matched panel
+Full graph + warm start,p1000-4000-1,58.38191304128172,TB-A,1.1000000659024316,matched panel
+Full graph + warm start,p1200-3000-1,50.69199174945178,TB-A,1.100000024202783,matched panel
+Full graph + warm start,p2000-2000-6,84.95500181694764,TB-A,1.4999999456347772,matched panel
+Full graph + warm start,p800-4400-31,0.9366890938874547,TB-B,1.1000000009546034,matched panel
+Full graph + warm start,p1000-1000-31,0.2590720241526351,TB-B,1.1000000005291564,matched panel
+Full graph + warm start,p1000-4000-31,2.2903865146614013,TB-B,1.0999999966052003,matched panel
+Full graph + warm start,p1200-3000-31,1.8426704891089751,TB-B,1.100000024202783,matched panel
+Full graph + warm start,p2000-2000-36,1.708617504073407,TB-B,1.5000000333229038,matched panel
+Full graph + warm start,p800-4400-61,0.537667231986443,TB-C,1.1000000065055653,matched panel
+Full graph + warm start,p1000-1000-61,-0.0025332737609535575,TB-C,1.099999971396408,matched panel
+Full graph + warm start,p1000-4000-61,0.22377985181282578,TB-C,1.100000042443862,matched panel
+Full graph + warm start,p1200-3000-61,0.6450730011219157,TB-C,1.1000000542004031,matched panel
+Full graph + warm start,p2000-2000-61,2.606286303365992,TB-C,1.0999999692335605,matched panel
+Full graph + warm start,p800-4400-15,372.2338724053434,TB-A,2.0000000420715365,matched panel
+Full graph + warm start,p800-4400-30,-0.3187747688955293,TB-A,9.999999918513007,matched panel
+Full graph + warm start,p1000-1000-18,-0.7440578559699532,TB-A,3.0000000305155905,matched panel
+Full graph + warm start,p1000-1000-30,-1.3870364593657838,TB-A,9.999999501786078,matched panel
+Full graph + warm start,p1000-4000-15,317.8458317172791,TB-A,2.0000000041877977,matched panel
+Full graph + warm start,p1000-4000-30,-0.515145783524123,TB-A,9.999999662805845,matched panel
+Full graph + warm start,p1200-3000-15,256.92717011212187,TB-A,2.000000028700753,matched panel
+Full graph + warm start,p1200-3000-30,-0.7784319680637217,TB-A,10.000000134020969,matched panel
+Full graph + warm start,p2000-2000-18,423.25393542531987,TB-A,3.0000001061066737,matched panel
+Full graph + warm start,p2000-2000-30,1797.6438555358106,TB-A,9.999999539539616,matched panel
+Full graph + warm start,p800-4400-43,0.546910127903794,TB-B,2.0000000080538793,matched panel
+Full graph + warm start,p800-4400-55,0.006572856426666469,TB-B,5.000000050121147,matched panel
+Full graph + warm start,p1000-1000-46,-0.08594328811122186,TB-B,3.0000000996401734,matched panel
+Full graph + warm start,p1000-1000-60,-0.000808325597045741,TB-B,10.000000069593648,matched panel
+Full graph + warm start,p1000-4000-45,0.9867832450642956,TB-B,2.00000002288164,matched panel
+Full graph + warm start,p1000-4000-60,-2.2505843677950162e-08,TB-B,10.000000517927525,matched panel
+Full graph + warm start,p1200-3000-45,1.7594372504002602,TB-B,2.0000000958291957,matched panel
+Full graph + warm start,p1200-3000-60,0.0,TB-B,9.999999987493108,matched panel
+Full graph + warm start,p2000-2000-48,0.9167206353335328,TB-B,2.9999999657536023,matched panel
+Full graph + warm start,p2000-2000-60,0.01677168735241521,TB-B,9.999999738748427,matched panel
+Full graph + warm start,p800-4400-75,0.0,TB-C,1.9999999672075048,matched panel
+Full graph + warm start,p800-4400-90,0.0,TB-C,10.000000240413822,matched panel
+Full graph + warm start,p1000-1000-75,0.0,TB-C,2.000000002368814,matched panel
+Full graph + warm start,p1000-1000-90,0.0,TB-C,9.999999970140758,matched panel
+Full graph + warm start,p1000-4000-75,0.0,TB-C,2.0000000268670313,matched panel
+Full graph + warm start,p1000-4000-90,0.0,TB-C,10.000000286773592,matched panel
+Full graph + warm start,p1200-3000-75,1.784922637792495e-14,TB-C,2.0000000471415262,matched panel
+Full graph + warm start,p1200-3000-90,0.0,TB-C,10.000000387267635,matched panel
+Full graph + warm start,p2000-2000-77,0.0,TB-C,2.9999998837179587,matched panel
+Full graph + warm start,p2000-2000-90,0.0,TB-C,10.000000386147716,matched panel

@@ -9,6 +9,7 @@ reported only if every stage terminates with an optimal status.
 from __future__ import annotations
 
 import argparse
+import json
 import math
 import time
 from dataclasses import dataclass
@@ -47,7 +48,6 @@ def certify(instance_path: str | Path, solution_path: str | Path, output: str | 
     if not check["valid"]:
         raise ValueError(f"The incumbent is infeasible: {check['errors']}")
     if metadata_path:
-        import json
         metadata = json.loads(Path(metadata_path).read_text(encoding="utf-8"))
         reduced_status = metadata.get("status", metadata.get("solver", {}).get("status"))
         if reduced_status != "optimal":
@@ -59,6 +59,7 @@ def certify(instance_path: str | Path, solution_path: str | Path, output: str | 
     incumbent = float(check["objective"])
     assignments = np.argmax(solution["x"], axis=1).astype(int).tolist()
     pricing = _pricing(instance, graph["candidates"], output, config, gp, GRB)
+    proof_tolerance = _proof_tolerance(incumbent, config)
     proof = {
         "instance": instance["name"],
         "status": "inconclusive",
@@ -75,7 +76,7 @@ def certify(instance_path: str | Path, solution_path: str | Path, output: str | 
         "pricing_added_arcs": len(pricing["added_final_state"]),
         "pricing_time": pricing["runtime"],
         "reduced_cost_tolerance": config.reduced_cost_tolerance,
-        "proof_tolerance": _proof_tolerance(incumbent, config),
+        "proof_tolerance": proof_tolerance,
     }
     if pricing["status"] != "optimal":
         proof["total_time"] = time.time() - started
@@ -83,7 +84,6 @@ def certify(instance_path: str | Path, solution_path: str | Path, output: str | 
         return proof
 
     lower_bound = float(pricing["lower_bound"])
-    proof_tolerance = _proof_tolerance(incumbent, config)
     if lower_bound > incumbent + proof_tolerance:
         raise ValueError("The priced LP lower bound exceeds the validated incumbent.")
     budget = max(0.0, incumbent - lower_bound)
@@ -131,7 +131,7 @@ def certify(instance_path: str | Path, solution_path: str | Path, output: str | 
     })
     if verification.get("solution") is not None:
         x, y = verification["solution"]
-        write_solution(output / "solution", instance["name"], x, y)
+        write_solution(output / "solution", instance["name"], x, y, dense=False)
     write_json(output / "proof.json", proof)
     return proof
 

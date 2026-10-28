@@ -7,9 +7,6 @@
   "objective": 13180502.087077986,
   "reported_bks": 13180503.61,
   "reported_lower_bound": 13179958.0,
-  "literature_cutoff": "2026-07-18",
-  "source": "Bakker et al. (2025), arXiv:2512.08576v1",
-  "source_evidence": "PDF pp. 11 and 14; complete-results table",
   "integrity": {
     "all_audit_checks_passed": true,
     "certifier_sha256": "08861717c8f186c91b162e6d6f714821bb657c502e5c2743ff64495f1c9d7b51",
@@ -33,25 +30,19 @@
     "total_time_seconds": 32.47284293174744
   },
   "optimal_solution": {
-    "dense": "certificates/sscflp/optimal-solutions/dense/p1000-4000-85.npz",
-    "dense_sha256": "a9e5f1143768124c82df0555722143475212fd24980cb9d26445e020f7cc2151",
-    "sparse": "certificates/sscflp/optimal-solutions/sparse/p1000-4000-85.csv.gz",
-    "sparse_sha256": "51b27693a88406c7ad7d5ad807b20809b1a448ac32f72998fe593903fdea9b5e"
+    "path": "certificates/sscflp/records/p1000-4000-85/optimal_solution.csv.gz",
+    "sha256": "51b27693a88406c7ad7d5ad807b20809b1a448ac32f72998fe593903fdea9b5e"
   },
   "files": {
-    "pricing.log": {
-      "path": "certificates/sscflp/records/p1000-4000-85/pricing.log.gz",
-      "sha256": "2c0d590663f9287590a1c97542f69933287dbba8f3b58fab5b5026b5a2cd8608"
-    },
-    "verification.log": {
-      "path": "certificates/sscflp/records/p1000-4000-85/verification.log.gz",
-      "sha256": "80fdfa63a87c21db1d3de53c7290c031964adec08c6a5a919361da44afb14057"
-    },
-    "pricing_iterations.csv": {
+    "pricing_iterations": {
       "path": "certificates/sscflp/records/p1000-4000-85/pricing_iterations.csv",
       "sha256": "4b21bb4435770b4974a45e27ccd44153a4da1705c67cc9634f9fd19f1b573a9b"
+    },
+    "verification_log": {
+      "path": "certificates/sscflp/records/p1000-4000-85/verification.log.gz",
+      "sha256": "80fdfa63a87c21db1d3de53c7290c031964adec08c6a5a919361da44afb14057"
     }
   },
-  "note": "Large reproducible intermediate arc dumps and simplex basis files are intentionally omitted.",
-  "log_redaction": "Only local paths and Gurobi license registration identifiers were redacted."
+  "trace_profile": "lp_pricing_phasewise",
+  "verification_log_available": true
 }

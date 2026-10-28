@@ -1,0 +1,46 @@
+{
+  "schema_version": "1.0",
+  "problem": "sscflp",
+  "instance": "p1000-1000-51",
+  "status": "certified_global_optimum",
+  "classification": "first_optimality_proof_at_reported_bks",
+  "objective": 121579.09513899997,
+  "reported_bks": 121579.0951,
+  "initial_par_incumbent": 121672.64904699998,
+  "literature_cutoff": "2026-07-18",
+  "campaign": "full_space_certification",
+  "trace_profile": "terminal_safe_support",
+  "proof_scope": "original SSCFLP assignment space",
+  "solver": {
+    "status": "optimal",
+    "bound": 121579.09513899998,
+    "relative_gap": 0.0,
+    "threads": 8,
+    "seed": 0,
+    "nodes": 96779.0,
+    "total_time_seconds": 3198.5310120000213
+  },
+  "validation": {
+    "feasible": true,
+    "objective": 121579.09513899997,
+    "fixed_cost": 52372.848048,
+    "assignment_cost": 69206.24709099997,
+    "open_facilities": 178,
+    "violations": 0
+  },
+  "files": {
+    "verification_log": {
+      "path": "certificates/sscflp/records/p1000-1000-51/verification.log.gz",
+      "sha256": "d9c30ef5c66fb088172852b5c12f2c472fd9444b14aef797ff77cfdd07d06cdc"
+    }
+  },
+  "customers": 1000,
+  "facilities": 1000,
+  "eligible_arcs": 953714,
+  "verification_arcs": 348534,
+  "optimal_solution": {
+    "path": "certificates/sscflp/records/p1000-1000-51/optimal_solution.csv.gz",
+    "sha256": "e0f7a5baa9f40a6c58ac01a4602309b08c0cd09a929293a54fcea2b4c37a7165"
+  },
+  "verification_log_available": true
+}

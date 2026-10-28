@@ -4,7 +4,6 @@ from __future__ import annotations
 
 import argparse
 import json
-from pathlib import Path
 
 import numpy as np
 
@@ -26,6 +25,8 @@ def validate(instance: dict, solution: dict, problem: str, tolerance: float = 1e
         errors.append("negative flow or assignment value")
     if np.min(y) < -tolerance or np.max(y) > 1 + tolerance:
         errors.append("facility variable outside [0,1]")
+    if np.max(np.abs(y - np.rint(y))) > tolerance:
+        errors.append("facility variable is not binary")
 
     demands = np.asarray(instance["demands"])
     capacities = np.asarray(instance["capacities"])
@@ -54,6 +55,10 @@ def validate(instance: dict, solution: dict, problem: str, tolerance: float = 1e
         if a.shape != (n, m):
             errors.append(f"a shape {a.shape}, expected {(n, m)}")
         else:
+            if np.min(a) < -tolerance or np.max(a) > 1 + tolerance:
+                errors.append("use variable outside [0,1]")
+            if np.max(np.abs(a - np.rint(a))) > tolerance:
+                errors.append("use variable is not binary")
             if np.max((x > tolerance).astype(float) - a) > tolerance:
                 errors.append("flow-to-use link violated")
             if np.max(a - y[None, :]) > tolerance:

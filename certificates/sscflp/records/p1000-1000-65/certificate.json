@@ -7,9 +7,6 @@
   "objective": 13589769.532692999,
   "reported_bks": 13589769.53,
   "reported_lower_bound": 13588678.0,
-  "literature_cutoff": "2026-07-18",
-  "source": "Bakker et al. (2025), arXiv:2512.08576v1",
-  "source_evidence": "PDF pp. 11 and 14; complete-results table",
   "integrity": {
     "all_audit_checks_passed": true,
     "certifier_sha256": "45ff2c80f146421e3b9da6ab265a6ac76e8e50cb92b2571413bebbb02520448d",
@@ -33,29 +30,19 @@
     "total_time_seconds": 433.07459831237793
   },
   "optimal_solution": {
-    "dense": "certificates/sscflp/optimal-solutions/dense/p1000-1000-65.npz",
-    "dense_sha256": "42a8c1345106d47eefb33b5188e8e5418a7ece94fd2049f6b934aca3fe912f82",
-    "sparse": "certificates/sscflp/optimal-solutions/sparse/p1000-1000-65.csv.gz",
-    "sparse_sha256": "44ba1292d132d5a8e67cc974b0110feb64bab433d638a0caf57ada6f704d6d9b"
+    "path": "certificates/sscflp/records/p1000-1000-65/optimal_solution.csv.gz",
+    "sha256": "44ba1292d132d5a8e67cc974b0110feb64bab433d638a0caf57ada6f704d6d9b"
   },
   "files": {
-    "pricing.log": {
-      "path": "certificates/sscflp/records/p1000-1000-65/pricing.log.gz",
-      "sha256": "61022ff44aa379abffcec2dbd4479e2f64957904b6bc981bc6419b82975af4e8"
-    },
-    "verification.log": {
-      "path": "certificates/sscflp/records/p1000-1000-65/verification.log.gz",
-      "sha256": "03991b2609e151cb63c68636d167695746967ad4fdc447feed9a59dee1f67b43"
-    },
-    "pricing_iterations.csv": {
+    "pricing_iterations": {
       "path": "certificates/sscflp/records/p1000-1000-65/pricing_iterations.csv",
       "sha256": "ff5794b14278f9a37aa041e9640e5d0932a5d7dfe5490533003a42ce1e600e71"
     },
-    "improved_solution_validation.json": {
-      "path": "certificates/sscflp/records/p1000-1000-65/optimal_solution_validation.json",
-      "sha256": "beac24bf62a1bf53e20da3d1ec64505a306931d022db4e6c98eb75072da9474d"
+    "verification_log": {
+      "path": "certificates/sscflp/records/p1000-1000-65/verification.log.gz",
+      "sha256": "03991b2609e151cb63c68636d167695746967ad4fdc447feed9a59dee1f67b43"
     }
   },
-  "note": "Large reproducible intermediate arc dumps and simplex basis files are intentionally omitted.",
-  "log_redaction": "Only local paths and Gurobi license registration identifiers were redacted."
+  "trace_profile": "lp_pricing_phasewise",
+  "verification_log_available": true
 }

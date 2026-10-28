@@ -4,17 +4,15 @@ from __future__ import annotations
 
 import argparse
 import csv
-import json
 import math
 import platform
-import sys
 import time
 from datetime import datetime
 from pathlib import Path
 
 import numpy as np
 
-from instances import assignment_cost, file_sha256, read_instance
+from instances import assignment_cost, read_instance
 from par import GRAPH_VARIANTS, PROBLEMS, build_candidates
 from results import SCHEMA_VERSION, sha256, write_json, write_solution
 from validate import validate
@@ -64,7 +62,7 @@ def solve(instance_path: str | Path, output: str | Path, problem: str,
 
     model.Params.TimeLimit = max(0.01, deadline - time.time() - POSTPROCESS_RESERVE)
     progress_path = run / "progress.csv"
-    callback, trace = _progress_callback(started, deadline, time_limit, progress_path, gp, GRB)
+    callback = _progress_callback(started, deadline, time_limit, progress_path, gp, GRB)
     error = None
     try:
         model.optimize(callback)
@@ -279,7 +277,7 @@ def _progress_callback(started, deadline, budget, path, gp, GRB):
             solutions = int(model.cbGet(GRB.Callback.MIP_SOLCNT))
         _append_progress_values(path, elapsed, "checkpoint", objective, bound, nodes, solutions)
         state["next"] += interval
-    return callback, state
+    return callback
 
 
 def _append_progress(path, elapsed, event, model, GRB):

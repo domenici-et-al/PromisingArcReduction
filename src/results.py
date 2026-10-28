@@ -2,7 +2,6 @@
 
 from __future__ import annotations
 
-import argparse
 import csv
 import gzip
 import hashlib
@@ -17,22 +16,17 @@ SCHEMA_VERSION = "1.0"
 
 
 def write_solution(directory: str | Path, name: str, x: np.ndarray, y: np.ndarray,
-                   a: np.ndarray | None = None, tolerance: float = 1e-9) -> dict:
-    """Write the complete primal vector in dense and sparse representations.
+                   a: np.ndarray | None = None, tolerance: float = 1e-9,
+                   dense: bool = True) -> dict:
+    """Write the complete primal vector, optionally in both representations.
 
     Dense NPZ arrays contain every variable value.  Sparse CSV files use
     one-based indices and omit values whose absolute value is at most the
     stated tolerance; every omitted value is exactly zero by convention.
     """
     directory = Path(directory)
-    dense = directory / "dense" / f"{name}.npz"
     sparse = directory / "sparse" / f"{name}.csv.gz"
-    dense.parent.mkdir(parents=True, exist_ok=True)
     sparse.parent.mkdir(parents=True, exist_ok=True)
-    arrays = {"x": np.asarray(x), "y": np.asarray(y)}
-    if a is not None:
-        arrays["a"] = np.asarray(a)
-    np.savez_compressed(dense, **arrays)
 
     with gzip.open(sparse, "wt", encoding="utf-8", newline="") as stream:
         writer = csv.writer(stream)
@@ -44,13 +38,21 @@ def write_solution(directory: str | Path, name: str, x: np.ndarray, y: np.ndarra
         if a is not None:
             for i, j in np.argwhere(np.abs(a) > tolerance):
                 writer.writerow(["a", int(i) + 1, int(j) + 1, _number(a[i, j])])
-    return {
-        "dense": dense,
+
+    result = {
         "sparse": sparse,
-        "dense_sha256": sha256(dense),
         "sparse_sha256": sha256(sparse),
         "zero_default_tolerance": tolerance,
     }
+    if dense:
+        dense_path = directory / "dense" / f"{name}.npz"
+        dense_path.parent.mkdir(parents=True, exist_ok=True)
+        arrays = {"x": np.asarray(x), "y": np.asarray(y)}
+        if a is not None:
+            arrays["a"] = np.asarray(a)
+        np.savez_compressed(dense_path, **arrays)
+        result.update({"dense": dense_path, "dense_sha256": sha256(dense_path)})
+    return result
 
 
 def read_solution(path: str | Path, customers: int, facilities: int) -> dict:
@@ -122,38 +124,10 @@ def sha256(path: str | Path) -> str:
     return digest.hexdigest()
 
 
-def write_checksums(root: str | Path, output: str | Path) -> int:
-    root, output = Path(root), Path(output)
-    excluded_directories = {".git", ".venv", "venv", "__pycache__", ".pytest_cache"}
-    files = sorted(
-        path for path in root.rglob("*")
-        if path.is_file()
-        and path.resolve() != output.resolve()
-        and not excluded_directories.intersection(path.relative_to(root).parts)
-        and path.suffix not in {".pyc", ".pyo"}
-    )
-    output.write_text("".join(f"{sha256(path)}  {path.relative_to(root).as_posix()}\n" for path in files), encoding="ascii")
-    return len(files)
-
-
 def _number(value) -> str:
     value = float(value)
     integer = round(value)
     return str(integer) if abs(value - integer) <= 1e-9 else f"{value:.17g}"
 
 
-def main() -> None:
-    parser = argparse.ArgumentParser(description="PAR artifact utilities")
-    sub = parser.add_subparsers(dest="command", required=True)
-    checksums = sub.add_parser("checksums", help="write a SHA-256 manifest")
-    checksums.add_argument("root")
-    checksums.add_argument("--output", default="SHA256SUMS")
-    args = parser.parse_args()
-    if args.command == "checksums":
-        root = Path(args.root)
-        count = write_checksums(root, root / args.output)
-        print(f"Wrote {count} checksums to {root / args.output}")
 
-
-if __name__ == "__main__":
-    main()

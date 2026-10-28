@@ -1,5 +1,5 @@
 {
-  "schema_version": "1.0",
+  "schema_version": "1.1",
   "status": "passed",
   "timed_solution_records": 970,
   "timed_solution_artifact_counts": {
@@ -25,12 +25,23 @@
       "progress": 80
     }
   },
-  "sscflp_certificate_records": 131,
-  "validated_optimal_witnesses": 136,
-  "sanitized_compressed_logs": 1676,
-  "public_python_modules": 6,
-  "repository_files_before_checksum_manifest": 6148,
+  "sscflp_certificate_records": 150,
+  "validated_optimal_witnesses": 364,
+  "sanitized_compressed_logs": 1773,
+  "public_python_modules": 8,
   "largest_file": "artifacts/solutions/mscflp-ci/dense/wlp20.npz",
   "largest_file_bytes": 437236,
-  "failures": []
+  "failures": [],
+  "sscflp_frozen_certificate_records": 131,
+  "sscflp_followup_certificate_records": 19,
+  "sscflp_certification_campaigns": 1,
+  "sscflp_phasewise_certificate_records": 131,
+  "sscflp_terminal_safe_support_records": 19,
+  "mscflp_certificate_records": 209,
+  "mscflp_ci_certificate_records": 9,
+  "mscflp_proof_records": 209,
+  "mscflp_attempted": 265,
+  "mscflp_uncertified": 56,
+  "mscflp_not_attempted": 180,
+  "mscflp_verification_logs": 209
 }

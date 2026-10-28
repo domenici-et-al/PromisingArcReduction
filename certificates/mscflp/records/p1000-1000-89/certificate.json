@@ -1,0 +1,68 @@
+{
+  "schema_version": "1.0",
+  "problem": "mscflp",
+  "instance": "p1000-1000-89",
+  "method": "M1",
+  "status": "certified_global_optimum",
+  "certified": true,
+  "classification": "improved_certified",
+  "proof_status": "Certified",
+  "proof_basis": "global_MIP_bound",
+  "solver_status": 2,
+  "objective": 3453190.404046816,
+  "best_bound": 3453190.404045813,
+  "proof_tolerance": 0.003453190404046816,
+  "input_incumbent_objective": 3453380.74819831,
+  "par_gap_pct": 0.005511820629579683,
+  "literature": {
+    "optimum": null,
+    "discrepancy": false,
+    "cv2020_discrepancy": false,
+    "proof_method": "",
+    "proof_source": ""
+  },
+  "total_proof_seconds": 32.00311447279819,
+  "total_available": true,
+  "reported_time_kind": "reconstructed_total",
+  "source_campaign": "ms_cflp_ci/results/proof_campaigns/m1_445_14h_20260923_191308",
+  "source_result_sha256": "0f197f22a64d1cdb9157665f3c7a00d9a14cad9c2167abcd4299d48face4247a",
+  "source_solution_sha256": "1c17dade916c736c8ba9cdf13d71390f29e7caa0042dfb74151466560b93ceae",
+  "instance_sha256": "233a18d0839e47c5b21d2e5d49aed605ab4b9298a2464ac90dfb0804b556e757",
+  "optimal_solution": {
+    "path": "certificates/mscflp/records/p1000-1000-89/optimal_solution.csv.gz",
+    "sha256": "d4aea0ee82dae8edb55d76904b7f82f2a6b1d75c3126c3b37e38614ed178fe92"
+  },
+  "files": {
+    "verification_log": {
+      "path": "certificates/mscflp/records/p1000-1000-89/verification.log.gz",
+      "sha256": "baf4c65d0fbf71d6602f334a04d1d7fae9d5711496fd3a08c9062d51367c247f"
+    }
+  },
+  "verification_log_available": true,
+  "validation": {
+    "objective": 3453190.404046816,
+    "violations": {
+      "negative_flow": 0.0,
+      "opening_bounds": 4.440892098500626e-16,
+      "integrality": 3.3306690738754696e-15,
+      "demand": 3.375077994860476e-14,
+      "capacity": 7.105427357601002e-15,
+      "link": 2.1316282072803006e-14
+    },
+    "tolerance": 1e-06
+  },
+  "solver": {
+    "runtime_seconds": 17.890000104904175,
+    "build_seconds": 6.232880099996692,
+    "nodes": 1.0,
+    "certificate_kind": "floating_point_with_explicit_tolerances",
+    "stop_reason": "optimality_proven",
+    "gurobi_version": [
+      13,
+      0,
+      1
+    ],
+    "peak_rss_mb": 3088.4375
+  },
+  "note": "Full-model M1 certificate. PAR supplies the incumbent; M1 proves the original-model optimum."
+}

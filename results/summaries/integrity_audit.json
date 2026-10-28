@@ -8,5 +8,5 @@
   "released_objective_matches": 970,
   "historical_solver_objective_matches_within_tolerance": 957,
   "historical_solver_objective_reconciliations": 13,
-  "note": "Sparse files were regenerated from the audited dense arrays with round-trip precision; final file hashes are checked by SHA256SUMS."
+  "note": "Sparse files were regenerated from the audited dense arrays with round-trip precision; per-file hashes are recorded in the run metadata."
 }

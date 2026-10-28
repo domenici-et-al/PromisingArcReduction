@@ -1,8 +1,12 @@
 {
-  "witnesses_checked": 136,
-  "valid_witnesses": 136,
+  "schema_version": "1.1",
+  "status": "passed",
+  "witnesses_checked": 364,
+  "valid_witnesses": 364,
   "failed_witnesses": 0,
-  "sscflp_witnesses": 131,
+  "sscflp_witnesses": 150,
+  "sscflp_phasewise_witnesses": 131,
+  "sscflp_terminal_safe_support_witnesses": 19,
   "mscflp_ci_witnesses": 5,
   "missing_mscflp_ci_witnesses": [
     "wlp04",
@@ -10,5 +14,7 @@
     "wlp06",
     "wlp22"
   ],
-  "failure_instances": []
+  "failure_instances": [],
+  "note": "364 verified witnesses: 150 SSCFLP, 209 MS-CFLP full-model M1, and 5 MS-CFLP-CI. All 150 SSCFLP witnesses belong to one reported certification campaign. The four CI records without a preserved witness are explicitly listed.",
+  "mscflp_witnesses": 209
 }

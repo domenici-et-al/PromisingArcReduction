@@ -32,5 +32,15 @@
     "reduced_cost_tolerance": 1e-7,
     "relative_proof_tolerance": 1e-9,
     "absolute_proof_tolerance": 1e-6
+  },
+  "mscflp_ci_certification": {
+    "model": "full_assignment_graph",
+    "conflict_rows": "exact_lazy_separation_at_integer_incumbents",
+    "threads": 16,
+    "seed": 0,
+    "time_limit_seconds": null,
+    "max_full_assignment_arcs": 2000000,
+    "relative_proof_tolerance": 1e-9,
+    "absolute_proof_tolerance": 1e-6
   }
 }

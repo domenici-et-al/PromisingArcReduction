@@ -39,16 +39,38 @@
   },
   "certificates": {
     "sscflp": {
-      "audited_global_optima": 131,
-      "first_optimality_proofs": 115,
+      "released_global_optima": 150,
+      "certification_campaigns": 1,
+      "phasewise_reproducibility_records": 131,
+      "terminal_safe_support_records": 19,
+      "first_optimality_proofs": 134,
+      "first_proofs_at_reported_bks": 106,
+      "first_proofs_with_improved_incumbent": 28,
       "re_certifications": 16,
-      "complete_optimal_primal_witnesses": 131
+      "complete_optimal_primal_witnesses": 150
+    },
+    "mscflp": {
+      "full_model_certificates": 209,
+      "confirmed": 83,
+      "certified": 117,
+      "certified_with_discrepancy": 9,
+      "par_confirmed": 36,
+      "improved": 173,
+      "attempted": 265,
+      "attempted_unproven": 56,
+      "not_attempted": 180,
+      "mean_total_proof_seconds": 601.3792255423375,
+      "median_total_proof_seconds": 245.20511946146144,
+      "complete_optimal_primal_witnesses": 209,
+      "method": "M1 full-model",
+      "proof_basis": "global_MIP_bound"
     },
     "mscflp_ci": {
       "historical_full_model_proofs": 9,
       "complete_optimal_primal_witnesses": 5,
       "proof_records_without_preserved_primal_witness": 4
-    }
+    },
+    "total_certificates": 368
   },
   "comparison_note": "Cross-study time ratios are descriptive because hardware, solvers, and parallelism differ.",
   "objective_reconciliation": {

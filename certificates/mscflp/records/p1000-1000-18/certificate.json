@@ -1,0 +1,68 @@
+{
+  "schema_version": "1.0",
+  "problem": "mscflp",
+  "instance": "p1000-1000-18",
+  "method": "M1",
+  "status": "certified_global_optimum",
+  "certified": true,
+  "classification": "improved_certified",
+  "proof_status": "Confirmed",
+  "proof_basis": "global_MIP_bound",
+  "solver_status": 2,
+  "objective": 95737.23238247294,
+  "best_bound": 95737.232381473,
+  "proof_tolerance": 9.573723238247295e-05,
+  "input_incumbent_objective": 95761.85664877348,
+  "par_gap_pct": 0.02571406629133046,
+  "literature": {
+    "optimum": 95737.23238,
+    "discrepancy": false,
+    "cv2020_discrepancy": false,
+    "proof_method": "CPLEX / CV2020",
+    "proof_source": "https://tandf.figshare.com/articles/journal_contribution/A_general_corridor_method-based_approach_for_capacitated_facility_location/8858258"
+  },
+  "total_proof_seconds": 271.3256540462753,
+  "total_available": true,
+  "reported_time_kind": "reconstructed_total",
+  "source_campaign": "ms_cflp_ci/results/proof_campaigns/m1_445_14h_20260923_191308",
+  "source_result_sha256": "2e3db2dd7a943e2d041ef34d98feac7a6d7b7080eab456d79f317c957f413167",
+  "source_solution_sha256": "dc501612ad08de2bbab66901bba3c911f289f25a831c1a9d474bff3cfbd174d2",
+  "instance_sha256": "7d8f11456eec3a9c493ab1298dc46e5c5e9b125b71474009a6cd37ded840a9cd",
+  "optimal_solution": {
+    "path": "certificates/mscflp/records/p1000-1000-18/optimal_solution.csv.gz",
+    "sha256": "d3cc41a574f14b7795231233d934563267178e565d82629aa3cc992fd71eadca"
+  },
+  "files": {
+    "verification_log": {
+      "path": "certificates/mscflp/records/p1000-1000-18/verification.log.gz",
+      "sha256": "dd62862cf94f696c910d3e58c3457054f08e61f38b26c6cae4fd686d75361618"
+    }
+  },
+  "verification_log_available": true,
+  "validation": {
+    "objective": 95737.23238247294,
+    "violations": {
+      "negative_flow": 4.474198789239381e-14,
+      "opening_bounds": 0.0,
+      "integrality": 9.2148511043888e-15,
+      "demand": 1.0658141036401503e-13,
+      "capacity": 1.3500311979441904e-13,
+      "link": 4.446443213623752e-14
+    },
+    "tolerance": 1e-06
+  },
+  "solver": {
+    "runtime_seconds": 251.48399996757507,
+    "build_seconds": 6.212143900003866,
+    "nodes": 2903.0,
+    "certificate_kind": "floating_point_with_explicit_tolerances",
+    "stop_reason": "optimality_proven",
+    "gurobi_version": [
+      13,
+      0,
+      1
+    ],
+    "peak_rss_mb": 3152.59375
+  },
+  "note": "Full-model M1 certificate. PAR supplies the incumbent; M1 proves the original-model optimum."
+}

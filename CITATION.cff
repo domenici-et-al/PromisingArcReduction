@@ -5,10 +5,14 @@ type: software
 authors:
   - family-names: Domenici
     given-names: "Pedro Diegues"
+  - family-names: "Leão"
+    given-names: "Aline A. S."
+  - family-names: Castellucci
+    given-names: "Pedro Belin"
 repository-code: "https://github.com/domenici-et-al/PromisingArcReduction"
 license: MIT
-version: 0.1.0
-date-released: 2026-07-19
+version: 1.0.0
+date-released: 2026-10-28
 keywords:
   - capacitated facility location
   - graph reduction
@@ -16,8 +20,12 @@ keywords:
   - optimality certification
 preferred-citation:
   type: article
-  title: "Promising arc reduction and full-space certification for large-scale SSCFLP"
+  title: "Full-space certification at scale for single-source capacitated facility location with deterministic promising-arc reduction"
   authors:
     - family-names: Domenici
       given-names: "Pedro Diegues"
+    - family-names: "Leão"
+      given-names: "Aline A. S."
+    - family-names: Castellucci
+      given-names: "Pedro Belin"
   year: 2026

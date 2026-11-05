@@ -12,7 +12,7 @@ authors:
 repository-code: "https://github.com/domenici-et-al/PromisingArcReduction"
 license: MIT
 version: 1.0.0
-date-released: 2026-10-28
+date-released: 2026-11-05
 keywords:
   - capacitated facility location
   - graph reduction
@@ -20,7 +20,7 @@ keywords:
   - optimality certification
 preferred-citation:
   type: article
-  title: "Full-space certification at scale for single-source capacitated facility location with deterministic promising-arc reduction"
+  title: "Promising Arc Reduction for Capacitated Facility Location: Heuristic Search and Optimality Proofs"
   authors:
     - family-names: Domenici
       given-names: "Pedro Diegues"

@@ -1,13 +1,56 @@
 {
-  "schema_version": "1.0",
+  "schema_version": "1.1",
   "problem": "mscflp-ci",
   "instance": "wlp06",
   "status": "certified_global_optimum",
   "classification": "first_optimality_proof",
   "objective": 111499.0,
   "proof_metadata_consistent": true,
-  "optimal_solution_available": false,
-  "optimal_solution": null,
-  "missing_solution_reason": "No exact primal witness was preserved in the available archive.",
-  "note": "This index records independently audited historical full-model solver proofs. The SSCFLP pricing certificate is not claimed for CI."
+  "optimal_solution_available": true,
+  "optimal_solution": {
+    "path": "certificates/mscflp-ci/records/wlp06/optimal_solution.csv.gz",
+    "sha256": "02fc780f11d757822e106c41d7ec3cd336af943971cb75b7a1664d94ccbc98de"
+  },
+  "missing_solution_reason": null,
+  "note": "Historical objective/classification/status preserved. Evidence level distinguishes raw global closure from historical metadata only; a validated primal alone is not an optimality proof. No solver replay was performed; see README.md.",
+  "evidence_level": "historical_metadata_and_validated_primal",
+  "raw_bound_closure_available": false,
+  "primal_provenance": {
+    "source_label": "ms_cflp_ci/results/proof_artifacts_ci_20260725/validated_witnesses/wlp06_exact_solution.txt",
+    "source_sha256": "07e1cfdc188c491e7c25a9e5f4e352caf016e266ef7bb04723833bdb1b9cfd9b",
+    "packaged_path": "certificates/mscflp-ci/records/wlp06/optimal_solution.csv.gz",
+    "packaged_sha256": "02fc780f11d757822e106c41d7ec3cd336af943971cb75b7a1664d94ccbc98de",
+    "transformation": "integer_matrix_to_sparse_x_y_a_gzip_mtime_zero",
+    "role": "recovered_primal_not_original_proof_run_vector"
+  },
+  "validation": {
+    "valid": true,
+    "arithmetic": "exact_integer_no_rounding_no_tolerance",
+    "objective": 111499,
+    "fixed_cost": 77130,
+    "assignment_cost": 34369,
+    "customers": 705,
+    "facilities": 300,
+    "incompatible_pairs_checked": 13701,
+    "open_facilities": 149,
+    "positive_assignments": 834,
+    "violations": 0,
+    "instance_sha256": "798e83efc2d4226f299d5490c3520b16b09da1de4938b2555b5f212d8bd1b2a4",
+    "solution_sha256": "02fc780f11d757822e106c41d7ec3cd336af943971cb75b7a1664d94ccbc98de"
+  },
+  "bound_consistency": {
+    "objective_bound_consistent": true,
+    "basis": "historical_metadata_only_not_raw_closure",
+    "archived_global_bound": null,
+    "cutoff": null
+  },
+  "archived_evidence": [
+    "certificates/mscflp-ci/evidence/wlp06/primal_recovery_result.json"
+  ],
+  "historical_metadata": [
+    "certificates/mscflp-ci/evidence/historical/resumo_exato_principal.csv",
+    "certificates/mscflp-ci/evidence/historical/optimum_proof_metadata.csv"
+  ],
+  "recovery_manifest": "certificates/mscflp-ci/recovery_manifest.json",
+  "recovery_note": "The 111499 recovery witness is not the original proof-run vector. Its restricted run bound 111476 is not a global lower bound and is not used as proof."
 }

@@ -1,5 +1,5 @@
 {
-  "schema_version": "1.0",
+  "schema_version": "1.1",
   "problem": "mscflp-ci",
   "instance": "wlp02",
   "status": "certified_global_optimum",
@@ -12,5 +12,63 @@
     "sha256": "cdeb7b5565851e4259ca12121e62ad3fef44f7e4fa08a90de2da33d18efbfd67"
   },
   "missing_solution_reason": null,
-  "note": "This index records independently audited historical full-model solver proofs. The SSCFLP pricing certificate is not claimed for CI."
+  "note": "Historical objective/classification/status preserved. Evidence level distinguishes raw global closure from historical metadata only; a validated primal alone is not an optimality proof. No solver replay was performed; see README.md.",
+  "evidence_level": "archived_global_closure_and_validated_primal",
+  "raw_bound_closure_available": true,
+  "primal_provenance": {
+    "source_label": "public-repository:certificates/mscflp-ci/records/wlp02/optimal_solution.csv.gz",
+    "source_sha256": "cdeb7b5565851e4259ca12121e62ad3fef44f7e4fa08a90de2da33d18efbfd67",
+    "packaged_path": "certificates/mscflp-ci/records/wlp02/optimal_solution.csv.gz",
+    "packaged_sha256": "cdeb7b5565851e4259ca12121e62ad3fef44f7e4fa08a90de2da33d18efbfd67",
+    "transformation": "existing_public_witness_unchanged",
+    "role": "existing_public_primal"
+  },
+  "validation": {
+    "valid": true,
+    "arithmetic": "exact_integer_no_rounding_no_tolerance",
+    "objective": 52952,
+    "fixed_cost": 30760,
+    "assignment_cost": 22192,
+    "customers": 253,
+    "facilities": 100,
+    "incompatible_pairs_checked": 1718,
+    "open_facilities": 53,
+    "positive_assignments": 297,
+    "violations": 0,
+    "instance_sha256": "4a5e6668c0f742fbb349f9228e64e0482df804ef3bf29f3867d4b03299b2a0af",
+    "solution_sha256": "cdeb7b5565851e4259ca12121e62ad3fef44f7e4fa08a90de2da33d18efbfd67"
+  },
+  "bound_consistency": {
+    "objective_bound_consistent": true,
+    "basis": "archived_full_space_global_bound_plus_exact_feasible_upper_bound",
+    "archived_global_bound": "52952.0",
+    "cutoff": null
+  },
+  "archived_evidence": [
+    "certificates/mscflp-ci/evidence/wlp02/gurobi.log",
+    "certificates/mscflp-ci/evidence/wlp02/progress.csv",
+    "certificates/mscflp-ci/evidence/wlp02/lazy_conflict_rows.csv.gz",
+    "certificates/mscflp-ci/evidence/wlp02/proof_solution.csv.gz",
+    "certificates/mscflp-ci/evidence/wlp02/certificate.json"
+  ],
+  "historical_metadata": [
+    "certificates/mscflp-ci/evidence/historical/resumo_exato_principal.csv",
+    "certificates/mscflp-ci/evidence/historical/optimum_proof_metadata.csv"
+  ],
+  "recovery_manifest": "certificates/mscflp-ci/recovery_manifest.json",
+  "archived_proof_primal_validation": {
+    "valid": true,
+    "arithmetic": "exact_integer_no_rounding_no_tolerance",
+    "objective": 52952,
+    "fixed_cost": 30760,
+    "assignment_cost": 22192,
+    "customers": 253,
+    "facilities": 100,
+    "incompatible_pairs_checked": 1718,
+    "open_facilities": 53,
+    "positive_assignments": 297,
+    "violations": 0,
+    "instance_sha256": "4a5e6668c0f742fbb349f9228e64e0482df804ef3bf29f3867d4b03299b2a0af",
+    "solution_sha256": "47ad01be0ad95ba0ddbdef95ad84a09fccfc3f874fddacf469e4b318e2d48aa3"
+  }
 }

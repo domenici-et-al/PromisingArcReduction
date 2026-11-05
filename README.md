@@ -1,151 +1,141 @@
 # Promising Arc Reduction
 
-Computational artifact for **Full-space certification at scale for
-single-source capacitated facility location with deterministic promising-arc
-reduction**.
+Code and results for the paper *Promising Arc Reduction for Capacitated Facility
+Location: Heuristic Search and Optimality Proofs* (Domenici, Leão and Castellucci).
 
-PAR deterministically constructs a small customer-facility assignment graph
-before optimization.  This repository contains the frozen implementation,
-complete primal solutions in two encodings, solver logs, progress traces,
-comparison tables, and full-space optimality certificates.
+PAR keeps, for each customer, a short prefix of its cheapest facilities and
+solves the reduced model with Gurobi. The prefix length depends only on the
+instance data: the capacity ratio, the customer's demand and how contested the
+nearby facilities are. The method is in [`src/par.py`](src/par.py).
 
-The release contains **970 complete validated primal solutions**: 445 for
-SSCFLP, 445 for MS-CFLP, and 80 for MS-CFLP-CI. It also contains **368
-full-model optimality certificates**: 150 SSCFLP full-space certificates,
-209 MS-CFLP full-model M1 certificates, and 9 MS-CFLP-CI historical proofs.
+| Problem | Instances | Runs | Optimality proofs |
+|---|---:|---:|---:|
+| SSCFLP | 445 | 445 | 150 |
+| MS-CFLP | 445 | 445 | 209 |
+| MS-CFLP-CI | 80 | 80 | 9 |
 
-The 150 SSCFLP records comprise 134 first optimality proofs relative to the
-exact statuses reported in the PaKS benchmark table and 16 re-certifications.
-Within the 134 first proofs, 28 improve a reported BKS and 106 prove the
-reported BKS; 131 records retain frozen LP-pricing and verification-MIP
-telemetry and 19 retain terminal safe-support telemetry.
-
-The 209 MS-CFLP certificates are full-model M1 proofs: 83 agree with an
-individually identified published optimum, 117 are certified without an
-individually identified prior proof, and 9 carry a literature discrepancy.
-Of 265 attempted instances, 56 remained uncertified and 180 were not attempted
-at the reporting cutoff. The 9 MS-CFLP-CI records are historical full-model
-proofs; five retain exact primal witnesses and four are explicitly identified
-as unavailable.
-
-## Scope
-
-| Problem | Instances | Time limit | Threads | Initialization |
-|---|---:|---:|---:|---|
-| SSCFLP | 445 | 600 s end-to-end | 1 | first feasible assignment |
-| MS-CFLP | 445 | 600 s end-to-end | 1 | none |
-| MS-CFLP-CI | 80 | `10*sqrt(m)` s end-to-end | 1 | none |
-
-Benchmark instances are **not redistributed**.  Obtain them from their original
-sources; the instance names used in the paper are listed in the supplementary
-material.
+The benchmark instances are not included; they are available from their
+original sources. Names follow the original files (`p800-4400-1.plc`,
+`wlp01.dzn`, `cflp-ci_00.dzn`, ...).
 
 ## Install
 
-Python 3.11 or newer and a working Gurobi license are required.
+Python 3.11+ and a Gurobi license.
 
-```powershell
-python -m venv .venv
-.venv\Scripts\Activate.ps1
+```
 pip install -r requirements.txt
 ```
 
-## Run
+## Usage
 
-```powershell
-# Frozen SSCFLP protocol (600 s, one thread, constructive initialization)
-python src/solve.py sscflp path/to/p800-4400-1.plc --output reproduced
+The scripts are in `src/` and are run from the repository root.
 
-# Direct transfer to splittable demand
-python src/solve.py mscflp path/to/p800-4400-1.plc --output reproduced
+```
+# PAR run (600 s, 1 thread; the CI default is 10*sqrt(m) s)
+python src/solve.py sscflp path/to/p800-4400-1.plc --output runs
+python src/solve.py mscflp path/to/p800-4400-1.plc --output runs
+python src/solve.py mscflp-ci path/to/wlp01.dzn --output runs
 
-# Customer-incompatibility extension; the default limit is 10*sqrt(m)
-python src/solve.py mscflp-ci path/to/wlp01.dzn --output reproduced
+# check a solution and recompute its cost
+python src/validate.py sscflp path/to/p800-4400-1.plc artifacts/solutions/sscflp/sparse/p800-4400-1.csv.gz
 
-# Independently validate either published solution encoding
-python src/validate.py sscflp path/to/p800-4400-1.plc \
-  artifacts/solutions/sscflp/dense/p800-4400-1.npz
+# optimality proofs from a feasible solution
+python src/certify.py path/to/p800-4400-1.plc runs/sscflp/p800-4400-1/solution.csv.gz --output proof --threads 8
+python src/certify_mscflp.py path/to/p800-4400-1.plc runs/mscflp/p800-4400-1/solution.csv.gz --output proof
+python src/certify_ci.py path/to/wlp01.dzn runs/mscflp-ci/wlp01/solution.csv.gz --output proof
 ```
 
-For an optimal reduced SSCFLP run:
+`solve.py` writes `metadata.json`, `solution.csv.gz`, `gurobi.log` and
+`progress.csv` to `runs/<problem>/<instance>/`. The ablation controls are
+selected with `--variant` (`no_congestion`, `direct_adaptive`,
+`unweighted_sqrt`, `full`) and `--no-warm-start`.
 
-```powershell
-python src/certify.py path/to/instance.plc path/to/solution.npz \
-  --metadata path/to/metadata.json --output certificate --threads 16
+To check the whole release against the instance files (rebuilds every PAR
+graph and validates every released solution, without Gurobi):
+
+```
+python scripts/check_release.py path/to/instances --workers 8
 ```
 
-For full-space MS-CFLP-CI certification from a validated PAR incumbent:
+Tests on small synthetic instances (the solver tests need Gurobi):
 
-```powershell
-python src/certify_ci.py path/to/wlp01.dzn path/to/par_solution.npz \
-  --output ci-certificate --threads 16
+```
+python -m unittest discover -s tests -v
 ```
 
-For full-model MS-CFLP certification from a validated PAR incumbent:
+## Contents
 
-```powershell
-python src/certify_mscflp.py path/to/instance.plc path/to/par_solution.npz \
-  --output mscflp-certificate --threads 16
+```
+src/                 PAR, the three models, validation and the certifiers
+scripts/             check_release.py
+tests/               synthetic tests
+configs/             run protocols and the two ablation panels
+artifacts/
+  metadata/<problem>/<instance>.json         PAR graph, status, objective, bound, times
+  solutions/<problem>/sparse/<instance>.csv.gz
+  solutions/<problem>/dense/<instance>.npz   the same solutions as full arrays
+  logs/<problem>/<instance>/                 Gurobi logs (and the SSCFLP warm start)
+  progress/<problem>/<instance>.csv.gz       incumbent and bound over time
+certificates/<problem>/records/<instance>/   certificate.json, optimal_solution.csv.gz,
+                                             verification.log.gz (+ pricing_iterations.csv)
+results/
+  comparisons/       PAR against the best known results
+  ablations/         ablation results (both panels and a few stress cases)
+  certificates/      one row per optimality proof
+  diagnostics/       hard SSCFLP cases
+  summaries/         totals and release audits
 ```
 
-## Artifact map
+Solution files have one row per nonzero variable: `variable,index_1,index_2,value`
+with `variable` in `x`, `y`, `a` and one-based indices. `x` is the assignment
+(SSCFLP) or the shipped quantity (MS-CFLP), `y` opens a facility and `a` marks
+customer-facility use in MS-CFLP-CI. In the metadata, `released_solution.objective`
+is the cost recomputed from the released solution; for 13 runs it differs from
+the objective printed by the solver, and these cases are listed in
+`results/summaries/historical_objective_reconciliation.csv`. Local paths and
+license identifiers were removed from the logs.
 
-- `src/`: compact Python implementation of PAR, validation, and certification.
-- `configs/`: frozen protocols and the stratified 45- and 90-instance ablation
-  panels.
-- `artifacts/metadata/`: one normalized JSON record per run.
-- `artifacts/solutions/`: dense NPZ and sparse `csv.gz` primal solutions.
-- `artifacts/logs/`: compressed Gurobi logs, separate from solutions.
-- `artifacts/progress/`: compressed end-to-end progress traces.
-- `results/`: comparison, ablation, and diagnostic tables used by the paper.
-- `certificates/`: proof indices, proof records, logs, and sparse optimal
-  witnesses for SSCFLP, MS-CFLP, and MS-CFLP-CI.
-- `docs/`: method, format, provenance, and reproduction details.
+## Notes on the proofs
 
-All indices in human-readable solution files are one-based.  Omitted entries
-in sparse files have value zero; dense NPZ files explicitly store every
-variable.  See [`docs/artifact-format.md`](docs/artifact-format.md).
+**SSCFLP (150).** Reference values are from Bakker et al. (2025),
+arXiv:2512.08576v1, with literature cutoff 2026-07-18: 134 proofs are the first
+for their instance (28 of them improve the best known solution) and 16 confirm
+known optima. 131 proofs follow Algorithm 2 of the paper and `certify.py`
+(LP pricing, reduced-cost fixing, verification MIP); `p800-4400-88` closes at
+the fixing step and has no verification log. The other 19 (`trace_profile =
+terminal_safe_support` in `certificate.json`) removed omitted arcs with
+Lagrangian bounds instead of LP reduced costs (a regret bound plus residual
+knapsack tests, with the LP duals and the best subgradient multipliers) and then
+solved the remaining model to optimality. That test is not part of `certify.py`;
+for these 19 instances the repository has the certificate, the optimal
+solution and the verification log. Proofs used 8 threads, except
+`p800-4400-51`, `p1200-3000-60` and `p2000-2000-67`, which used 16.
 
-The three certificate families are indexed under `results/certificates/`:
-`sscflp_all_certificates.csv` (150), `mscflp_certificates.csv` (209), and
-`mscflp_ci_certificates.csv` (9). The SSCFLP ledger combines 131 LP-pricing
-phasewise records and 19 terminal safe-support records; the MS-CFLP index
-records the full-model M1 classification, literature status, and proof times;
-the CI index records the five preserved witnesses and the four explicitly
-unavailable ones. Certificate witnesses are released in sparse form. See
-[`docs/certification.md`](docs/certification.md).
+**MS-CFLP (209).** `certify_mscflp.py` solves the complete model starting from
+the PAR solution (1 thread). 83 proofs agree with a published optimum, 117 have
+no published proof and 9 disagree with a published value. 56 more instances
+were attempted without a proof and 180 were not attempted.
 
-New MS-CFLP proofs can be generated with `src/certify_mscflp.py`; it solves the
-complete multi-source model, and a certificate is issued only when the
-full-model MIP is optimal and the primal validator accepts the returned vector.
-The CI archive records nine historical full-model proofs; five witnesses are
-preserved and four are explicitly identified as unavailable.
+**MS-CFLP-CI (9).** These proofs were obtained with the complete model before
+`certify_ci.py` was written. All nine optimal solutions are included. Solver
+logs with the final bound were recovered for `wlp01`-`wlp04`, `wlp21` and
+`wlp22` (`certificates/mscflp-ci/evidence/`); for `wlp05`, `wlp06` and `wlp23`
+only the recorded objective and bound remain.
 
-## Reproducibility
+**Ablations.** The 90-instance panel compares PAR with six changes to the
+formula and the 45-instance panel with three solver settings (no warm start,
+full graph, full graph with warm start). Of the six formula controls, three are
+available as `--variant` (`no_congestion`, `direct_adaptive`,
+`unweighted_sqrt`); the other three (no capacity scaling, no demand scaling,
+unit prefix weights) are not.
 
-- [`configs/protocols.json`](configs/protocols.json) freezes time, thread,
-  seed, initialization, and proof tolerances.
-- [`results/summaries/artifact_validation.csv`](results/summaries/artifact_validation.csv)
-  reports the independent solution audit.
-- [`results/summaries/certificate_validation.csv`](results/summaries/certificate_validation.csv)
-  reports the independent validation of the 155 certificate witnesses:
-  131 phasewise SSCFLP, 19 terminal SSCFLP, and 5 CI.
-- [`results/certificates/mscflp_certificates.csv`](results/certificates/mscflp_certificates.csv)
-  lists the 209 full-model MS-CFLP certificates with their literature status
-  and proof times.
-- [`results/summaries/historical_objective_reconciliation.csv`](results/summaries/historical_objective_reconciliation.csv)
-  preserves the 13 cases in which an archived solver objective differed from
-  the objective recomputed from its saved primal vector.
-- Each run's metadata stores the SHA-256 of its released solution, logs, and
-  progress trace; each certificate record stores the hashes of its proof files.
+## Environment
 
-The release environment was Python 3.13.12, NumPy 2.4.3, Gurobi 13.0.1,
-Windows 11 Pro, and an AMD Ryzen 9 9950X with 64 GB RAM.  The timed experiments
-used one solver thread.
+The reported runs used Python 3.13.12, NumPy 2.4.3 and Gurobi 13.0.1 on
+Windows 11 with an AMD Ryzen 9 9950X (64 GB RAM).
 
-## Licensing
+## License
 
-Source code is released under the MIT License.  Result tables, logs, metadata,
-and generated solution artifacts are released under CC BY 4.0; see
-[`LICENSE-DATA`](LICENSE-DATA).  Original benchmark data remain under their
-respective authors' terms.
+Code: MIT ([`LICENSE`](LICENSE)). Results, logs and solutions: CC BY 4.0
+([`LICENSE-DATA`](LICENSE-DATA)). The benchmark instances keep their original
+terms.

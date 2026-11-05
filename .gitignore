@@ -14,3 +14,7 @@ dist/
 
 # Benchmark files are distributed by their original authors.
 instances/
+
+# Default output folders of the scripts.
+runs/
+proof/

@@ -40,7 +40,7 @@
   "verification_arcs": 381507,
   "optimal_solution": {
     "path": "certificates/sscflp/records/p800-4400-70/optimal_solution.csv.gz",
-    "sha256": "521647fc4516b2c052912b328b34307e2286bbafbfd578653ae3ff9eb77a8899"
+    "sha256": "80025f34ebfb6e7ddf190b9a5424d9a8c2b32153e52a6f1abbfaa989b919db15"
   },
   "verification_log_available": true
 }

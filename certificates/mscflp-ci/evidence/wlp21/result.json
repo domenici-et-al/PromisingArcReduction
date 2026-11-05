@@ -1,0 +1,1213 @@
+{
+  "nome": "wlp21",
+  "caminho_instancia": "historical-source:instances/mess/hidden/wlp21.dzn",
+  "metodo": "lazy_fluxo_inteiro_reforcado",
+  "status": "otimo",
+  "tem_solucao": true,
+  "objetivo": 38067.0,
+  "melhor_limite": 38067.0,
+  "gap": 0.0,
+  "tempo": 8.171058177947998,
+  "runtime_gurobi": 8.16599988937378,
+  "nos_explorados": 292.0,
+  "iteracoes_simplex": 15693.0,
+  "solucoes_encontradas": 10,
+  "memoria_maxima_gb": 0.135189565,
+  "cortes_lazy": 209,
+  "cortes_iniciais": 0,
+  "cortes_empacotamento_incompat": 0,
+  "cortes_cliques_rank": 0,
+  "modo_cortes_iniciais": "none",
+  "usar_cliques": false,
+  "mip_focus": 1,
+  "heuristics": 0.8,
+  "cuts": null,
+  "presolve": null,
+  "cutoff": null,
+  "x_continuo": false,
+  "usar_user_cuts": false,
+  "user_cuts": 0,
+  "user_cuts_cliques": 0,
+  "user_cuts_pares": 0,
+  "usar_user_cuts_pares_frac": false,
+  "usar_user_cuts_rhs_y": false,
+  "user_cuts_limite_root": 300,
+  "user_cuts_min_a": 0.05,
+  "user_cuts_max_clientes_deposito": 80,
+  "user_cuts_max_pares_deposito": 200,
+  "user_cuts_todos_clientes": false,
+  "usar_incompat_rhs_y": false,
+  "limite_fornecedores_modelo": null,
+  "arquivo_start": null,
+  "usar_t1_t2_y": false,
+  "t1_top": 20,
+  "t2_top": 6,
+  "usar_branch_score_y": false,
+  "branch_score_top": null,
+  "usar_var_hint_start_y": false,
+  "usar_branch_start_y": false,
+  "usar_branch_scaffold_start_y": false,
+  "branch_scaffold_buckets_adicoes": [],
+  "branch_scaffold_buckets_remocoes": [],
+  "branch_scaffold_politica": "indice",
+  "branch_scaffold_info": null,
+  "arquivo_hot_guide": null,
+  "usar_hot_branch": false,
+  "usar_hot_cuts": false,
+  "usar_hot_x_cuts": false,
+  "hot_branch_a": 0,
+  "hot_branch_y": 0,
+  "hot_cuts_pares": 0,
+  "hot_cuts_cliques": 0,
+  "hot_cuts_x": 0,
+  "pause_file": null,
+  "resume_file": null,
+  "stop_file": null,
+  "estado_arquivo": "historical-source:resultados/full_lazy_baseline_10sqrt/basic/wlp21/resultado_solver/wlp21_estado_prova.json",
+  "pausas": 0,
+  "tempo_pausado": 0.0,
+  "hamming_start_y": null,
+  "hamming_min_start_y": null,
+  "remocoes_min_start_y": null,
+  "remocoes_max_start_y": null,
+  "adicoes_min_start_y": null,
+  "adicoes_max_start_y": null,
+  "k_min_abertos": null,
+  "k_max_abertos": null,
+  "cap_min_aberta": null,
+  "cap_max_aberta": null,
+  "custo_fixo_min": null,
+  "custo_fixo_max": null,
+  "transporte_min": null,
+  "transporte_max": null,
+  "usar_corte_saturacao_capacidade": false,
+  "cortes_saturacao_capacidade": 0,
+  "usar_corte_custo_fixo": false,
+  "ub_prova": null,
+  "limite_custo_fixo_aberto": null,
+  "transporte_lb_custo_fixo": null,
+  "usar_empacotamento_incompat": false,
+  "top_k_empacotamento": null,
+  "usar_cliques_rank": false,
+  "camadas_cliques_rank": null,
+  "max_cliques_rank_por_deposito": 20,
+  "arquivo_restricoes_y": null,
+  "restricoes_y_arquivo": null,
+  "bound_t1_t2": null,
+  "ganho_t1_t2": null,
+  "tempo_t1_t2": null,
+  "melhor_variavel_t1": null,
+  "tempo_primeira_solucao": 0.006000041961669922,
+  "tempo_melhor_solucao": 7.603999853134155,
+  "melhor_obj_25pct_tempo": null,
+  "melhor_bound_25pct_tempo": null,
+  "melhor_obj_50pct_tempo": null,
+  "melhor_bound_50pct_tempo": null,
+  "melhor_obj_75pct_tempo": null,
+  "melhor_bound_75pct_tempo": null,
+  "tempo_callback": 0.49548816680908203,
+  "top_k_efetivo": 20,
+  "max_cortes_por_par": 0,
+  "depositos_abertos": [
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    10,
+    11,
+    12,
+    14,
+    17,
+    20,
+    25,
+    26,
+    28,
+    29,
+    30,
+    33,
+    36,
+    39,
+    42,
+    43,
+    44,
+    46,
+    47,
+    49,
+    54,
+    55,
+    56,
+    57,
+    58,
+    59,
+    61,
+    63,
+    65,
+    66,
+    68,
+    69,
+    70,
+    71,
+    74
+  ],
+  "atendimentos_positivos": [
+    {
+      "cliente": 1,
+      "deposito": 5,
+      "quantidade": 1
+    },
+    {
+      "cliente": 1,
+      "deposito": 7,
+      "quantidade": 11
+    },
+    {
+      "cliente": 2,
+      "deposito": 7,
+      "quantidade": 9
+    },
+    {
+      "cliente": 3,
+      "deposito": 14,
+      "quantidade": 14
+    },
+    {
+      "cliente": 4,
+      "deposito": 11,
+      "quantidade": 3
+    },
+    {
+      "cliente": 4,
+      "deposito": 36,
+      "quantidade": 6
+    },
+    {
+      "cliente": 5,
+      "deposito": 17,
+      "quantidade": 9
+    },
+    {
+      "cliente": 6,
+      "deposito": 29,
+      "quantidade": 13
+    },
+    {
+      "cliente": 6,
+      "deposito": 74,
+      "quantidade": 7
+    },
+    {
+      "cliente": 7,
+      "deposito": 59,
+      "quantidade": 17
+    },
+    {
+      "cliente": 8,
+      "deposito": 30,
+      "quantidade": 11
+    },
+    {
+      "cliente": 8,
+      "deposito": 42,
+      "quantidade": 8
+    },
+    {
+      "cliente": 9,
+      "deposito": 74,
+      "quantidade": 13
+    },
+    {
+      "cliente": 10,
+      "deposito": 59,
+      "quantidade": 13
+    },
+    {
+      "cliente": 10,
+      "deposito": 71,
+      "quantidade": 7
+    },
+    {
+      "cliente": 11,
+      "deposito": 49,
+      "quantidade": 9
+    },
+    {
+      "cliente": 12,
+      "deposito": 61,
+      "quantidade": 5
+    },
+    {
+      "cliente": 13,
+      "deposito": 43,
+      "quantidade": 12
+    },
+    {
+      "cliente": 14,
+      "deposito": 28,
+      "quantidade": 5
+    },
+    {
+      "cliente": 15,
+      "deposito": 14,
+      "quantidade": 8
+    },
+    {
+      "cliente": 16,
+      "deposito": 69,
+      "quantidade": 7
+    },
+    {
+      "cliente": 17,
+      "deposito": 58,
+      "quantidade": 9
+    },
+    {
+      "cliente": 18,
+      "deposito": 65,
+      "quantidade": 12
+    },
+    {
+      "cliente": 19,
+      "deposito": 63,
+      "quantidade": 6
+    },
+    {
+      "cliente": 20,
+      "deposito": 11,
+      "quantidade": 12
+    },
+    {
+      "cliente": 21,
+      "deposito": 57,
+      "quantidade": 10
+    },
+    {
+      "cliente": 21,
+      "deposito": 70,
+      "quantidade": 9
+    },
+    {
+      "cliente": 22,
+      "deposito": 71,
+      "quantidade": 16
+    },
+    {
+      "cliente": 23,
+      "deposito": 14,
+      "quantidade": 8
+    },
+    {
+      "cliente": 23,
+      "deposito": 20,
+      "quantidade": 2
+    },
+    {
+      "cliente": 23,
+      "deposito": 29,
+      "quantidade": 3
+    },
+    {
+      "cliente": 24,
+      "deposito": 44,
+      "quantidade": 16
+    },
+    {
+      "cliente": 25,
+      "deposito": 71,
+      "quantidade": 9
+    },
+    {
+      "cliente": 26,
+      "deposito": 5,
+      "quantidade": 12
+    },
+    {
+      "cliente": 27,
+      "deposito": 6,
+      "quantidade": 18
+    },
+    {
+      "cliente": 28,
+      "deposito": 39,
+      "quantidade": 17
+    },
+    {
+      "cliente": 29,
+      "deposito": 33,
+      "quantidade": 12
+    },
+    {
+      "cliente": 29,
+      "deposito": 68,
+      "quantidade": 4
+    },
+    {
+      "cliente": 30,
+      "deposito": 26,
+      "quantidade": 17
+    },
+    {
+      "cliente": 31,
+      "deposito": 26,
+      "quantidade": 13
+    },
+    {
+      "cliente": 32,
+      "deposito": 46,
+      "quantidade": 8
+    },
+    {
+      "cliente": 33,
+      "deposito": 7,
+      "quantidade": 17
+    },
+    {
+      "cliente": 34,
+      "deposito": 63,
+      "quantidade": 6
+    },
+    {
+      "cliente": 35,
+      "deposito": 4,
+      "quantidade": 18
+    },
+    {
+      "cliente": 36,
+      "deposito": 69,
+      "quantidade": 5
+    },
+    {
+      "cliente": 37,
+      "deposito": 33,
+      "quantidade": 2
+    },
+    {
+      "cliente": 37,
+      "deposito": 71,
+      "quantidade": 4
+    },
+    {
+      "cliente": 38,
+      "deposito": 70,
+      "quantidade": 9
+    },
+    {
+      "cliente": 39,
+      "deposito": 44,
+      "quantidade": 9
+    },
+    {
+      "cliente": 40,
+      "deposito": 42,
+      "quantidade": 18
+    },
+    {
+      "cliente": 41,
+      "deposito": 74,
+      "quantidade": 8
+    },
+    {
+      "cliente": 42,
+      "deposito": 54,
+      "quantidade": 10
+    },
+    {
+      "cliente": 43,
+      "deposito": 54,
+      "quantidade": 20
+    },
+    {
+      "cliente": 44,
+      "deposito": 7,
+      "quantidade": 11
+    },
+    {
+      "cliente": 45,
+      "deposito": 20,
+      "quantidade": 5
+    },
+    {
+      "cliente": 45,
+      "deposito": 55,
+      "quantidade": 8
+    },
+    {
+      "cliente": 46,
+      "deposito": 1,
+      "quantidade": 6
+    },
+    {
+      "cliente": 47,
+      "deposito": 44,
+      "quantidade": 20
+    },
+    {
+      "cliente": 48,
+      "deposito": 33,
+      "quantidade": 16
+    },
+    {
+      "cliente": 49,
+      "deposito": 26,
+      "quantidade": 6
+    },
+    {
+      "cliente": 50,
+      "deposito": 69,
+      "quantidade": 7
+    },
+    {
+      "cliente": 51,
+      "deposito": 1,
+      "quantidade": 10
+    },
+    {
+      "cliente": 52,
+      "deposito": 65,
+      "quantidade": 15
+    },
+    {
+      "cliente": 53,
+      "deposito": 11,
+      "quantidade": 7
+    },
+    {
+      "cliente": 54,
+      "deposito": 65,
+      "quantidade": 10
+    },
+    {
+      "cliente": 55,
+      "deposito": 29,
+      "quantidade": 12
+    },
+    {
+      "cliente": 56,
+      "deposito": 39,
+      "quantidade": 18
+    },
+    {
+      "cliente": 57,
+      "deposito": 1,
+      "quantidade": 13
+    },
+    {
+      "cliente": 58,
+      "deposito": 44,
+      "quantidade": 15
+    },
+    {
+      "cliente": 58,
+      "deposito": 69,
+      "quantidade": 3
+    },
+    {
+      "cliente": 59,
+      "deposito": 7,
+      "quantidade": 4
+    },
+    {
+      "cliente": 59,
+      "deposito": 63,
+      "quantidade": 3
+    },
+    {
+      "cliente": 60,
+      "deposito": 1,
+      "quantidade": 20
+    },
+    {
+      "cliente": 61,
+      "deposito": 68,
+      "quantidade": 9
+    },
+    {
+      "cliente": 62,
+      "deposito": 71,
+      "quantidade": 16
+    },
+    {
+      "cliente": 63,
+      "deposito": 71,
+      "quantidade": 10
+    },
+    {
+      "cliente": 64,
+      "deposito": 4,
+      "quantidade": 13
+    },
+    {
+      "cliente": 65,
+      "deposito": 7,
+      "quantidade": 11
+    },
+    {
+      "cliente": 66,
+      "deposito": 59,
+      "quantidade": 20
+    },
+    {
+      "cliente": 67,
+      "deposito": 20,
+      "quantidade": 14
+    },
+    {
+      "cliente": 68,
+      "deposito": 2,
+      "quantidade": 15
+    },
+    {
+      "cliente": 69,
+      "deposito": 11,
+      "quantidade": 13
+    },
+    {
+      "cliente": 69,
+      "deposito": 74,
+      "quantidade": 5
+    },
+    {
+      "cliente": 70,
+      "deposito": 66,
+      "quantidade": 14
+    },
+    {
+      "cliente": 71,
+      "deposito": 68,
+      "quantidade": 18
+    },
+    {
+      "cliente": 72,
+      "deposito": 4,
+      "quantidade": 6
+    },
+    {
+      "cliente": 73,
+      "deposito": 10,
+      "quantidade": 11
+    },
+    {
+      "cliente": 74,
+      "deposito": 1,
+      "quantidade": 9
+    },
+    {
+      "cliente": 75,
+      "deposito": 12,
+      "quantidade": 14
+    },
+    {
+      "cliente": 75,
+      "deposito": 39,
+      "quantidade": 4
+    },
+    {
+      "cliente": 76,
+      "deposito": 55,
+      "quantidade": 7
+    },
+    {
+      "cliente": 77,
+      "deposito": 71,
+      "quantidade": 5
+    },
+    {
+      "cliente": 78,
+      "deposito": 25,
+      "quantidade": 11
+    },
+    {
+      "cliente": 78,
+      "deposito": 47,
+      "quantidade": 1
+    },
+    {
+      "cliente": 79,
+      "deposito": 2,
+      "quantidade": 9
+    },
+    {
+      "cliente": 80,
+      "deposito": 10,
+      "quantidade": 19
+    },
+    {
+      "cliente": 81,
+      "deposito": 74,
+      "quantidade": 8
+    },
+    {
+      "cliente": 82,
+      "deposito": 61,
+      "quantidade": 10
+    },
+    {
+      "cliente": 83,
+      "deposito": 43,
+      "quantidade": 8
+    },
+    {
+      "cliente": 84,
+      "deposito": 25,
+      "quantidade": 2
+    },
+    {
+      "cliente": 84,
+      "deposito": 46,
+      "quantidade": 3
+    },
+    {
+      "cliente": 85,
+      "deposito": 56,
+      "quantidade": 15
+    },
+    {
+      "cliente": 86,
+      "deposito": 36,
+      "quantidade": 13
+    },
+    {
+      "cliente": 87,
+      "deposito": 63,
+      "quantidade": 7
+    },
+    {
+      "cliente": 88,
+      "deposito": 55,
+      "quantidade": 7
+    },
+    {
+      "cliente": 89,
+      "deposito": 20,
+      "quantidade": 11
+    },
+    {
+      "cliente": 89,
+      "deposito": 58,
+      "quantidade": 6
+    },
+    {
+      "cliente": 90,
+      "deposito": 55,
+      "quantidade": 19
+    },
+    {
+      "cliente": 91,
+      "deposito": 66,
+      "quantidade": 15
+    },
+    {
+      "cliente": 92,
+      "deposito": 25,
+      "quantidade": 17
+    },
+    {
+      "cliente": 93,
+      "deposito": 36,
+      "quantidade": 13
+    },
+    {
+      "cliente": 94,
+      "deposito": 71,
+      "quantidade": 6
+    },
+    {
+      "cliente": 95,
+      "deposito": 4,
+      "quantidade": 3
+    },
+    {
+      "cliente": 95,
+      "deposito": 10,
+      "quantidade": 1
+    },
+    {
+      "cliente": 95,
+      "deposito": 46,
+      "quantidade": 9
+    },
+    {
+      "cliente": 96,
+      "deposito": 25,
+      "quantidade": 6
+    },
+    {
+      "cliente": 96,
+      "deposito": 68,
+      "quantidade": 7
+    },
+    {
+      "cliente": 97,
+      "deposito": 17,
+      "quantidade": 19
+    },
+    {
+      "cliente": 98,
+      "deposito": 1,
+      "quantidade": 7
+    },
+    {
+      "cliente": 99,
+      "deposito": 54,
+      "quantidade": 20
+    },
+    {
+      "cliente": 100,
+      "deposito": 28,
+      "quantidade": 5
+    },
+    {
+      "cliente": 100,
+      "deposito": 30,
+      "quantidade": 1
+    },
+    {
+      "cliente": 100,
+      "deposito": 56,
+      "quantidade": 8
+    },
+    {
+      "cliente": 101,
+      "deposito": 17,
+      "quantidade": 12
+    },
+    {
+      "cliente": 101,
+      "deposito": 61,
+      "quantidade": 5
+    },
+    {
+      "cliente": 102,
+      "deposito": 49,
+      "quantidade": 7
+    },
+    {
+      "cliente": 103,
+      "deposito": 12,
+      "quantidade": 20
+    },
+    {
+      "cliente": 104,
+      "deposito": 5,
+      "quantidade": 5
+    },
+    {
+      "cliente": 105,
+      "deposito": 58,
+      "quantidade": 16
+    },
+    {
+      "cliente": 106,
+      "deposito": 5,
+      "quantidade": 8
+    },
+    {
+      "cliente": 107,
+      "deposito": 1,
+      "quantidade": 14
+    },
+    {
+      "cliente": 107,
+      "deposito": 17,
+      "quantidade": 2
+    },
+    {
+      "cliente": 108,
+      "deposito": 70,
+      "quantidade": 20
+    },
+    {
+      "cliente": 109,
+      "deposito": 69,
+      "quantidade": 20
+    },
+    {
+      "cliente": 110,
+      "deposito": 1,
+      "quantidade": 1
+    },
+    {
+      "cliente": 110,
+      "deposito": 68,
+      "quantidade": 8
+    },
+    {
+      "cliente": 111,
+      "deposito": 6,
+      "quantidade": 13
+    },
+    {
+      "cliente": 112,
+      "deposito": 12,
+      "quantidade": 16
+    },
+    {
+      "cliente": 113,
+      "deposito": 47,
+      "quantidade": 16
+    },
+    {
+      "cliente": 114,
+      "deposito": 5,
+      "quantidade": 8
+    },
+    {
+      "cliente": 115,
+      "deposito": 17,
+      "quantidade": 11
+    },
+    {
+      "cliente": 116,
+      "deposito": 69,
+      "quantidade": 8
+    },
+    {
+      "cliente": 117,
+      "deposito": 29,
+      "quantidade": 16
+    },
+    {
+      "cliente": 118,
+      "deposito": 47,
+      "quantidade": 13
+    },
+    {
+      "cliente": 119,
+      "deposito": 2,
+      "quantidade": 13
+    },
+    {
+      "cliente": 120,
+      "deposito": 55,
+      "quantidade": 9
+    },
+    {
+      "cliente": 121,
+      "deposito": 3,
+      "quantidade": 7
+    },
+    {
+      "cliente": 122,
+      "deposito": 39,
+      "quantidade": 1
+    },
+    {
+      "cliente": 122,
+      "deposito": 63,
+      "quantidade": 8
+    },
+    {
+      "cliente": 123,
+      "deposito": 43,
+      "quantidade": 10
+    },
+    {
+      "cliente": 123,
+      "deposito": 46,
+      "quantidade": 8
+    },
+    {
+      "cliente": 124,
+      "deposito": 49,
+      "quantidade": 8
+    },
+    {
+      "cliente": 125,
+      "deposito": 36,
+      "quantidade": 17
+    },
+    {
+      "cliente": 126,
+      "deposito": 3,
+      "quantidade": 13
+    },
+    {
+      "cliente": 126,
+      "deposito": 26,
+      "quantidade": 5
+    },
+    {
+      "cliente": 126,
+      "deposito": 70,
+      "quantidade": 2
+    },
+    {
+      "cliente": 127,
+      "deposito": 69,
+      "quantidade": 10
+    },
+    {
+      "cliente": 128,
+      "deposito": 68,
+      "quantidade": 14
+    },
+    {
+      "cliente": 129,
+      "deposito": 25,
+      "quantidade": 16
+    },
+    {
+      "cliente": 130,
+      "deposito": 6,
+      "quantidade": 17
+    },
+    {
+      "cliente": 131,
+      "deposito": 11,
+      "quantidade": 9
+    },
+    {
+      "cliente": 132,
+      "deposito": 29,
+      "quantidade": 6
+    },
+    {
+      "cliente": 132,
+      "deposito": 71,
+      "quantidade": 1
+    },
+    {
+      "cliente": 133,
+      "deposito": 65,
+      "quantidade": 16
+    },
+    {
+      "cliente": 134,
+      "deposito": 56,
+      "quantidade": 9
+    },
+    {
+      "cliente": 135,
+      "deposito": 10,
+      "quantidade": 19
+    },
+    {
+      "cliente": 136,
+      "deposito": 49,
+      "quantidade": 10
+    },
+    {
+      "cliente": 137,
+      "deposito": 26,
+      "quantidade": 6
+    },
+    {
+      "cliente": 138,
+      "deposito": 46,
+      "quantidade": 12
+    },
+    {
+      "cliente": 139,
+      "deposito": 6,
+      "quantidade": 1
+    },
+    {
+      "cliente": 139,
+      "deposito": 11,
+      "quantidade": 6
+    },
+    {
+      "cliente": 140,
+      "deposito": 30,
+      "quantidade": 8
+    },
+    {
+      "cliente": 140,
+      "deposito": 54,
+      "quantidade": 10
+    },
+    {
+      "cliente": 141,
+      "deposito": 11,
+      "quantidade": 17
+    },
+    {
+      "cliente": 142,
+      "deposito": 65,
+      "quantidade": 6
+    },
+    {
+      "cliente": 143,
+      "deposito": 59,
+      "quantidade": 10
+    },
+    {
+      "cliente": 144,
+      "deposito": 7,
+      "quantidade": 7
+    },
+    {
+      "cliente": 145,
+      "deposito": 69,
+      "quantidade": 9
+    },
+    {
+      "cliente": 146,
+      "deposito": 71,
+      "quantidade": 8
+    },
+    {
+      "cliente": 147,
+      "deposito": 11,
+      "quantidade": 5
+    },
+    {
+      "cliente": 148,
+      "deposito": 5,
+      "quantidade": 9
+    },
+    {
+      "cliente": 149,
+      "deposito": 20,
+      "quantidade": 8
+    },
+    {
+      "cliente": 150,
+      "deposito": 3,
+      "quantidade": 20
+    },
+    {
+      "cliente": 151,
+      "deposito": 25,
+      "quantidade": 8
+    },
+    {
+      "cliente": 152,
+      "deposito": 71,
+      "quantidade": 12
+    },
+    {
+      "cliente": 153,
+      "deposito": 30,
+      "quantidade": 9
+    },
+    {
+      "cliente": 154,
+      "deposito": 28,
+      "quantidade": 9
+    },
+    {
+      "cliente": 154,
+      "deposito": 65,
+      "quantidade": 1
+    },
+    {
+      "cliente": 155,
+      "deposito": 66,
+      "quantidade": 8
+    },
+    {
+      "cliente": 156,
+      "deposito": 6,
+      "quantidade": 1
+    },
+    {
+      "cliente": 156,
+      "deposito": 66,
+      "quantidade": 11
+    },
+    {
+      "cliente": 157,
+      "deposito": 2,
+      "quantidade": 13
+    },
+    {
+      "cliente": 157,
+      "deposito": 26,
+      "quantidade": 3
+    },
+    {
+      "cliente": 158,
+      "deposito": 17,
+      "quantidade": 17
+    },
+    {
+      "cliente": 159,
+      "deposito": 11,
+      "quantidade": 18
+    },
+    {
+      "cliente": 160,
+      "deposito": 69,
+      "quantidade": 11
+    },
+    {
+      "cliente": 161,
+      "deposito": 36,
+      "quantidade": 12
+    },
+    {
+      "cliente": 162,
+      "deposito": 30,
+      "quantidade": 11
+    },
+    {
+      "cliente": 163,
+      "deposito": 56,
+      "quantidade": 8
+    },
+    {
+      "cliente": 163,
+      "deposito": 74,
+      "quantidade": 9
+    },
+    {
+      "cliente": 164,
+      "deposito": 42,
+      "quantidade": 14
+    },
+    {
+      "cliente": 165,
+      "deposito": 49,
+      "quantidade": 6
+    },
+    {
+      "cliente": 165,
+      "deposito": 66,
+      "quantidade": 12
+    },
+    {
+      "cliente": 166,
+      "deposito": 58,
+      "quantidade": 19
+    },
+    {
+      "cliente": 167,
+      "deposito": 5,
+      "quantidade": 6
+    },
+    {
+      "cliente": 167,
+      "deposito": 61,
+      "quantidade": 10
+    },
+    {
+      "cliente": 168,
+      "deposito": 57,
+      "quantidade": 20
+    },
+    {
+      "cliente": 169,
+      "deposito": 5,
+      "quantidade": 11
+    },
+    {
+      "cliente": 170,
+      "deposito": 4,
+      "quantidade": 20
+    },
+    {
+      "cliente": 171,
+      "deposito": 36,
+      "quantidade": 19
+    },
+    {
+      "cliente": 172,
+      "deposito": 28,
+      "quantidade": 11
+    }
+  ],
+  "arquivo_solucao": "historical-source:resultados/full_lazy_baseline_10sqrt/basic/wlp21/resultado_solver/wlp21_solucao.txt"
+}

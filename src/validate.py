@@ -1,4 +1,4 @@
-"""Independent primal validation for SSCFLP, MS-CFLP, and MS-CFLP-CI."""
+"""Check a solution against the original instance and recompute its cost."""
 
 from __future__ import annotations
 
@@ -7,7 +7,8 @@ import json
 
 import numpy as np
 
-from instances import assignment_cost, read_instance
+from instances import read_instance
+from par import PROBLEMS
 from results import read_solution
 
 
@@ -15,91 +16,65 @@ def validate(instance: dict, solution: dict, problem: str, tolerance: float = 1e
     n, m = instance["customers"], instance["facilities"]
     x = np.asarray(solution["x"], dtype=float)
     y = np.asarray(solution["y"], dtype=float)
-    a = np.asarray(solution.get("a", x > tolerance), dtype=float)
+    if x.shape != (n, m) or y.shape != (m,):
+        return {"valid": False, "errors": [f"shapes x{x.shape} y{y.shape}, expected ({n}, {m})"]}
+    demands = instance["demands"]
+    capacities = instance["capacities"]
+    costs = instance["assignment_costs"]
+    used = x > tolerance
     errors = []
-    if x.shape != (n, m):
-        return {"valid": False, "errors": [f"x shape {x.shape}, expected {(n, m)}"]}
-    if y.shape != (m,):
-        return {"valid": False, "errors": [f"y shape {y.shape}, expected {(m,)}"]}
-    if np.min(x) < -tolerance:
-        errors.append("negative flow or assignment value")
-    if np.min(y) < -tolerance or np.max(y) > 1 + tolerance:
-        errors.append("facility variable outside [0,1]")
-    if np.max(np.abs(y - np.rint(y))) > tolerance:
-        errors.append("facility variable is not binary")
 
-    demands = np.asarray(instance["demands"])
-    capacities = np.asarray(instance["capacities"])
+    def check(ok, message):
+        if not ok:
+            errors.append(message)
+
+    check(x.min() >= -tolerance, "negative x")
+    check(np.abs(y - np.rint(y)).max() <= tolerance and y.min() >= -tolerance
+          and y.max() <= 1 + tolerance, "y is not binary")
     if problem == "sscflp":
-        if np.max(np.abs(x.sum(axis=1) - 1.0)) > tolerance:
-            errors.append("single-source assignment equations violated")
-        if np.max(np.abs(x - np.rint(x))) > tolerance:
-            errors.append("single-source assignment is not binary")
+        check(np.abs(x - np.rint(x)).max() <= tolerance, "x is not binary")
+        check(np.abs(x.sum(axis=1) - 1.0).max() <= tolerance, "a customer is not assigned exactly once")
+        check(not (used & (capacities[None, :] + tolerance < demands[:, None])).any(),
+              "a customer is assigned to a facility smaller than its demand")
         flow = demands[:, None] * x
     else:
-        if np.max(np.abs(x.sum(axis=1) - demands)) > tolerance:
-            errors.append("demand equations violated")
+        check(np.abs(x.sum(axis=1) - demands).max() <= tolerance, "demand not met")
         flow = x
-    if np.max(flow.sum(axis=0) - capacities * y) > tolerance:
-        errors.append("facility capacity violated")
-    if np.max((x > tolerance).astype(float) - y[None, :]) > tolerance:
-        errors.append("assignment-to-opening link violated")
+    check((flow.sum(axis=0) - capacities * y).max() <= tolerance, "capacity exceeded")
+    check(not (used & (y[None, :] < 0.5)).any(), "flow to a closed facility")
 
-    if problem == "sscflp":
-        for i in range(n):
-            for j in np.flatnonzero(x[i] > tolerance):
-                if capacities[j] + tolerance < demands[i]:
-                    errors.append(f"ineligible assignment x[{i + 1},{j + 1}]")
-                    break
     if problem == "mscflp-ci":
-        if a.shape != (n, m):
-            errors.append(f"a shape {a.shape}, expected {(n, m)}")
-        else:
-            if np.min(a) < -tolerance or np.max(a) > 1 + tolerance:
-                errors.append("use variable outside [0,1]")
-            if np.max(np.abs(a - np.rint(a))) > tolerance:
-                errors.append("use variable is not binary")
-            if np.max((x > tolerance).astype(float) - a) > tolerance:
-                errors.append("flow-to-use link violated")
-            if np.max(a - y[None, :]) > tolerance:
-                errors.append("use-to-opening link violated")
-            used = a > 0.5
-            for i, k in instance["incompatible_pairs"]:
-                common = np.flatnonzero(used[i] & used[k])
-                if len(common):
-                    errors.append(f"incompatible customers {i + 1},{k + 1} share facility {common[0] + 1}")
-                    if len(errors) >= 20:
-                        break
+        a = np.asarray(solution.get("a", used), dtype=float)
+        check(np.abs(a - np.rint(a)).max() <= tolerance, "a is not binary")
+        check(not (used & (a < 0.5)).any(), "flow without a use variable")
+        check(not ((a > 0.5) & (y[None, :] < 0.5)).any(), "use of a closed facility")
+        for i, k in instance["incompatible_pairs"]:
+            shared = np.flatnonzero((a[i] > 0.5) & (a[k] > 0.5))
+            if len(shared):
+                errors.append(f"incompatible customers {i + 1} and {k + 1} share facility {shared[0] + 1}")
+                break
 
-    fixed = sum(instance["fixed_costs"][j] * y[j] for j in range(m))
-    if problem == "sscflp":
-        transport = sum(assignment_cost(instance, i, j) * x[i, j] for i in range(n) for j in range(m))
-    else:
-        transport = sum(instance["assignment_costs"][i][j] * x[i, j] for i in range(n) for j in range(m))
+    fixed_cost = float(instance["fixed_costs"] @ y)
+    assignment_cost = float((costs * flow).sum())
     return {
         "valid": not errors,
-        "problem": problem,
-        "instance": instance["name"],
-        "objective": float(fixed + transport),
-        "fixed_cost": float(fixed),
-        "assignment_cost": float(transport),
-        "open_facilities": int(np.count_nonzero(y > tolerance)),
-        "positive_assignments": int(np.count_nonzero(x > tolerance)),
-        "max_capacity_violation": float(max(0.0, np.max(flow.sum(axis=0) - capacities * y))),
+        "objective": fixed_cost + assignment_cost,
+        "fixed_cost": fixed_cost,
+        "assignment_cost": assignment_cost,
+        "open_facilities": int((y > 0.5).sum()),
         "errors": errors,
     }
 
 
 def main() -> None:
     parser = argparse.ArgumentParser(description=__doc__)
-    parser.add_argument("problem", choices=("sscflp", "mscflp", "mscflp-ci"))
+    parser.add_argument("problem", choices=PROBLEMS)
     parser.add_argument("instance")
-    parser.add_argument("solution")
-    parser.add_argument("--tolerance", type=float, default=1e-6)
+    parser.add_argument("solution", help="sparse .csv.gz or dense .npz file")
     args = parser.parse_args()
     instance = read_instance(args.instance)
     solution = read_solution(args.solution, instance["customers"], instance["facilities"])
-    result = validate(instance, solution, args.problem, args.tolerance)
+    result = validate(instance, solution, args.problem)
     print(json.dumps(result, indent=2))
     raise SystemExit(0 if result["valid"] else 1)
 

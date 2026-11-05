@@ -1,3 +1,5 @@
 * text=auto eol=lf
 *.gz binary
 *.npz binary
+# Keep the archived CI evidence byte for byte (its hashes are recorded).
+certificates/mscflp-ci/evidence/** -text

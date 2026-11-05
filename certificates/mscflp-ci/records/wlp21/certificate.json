@@ -1,5 +1,5 @@
 {
-  "schema_version": "1.0",
+  "schema_version": "1.1",
   "problem": "mscflp-ci",
   "instance": "wlp21",
   "status": "certified_global_optimum",
@@ -12,5 +12,45 @@
     "sha256": "5af4438618d39c849ebcc8d3a665da32a01b9f63a037272ad99041872e48e641"
   },
   "missing_solution_reason": null,
-  "note": "This index records independently audited historical full-model solver proofs. The SSCFLP pricing certificate is not claimed for CI."
+  "note": "Historical objective/classification/status preserved. Evidence level distinguishes raw global closure from historical metadata only; a validated primal alone is not an optimality proof. No solver replay was performed; see README.md.",
+  "evidence_level": "archived_global_closure_and_validated_primal",
+  "raw_bound_closure_available": true,
+  "primal_provenance": {
+    "source_label": "public-repository:certificates/mscflp-ci/records/wlp21/optimal_solution.csv.gz",
+    "source_sha256": "5af4438618d39c849ebcc8d3a665da32a01b9f63a037272ad99041872e48e641",
+    "packaged_path": "certificates/mscflp-ci/records/wlp21/optimal_solution.csv.gz",
+    "packaged_sha256": "5af4438618d39c849ebcc8d3a665da32a01b9f63a037272ad99041872e48e641",
+    "transformation": "existing_public_witness_unchanged",
+    "role": "existing_public_primal"
+  },
+  "validation": {
+    "valid": true,
+    "arithmetic": "exact_integer_no_rounding_no_tolerance",
+    "objective": 38067,
+    "fixed_cost": 20890,
+    "assignment_cost": 17177,
+    "customers": 172,
+    "facilities": 75,
+    "incompatible_pairs_checked": 879,
+    "open_facilities": 42,
+    "positive_assignments": 211,
+    "violations": 0,
+    "instance_sha256": "02106f20f23f682d0b4c4957434ad0e7d416390cdd875112be08146f5fa0afdd",
+    "solution_sha256": "5af4438618d39c849ebcc8d3a665da32a01b9f63a037272ad99041872e48e641"
+  },
+  "bound_consistency": {
+    "objective_bound_consistent": true,
+    "basis": "archived_full_space_global_bound_plus_exact_feasible_upper_bound",
+    "archived_global_bound": "38067.0",
+    "cutoff": null
+  },
+  "archived_evidence": [
+    "certificates/mscflp-ci/evidence/wlp21/result.json",
+    "certificates/mscflp-ci/evidence/wlp21/gurobi.log"
+  ],
+  "historical_metadata": [
+    "certificates/mscflp-ci/evidence/historical/resumo_exato_principal.csv",
+    "certificates/mscflp-ci/evidence/historical/optimum_proof_metadata.csv"
+  ],
+  "recovery_manifest": "certificates/mscflp-ci/recovery_manifest.json"
 }

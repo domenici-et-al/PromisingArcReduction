@@ -1,5 +1,4 @@
 {
-  "schema_version": "1.0",
   "sscflp": {
     "time_limit_seconds": 600,
     "time_scope": "end_to_end",
@@ -25,13 +24,18 @@
     "conflict_rows": "materialize only intersections of retained customer candidate sets"
   },
   "sscflp_certification": {
-    "threads": 16,
+    "threads": 8,
     "seed": 0,
     "time_limit_seconds": null,
     "max_pricing_iterations": 100,
     "reduced_cost_tolerance": 1e-7,
     "relative_proof_tolerance": 1e-9,
-    "absolute_proof_tolerance": 1e-6
+    "absolute_proof_tolerance": 1e-6,
+    "threads_16": [
+      "p800-4400-51",
+      "p1200-3000-60",
+      "p2000-2000-67"
+    ]
   },
   "mscflp_ci_certification": {
     "model": "full_assignment_graph",
@@ -39,8 +43,16 @@
     "threads": 16,
     "seed": 0,
     "time_limit_seconds": null,
-    "max_full_assignment_arcs": 2000000,
     "relative_proof_tolerance": 1e-9,
     "absolute_proof_tolerance": 1e-6
+  },
+  "mscflp_certification": {
+    "model": "full_assignment_graph",
+    "start": "PAR solution with the transportation reoptimized",
+    "threads": 1,
+    "seed": 0,
+    "time_limit_seconds": null,
+    "tolerances": 1e-8,
+    "mip_gap_abs": 1e-7
   }
 }

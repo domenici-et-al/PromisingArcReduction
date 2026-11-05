@@ -36,7 +36,7 @@
   "files": {
     "pricing_iterations": {
       "path": "certificates/sscflp/records/p2000-2000-85/pricing_iterations.csv",
-      "sha256": "379b4fe2d1b242df88ab85c60003ed6c31e3459447a8a72febc22e26e35be4a2"
+      "sha256": "c31dc32296ec94caf5c473b54c95b3b9e3b40e7ee3891e3147f915791c93a910"
     },
     "verification_log": {
       "path": "certificates/sscflp/records/p2000-2000-85/verification.log.gz",

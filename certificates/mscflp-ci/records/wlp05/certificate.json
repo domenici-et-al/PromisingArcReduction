@@ -1,13 +1,55 @@
 {
-  "schema_version": "1.0",
+  "schema_version": "1.1",
   "problem": "mscflp-ci",
   "instance": "wlp05",
   "status": "certified_global_optimum",
   "classification": "first_optimality_proof",
   "objective": 103829.0,
   "proof_metadata_consistent": true,
-  "optimal_solution_available": false,
-  "optimal_solution": null,
-  "missing_solution_reason": "No exact primal witness was preserved in the available archive.",
-  "note": "This index records independently audited historical full-model solver proofs. The SSCFLP pricing certificate is not claimed for CI."
+  "optimal_solution_available": true,
+  "optimal_solution": {
+    "path": "certificates/mscflp-ci/records/wlp05/optimal_solution.csv.gz",
+    "sha256": "0cda7a6dba3f8a2f06e7cfb26f4c135654773af5e86e70297e2c548a45f035fe"
+  },
+  "missing_solution_reason": null,
+  "note": "Historical objective/classification/status preserved. Evidence level distinguishes raw global closure from historical metadata only; a validated primal alone is not an optimality proof. No solver replay was performed; see README.md.",
+  "evidence_level": "historical_metadata_and_validated_primal",
+  "raw_bound_closure_available": false,
+  "primal_provenance": {
+    "source_label": "ms_cflp_ci/results/proof_artifacts_ci_20260725/validated_witnesses/wlp05_exact_solution.txt",
+    "source_sha256": "41d2aa1c3bcf4dcc9ddd4a8125ee0176b514ec11cf9aaaaea066edcb0eb31a61",
+    "packaged_path": "certificates/mscflp-ci/records/wlp05/optimal_solution.csv.gz",
+    "packaged_sha256": "0cda7a6dba3f8a2f06e7cfb26f4c135654773af5e86e70297e2c548a45f035fe",
+    "transformation": "integer_matrix_to_sparse_x_y_a_gzip_mtime_zero",
+    "role": "recovered_primal_not_original_proof_run_vector"
+  },
+  "validation": {
+    "valid": true,
+    "arithmetic": "exact_integer_no_rounding_no_tolerance",
+    "objective": 103829,
+    "fixed_cost": 69550,
+    "assignment_cost": 34279,
+    "customers": 601,
+    "facilities": 250,
+    "incompatible_pairs_checked": 9750,
+    "open_facilities": 128,
+    "positive_assignments": 713,
+    "violations": 0,
+    "instance_sha256": "4793ee42fabcb92af27061eb334c309817a8b63c95d686001a2d0edce962abb1",
+    "solution_sha256": "0cda7a6dba3f8a2f06e7cfb26f4c135654773af5e86e70297e2c548a45f035fe"
+  },
+  "bound_consistency": {
+    "objective_bound_consistent": true,
+    "basis": "historical_metadata_only_not_raw_closure",
+    "archived_global_bound": null,
+    "cutoff": null
+  },
+  "archived_evidence": [
+    "certificates/mscflp-ci/evidence/wlp05/primal_source_result.json"
+  ],
+  "historical_metadata": [
+    "certificates/mscflp-ci/evidence/historical/resumo_exato_principal.csv",
+    "certificates/mscflp-ci/evidence/historical/optimum_proof_metadata.csv"
+  ],
+  "recovery_manifest": "certificates/mscflp-ci/recovery_manifest.json"
 }

@@ -1,0 +1,59 @@
+{
+  "purpose": "Canonical independently validated primal witnesses for archived MS-CFLP-CI optimality proofs.",
+  "validation_code": "historical-source:ms_cflp_ci/code/validate_solution.py",
+  "generated_on": "2026-07-25",
+  "records": [
+    {
+      "instance": "wlp04",
+      "objective": 84633.0,
+      "instance_file": "historical-source:instances/mess/wlp04.dzn",
+      "instance_sha256": "57d6334883169713bb62b51414329f2b0fbbc848b7a62594f91966ce786ff8ac",
+      "source_file": "historical-source:ms_cflp_ci/results/final_runs/fixed_q/fixed_q_15_10sqrt/results/wlp04_par_solution.txt",
+      "canonical_file": "historical-source:ms_cflp_ci/results/proof_artifacts_ci_20260725/validated_witnesses/wlp04_exact_solution.txt",
+      "solution_sha256": "674a796a464a0856f941246369a1d0d97de57b33b0e4420c7a03b7a565469286",
+      "feasible": true,
+      "violations": 0,
+      "fixed_cost": 54160.0,
+      "assignment_cost": 30473.0
+    },
+    {
+      "instance": "wlp05",
+      "objective": 103829.0,
+      "instance_file": "historical-source:instances/mess/wlp05.dzn",
+      "instance_sha256": "4793ee42fabcb92af27061eb334c309817a8b63c95d686001a2d0edce962abb1",
+      "source_file": "historical-source:ms_cflp_ci/results/ci_simplification_6_20260713/ci_local_6/results/wlp05_par_solution.txt",
+      "canonical_file": "historical-source:ms_cflp_ci/results/proof_artifacts_ci_20260725/validated_witnesses/wlp05_exact_solution.txt",
+      "solution_sha256": "41d2aa1c3bcf4dcc9ddd4a8125ee0176b514ec11cf9aaaaea066edcb0eb31a61",
+      "feasible": true,
+      "violations": 0,
+      "fixed_cost": 69550.0,
+      "assignment_cost": 34279.0
+    },
+    {
+      "instance": "wlp22",
+      "objective": 74466.0,
+      "instance_file": "historical-source:instances/mess/hidden/wlp22.dzn",
+      "instance_sha256": "72c156d28f45d3ba6938112965c4403a30d7aa3eb07d7499c19f67c1d937434e",
+      "source_file": "historical-source:ms_cflp_ci/results/final_runs/baseline_par/par_10sqrt/results/wlp22_par_solution.txt",
+      "canonical_file": "historical-source:ms_cflp_ci/results/proof_artifacts_ci_20260725/validated_witnesses/wlp22_exact_solution.txt",
+      "solution_sha256": "5ef36a3f188bc8be35e82a41dcff958cc3e891500beabdaf6d77aeee73b4103d",
+      "feasible": true,
+      "violations": 0,
+      "fixed_cost": 47280.0,
+      "assignment_cost": 27186.0
+    },
+    {
+      "instance": "wlp06",
+      "objective": 111499.0,
+      "instance_file": "historical-source:instances/mess/wlp06.dzn",
+      "instance_sha256": "798e83efc2d4226f299d5490c3520b16b09da1de4938b2555b5f212d8bd1b2a4",
+      "source_file": "historical-source:ms_cflp_ci/results/proof_artifacts_ci_20260725/wlp06_q14_seed24_bridge_hamming0/wlp06_exact_solution.txt",
+      "canonical_file": "historical-source:ms_cflp_ci/results/proof_artifacts_ci_20260725/validated_witnesses/wlp06_exact_solution.txt",
+      "solution_sha256": "07e1cfdc188c491e7c25a9e5f4e352caf016e266ef7bb04723833bdb1b9cfd9b",
+      "feasible": true,
+      "violations": 0,
+      "fixed_cost": 77130.0,
+      "assignment_cost": 34369.0
+    }
+  ]
+}

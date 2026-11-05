@@ -1,13 +1,56 @@
 {
-  "schema_version": "1.0",
+  "schema_version": "1.1",
   "problem": "mscflp-ci",
   "instance": "wlp22",
   "status": "certified_global_optimum",
   "classification": "first_optimality_proof",
   "objective": 74466.0,
   "proof_metadata_consistent": true,
-  "optimal_solution_available": false,
-  "optimal_solution": null,
-  "missing_solution_reason": "No exact primal witness was preserved in the available archive.",
-  "note": "This index records independently audited historical full-model solver proofs. The SSCFLP pricing certificate is not claimed for CI."
+  "optimal_solution_available": true,
+  "optimal_solution": {
+    "path": "certificates/mscflp-ci/records/wlp22/optimal_solution.csv.gz",
+    "sha256": "fd71540b7107817197439f61a5c8cb155c6d08d77d6b74ddf1632cd6d450b53f"
+  },
+  "missing_solution_reason": null,
+  "note": "Historical objective/classification/status preserved. Evidence level distinguishes raw global closure from historical metadata only; a validated primal alone is not an optimality proof. No solver replay was performed; see README.md.",
+  "evidence_level": "archived_integer_cutoff_and_validated_primal",
+  "raw_bound_closure_available": true,
+  "primal_provenance": {
+    "source_label": "ms_cflp_ci/results/proof_artifacts_ci_20260725/validated_witnesses/wlp22_exact_solution.txt",
+    "source_sha256": "5ef36a3f188bc8be35e82a41dcff958cc3e891500beabdaf6d77aeee73b4103d",
+    "packaged_path": "certificates/mscflp-ci/records/wlp22/optimal_solution.csv.gz",
+    "packaged_sha256": "fd71540b7107817197439f61a5c8cb155c6d08d77d6b74ddf1632cd6d450b53f",
+    "transformation": "integer_matrix_to_sparse_x_y_a_gzip_mtime_zero",
+    "role": "recovered_primal_not_original_proof_run_vector"
+  },
+  "validation": {
+    "valid": true,
+    "arithmetic": "exact_integer_no_rounding_no_tolerance",
+    "objective": 74466,
+    "fixed_cost": 47280,
+    "assignment_cost": 27186,
+    "customers": 428,
+    "facilities": 175,
+    "incompatible_pairs_checked": 4744,
+    "open_facilities": 88,
+    "positive_assignments": 507,
+    "violations": 0,
+    "instance_sha256": "72c156d28f45d3ba6938112965c4403a30d7aa3eb07d7499c19f67c1d937434e",
+    "solution_sha256": "fd71540b7107817197439f61a5c8cb155c6d08d77d6b74ddf1632cd6d450b53f"
+  },
+  "bound_consistency": {
+    "objective_bound_consistent": true,
+    "basis": "archived_full_space_integer_cutoff_plus_exact_feasible_upper_bound",
+    "archived_global_bound": "74465.50000744667",
+    "cutoff": "74465.5"
+  },
+  "archived_evidence": [
+    "certificates/mscflp-ci/evidence/wlp22/result.json",
+    "certificates/mscflp-ci/evidence/wlp22/gurobi.log"
+  ],
+  "historical_metadata": [
+    "certificates/mscflp-ci/evidence/historical/resumo_exato_principal.csv",
+    "certificates/mscflp-ci/evidence/historical/optimum_proof_metadata.csv"
+  ],
+  "recovery_manifest": "certificates/mscflp-ci/recovery_manifest.json"
 }

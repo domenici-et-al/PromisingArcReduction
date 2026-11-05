@@ -1,0 +1,100 @@
+{
+  "schema_version": "1.0",
+  "problem": "mscflp-ci",
+  "instance": "wlp02",
+  "status": "certified_global_optimum",
+  "solver_status": "optimal",
+  "classification": "incumbent_certified",
+  "certified": true,
+  "started_at": "2026-07-20T16:33:52-03:00",
+  "finished_at": "2026-07-20T16:35:07-03:00",
+  "input_incumbent_objective": 52952.0,
+  "objective": 52952.0,
+  "best_bound": 52952.0,
+  "solver_gap": 0.0,
+  "proof_tolerance": 5.2952000000000004e-05,
+  "objective_bound_consistent": true,
+  "recomputed_objective_consistent": true,
+  "runtime_gurobi": 73.86099982261658,
+  "total_time": 74.93657660484314,
+  "nodes": 11704.0,
+  "threads": 16,
+  "seed": 0,
+  "time_limit": null,
+  "customers": 253,
+  "facilities": 100,
+  "incompatible_pairs": 1718,
+  "full_assignment_arcs": 25300,
+  "full_flow_variables": 25300,
+  "full_use_variables": 25300,
+  "potential_conflict_rows": 171800,
+  "lazy_conflict_rows_submitted": 12259,
+  "lazy_mipsol_callbacks": 8,
+  "lazy_callback_error": null,
+  "validation": {
+    "valid": true,
+    "problem": "mscflp-ci",
+    "instance": "wlp02",
+    "objective": 52952.0,
+    "fixed_cost": 30760.0,
+    "assignment_cost": 22192.0,
+    "open_facilities": 53,
+    "positive_assignments": 297,
+    "max_capacity_violation": 0.0,
+    "errors": []
+  },
+  "solver_error": null,
+  "instance_file": "historical-source:wlp02.dzn",
+  "instance_sha256": "4a5e6668c0f742fbb349f9228e64e0482df804ef3bf29f3867d4b03299b2a0af",
+  "input_solution_sha256": "4513b51c68e8ec0a412c8037ff6d07997ca45fdbbb73f3f6abfa4bba7d628962",
+  "gurobi_version": "13.0.1",
+  "python_version": "3.13.12",
+  "platform": "Windows-11-10.0.26200-SP0",
+  "source_sha256": {
+    "certify_ci.py": "a0f5db4c94b8479372989aebd05147031a1d7dd49d134f642aca13d8311709df",
+    "instances.py": "483404e78e43169c9341566560bfc7b4168bcbda9d6ff297acb686769f962532",
+    "results.py": "b47ffafc0436a25db16533688265d509017955b3603df9e59823aa02443b171c",
+    "validate.py": "8decdcd5cfb3734db0098eeaca40cab433cfcd6c376c32a62af523e05d22d6e4"
+  },
+  "source_file_references": [
+    {
+      "role": "gurobi_log",
+      "source_label": "ms_cflp_ci/results/full_space_certification_par_ci_20260720/wlp02_optimal_start_solo/gurobi.log",
+      "source_sha256": "0ef31a241cae3ac6d39b4bd61b6bf271aa35b4f7119644dab12e08698e6abb37",
+      "source_hash_verified": true,
+      "packaged_path": "certificates/mscflp-ci/evidence/wlp02/gurobi.log",
+      "packaged_sha256": "ec4df7a039c09dc8f8182e649749a749f24a635f47ab2b636e0b33213f810990"
+    },
+    {
+      "role": "progress",
+      "source_label": "ms_cflp_ci/results/full_space_certification_par_ci_20260720/wlp02_optimal_start_solo/progress.csv",
+      "source_sha256": "390d325f4b6c1b169f7167d856280d78f6c27b662537a33d3cad0d7e02259d86",
+      "source_hash_verified": true,
+      "packaged_path": "certificates/mscflp-ci/evidence/wlp02/progress.csv",
+      "packaged_sha256": "390d325f4b6c1b169f7167d856280d78f6c27b662537a33d3cad0d7e02259d86"
+    },
+    {
+      "role": "lazy_conflict_rows",
+      "source_label": "ms_cflp_ci/results/full_space_certification_par_ci_20260720/wlp02_optimal_start_solo/lazy_conflict_rows.csv.gz",
+      "source_sha256": "551e9658c7e348589079f463bd8f2a361851573e154c026c801d0279d937617b",
+      "source_hash_verified": true,
+      "packaged_path": "certificates/mscflp-ci/evidence/wlp02/lazy_conflict_rows.csv.gz",
+      "packaged_sha256": "551e9658c7e348589079f463bd8f2a361851573e154c026c801d0279d937617b"
+    },
+    {
+      "role": "solution_dense",
+      "source_label": "ms_cflp_ci/results/full_space_certification_par_ci_20260720/wlp02_optimal_start_solo/solution/dense/wlp02.npz",
+      "source_sha256": "4513b51c68e8ec0a412c8037ff6d07997ca45fdbbb73f3f6abfa4bba7d628962",
+      "source_hash_verified": true,
+      "not_packaged_reason": "Redundant dense vector: source hash verified; sparse proof-run vector is archived."
+    },
+    {
+      "role": "solution_sparse",
+      "source_label": "ms_cflp_ci/results/full_space_certification_par_ci_20260720/wlp02_optimal_start_solo/solution/sparse/wlp02.csv.gz",
+      "source_sha256": "47ad01be0ad95ba0ddbdef95ad84a09fccfc3f874fddacf469e4b318e2d48aa3",
+      "source_hash_verified": true,
+      "packaged_path": "certificates/mscflp-ci/evidence/wlp02/proof_solution.csv.gz",
+      "packaged_sha256": "47ad01be0ad95ba0ddbdef95ad84a09fccfc3f874fddacf469e4b318e2d48aa3"
+    }
+  ]
+}

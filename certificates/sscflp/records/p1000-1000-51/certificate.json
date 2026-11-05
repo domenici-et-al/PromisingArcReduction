@@ -40,7 +40,7 @@
   "verification_arcs": 348534,
   "optimal_solution": {
     "path": "certificates/sscflp/records/p1000-1000-51/optimal_solution.csv.gz",
-    "sha256": "e0f7a5baa9f40a6c58ac01a4602309b08c0cd09a929293a54fcea2b4c37a7165"
+    "sha256": "120150d350b71df05b14d2aa67150f96ba8baed14c7d5bf097c667041890fb8f"
   },
   "verification_log_available": true
 }
